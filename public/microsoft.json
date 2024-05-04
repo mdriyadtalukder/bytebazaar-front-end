@@ -1,0 +1,1232 @@
+[
+    {
+        "productName": "Microsoft Surface Go 3 (Wi-Fi) Intel Core i3 10100Y 8GB RAM 128GB SSD 10.5 Inch PixelSense MultiTouch Display Black Surface Go (Type Cover is sold separately)",
+        "productImage": "https://www.ryans.com/storage/products/main/microsoft-surface-go-3-wi-fi-intel-core-i3-11689229984.webp",
+        "productPrice": 138000,
+        "productLikes": 56,
+        "productUnlikes": 11,
+        "productQuantity": 5,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Microsoft",
+            "productModel": "Microsoft Surface Go 3 (Wi-Fi)",
+            "productLaptopSeries": "Surface Go",
+            "productPartNo": "8VC-00024"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i3",
+            "generation": "10th (Intel)",
+            "processorModel": "Core i3 10100Y",
+            "processorBaseFrequency": "1.30 GHz",
+            "processorMaxTurboFrequency": "3.90 GHz",
+            "processorCore": 2,
+            "processorThread": 4,
+            "cpuCache": "4MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Non-Removable",
+            "ramType": "LPDDR3",
+            "emptyExpansionRamSlot": "Unmentioned",
+            "maxRamSupport": "8GB"
+        },
+        "productStorage": {
+            "storage": "128GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Installed SSD Can Not Be Replaced"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel UHD Graphics 615",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 10.5,
+            "displayType": "PixelSense MultiTouch Display",
+            "displayResolution": "1920x1280",
+            "touchScreen": "Yes",
+            "displayRefreshRate": "60 Hz",
+            "displayFeatures": "Aspect ratio: 3:2, Contrast ratio: 1500:1, Touch: 10 point multi-touch",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "MicroSD card",
+            "usb2Port": "No",
+            "usb3Port": "No",
+            "usbCThunderboltPort": "1 x USB Type-C",
+            "hdmiPort": "No",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "WiFi 6 IEEE 802.11 a/b/g/n/ac/ax compatible",
+            "bluetooth": "Bluetooth 5.0"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2W stereo speakers with Dolby Audio",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeypad": "No",
+            "pointingDevice": "Touchscreen",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home in S mode",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Black",
+            "dimensions": "245 x 175 x 8.3mm",
+            "weightKg": "544 gm"
+        },
+        "productPower": {
+            "batteryCapacity": "26.8Wh"
+        },
+        "productWarranty": {
+            "warranty": "1 Year",
+            "warrantyDetails": "1 Year international warranty",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 40 Days. It may take additional time up to 90 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ENERGY STAR",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Microsoft Surface Pro 9 (Wi-Fi) Intel Core i5 1245U 8GB RAM, 512GB SSD 13 Inch Pixelsense Flow Multi Touch Display Graphite 2-in-1 Detachable Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/microsoft-surface-pro-9-wi-fi-intel-core-i5-11700918412.webp",
+        "productPrice": 154000,
+        "productLikes": 69,
+        "productUnlikes": 5,
+        "productQuantity": 9,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Microsoft",
+            "productModel": "Microsoft Surface Pro 9 (Wi-Fi)",
+            "productLaptopSeries": "Surface Pro",
+            "productPartNo": "QI3-00015"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i5 1245U",
+            "performanceCoreBaseFrequency": "1.60GHz",
+            "efficientCoreBaseFrequency": "1.20GHz",
+            "processorMaxTurboFrequency": "4.40GHz",
+            "performanceCoreMaxTurboFrequency": "4.40GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Non-removeable",
+            "ramType": "LPDDR5",
+            "totalRamSlot": "No",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "8GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Unmentioned"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 13,
+            "displayType": "PixelSense Flow MultiTouch Display",
+            "displayResolution": "2880x1920",
+            "touchScreen": "Yes",
+            "displayRefreshRate": "120 Hz",
+            "displayFeatures": "Aspect ratio: 3:2, Contrast ratio: 1200:1, Touch: 10-point multi-touch, Dolby Vision IQ support, Gorilla Glass 5",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "No",
+            "supportedMultimediaCard": "No",
+            "usb2Port": "No",
+            "usb3Port": "No",
+            "usbCThunderboltPort": "2 x Thunderbolt 4",
+            "hdmiPort": "No",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "No",
+            "microphonePort": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6E",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "No",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeypad": "No",
+            "pointingDevice": "Touchscreen",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Pro",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Graphite",
+            "dimensions": "287 x 209 x 9.3mm",
+            "weightKg": "879 gm"
+        },
+        "productPower": {
+            "batteryCapacity": "47.7Wh",
+            "backupTime": "Up to 15 Hrs."
+        },
+        "productWarranty": {
+            "warranty": "1 Year",
+            "warrantyDetails": "1 Year international warranty",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 40 Days. It may take additional time up to 90 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ENERGY STAR",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits, Office Work etc, Movies, Music",
+            "others": "2-in-1 Detachable Laptop (Type Cover is sold separately). Front-facing camera with 1080p full HD video, 10.0MP rear-facing autofocus camera with 1080p HD and 4k video. 2W stereo speakers with Dolby Atmos Footnote8. Dual far field studio microphones. Connections: 2 x USB-C with USB 4.0/ Thunderbolt 4, 1 x Surface Connect port, 1 x Surface Type Cover port. Wi-Fi 6E: 802.11ax compatible",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Microsoft Surface Pro 9 (Wi-Fi) Intel Core i7 1255U 16GB RAM 512GB SSD 13 Inch Pixelsense Flow Multi Touch Display Graphite 2-in-1 Detachable Laptop (Type Cover is sold separately)",
+        "productImage": "https://www.ryans.com/storage/products/main/microsoft-surface-pro-9-wi-fi-intel-core-i7-11674104528.webp",
+        "productPrice": 255000,
+        "productLikes": 57,
+        "productUnlikes": 15,
+        "productQuantity": 3,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Microsoft",
+            "productModel": "Microsoft Surface Pro 9",
+            "productLaptopSeries": "Surface Pro",
+            "productPartNo": "QIX-00018"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i7 1255U",
+            "performanceCoreBaseFrequency": "1.70GHz",
+            "efficientCoreBaseFrequency": "1.20GHz",
+            "processorMaxTurboFrequency": "4.70GHz",
+            "performanceCoreMaxTurboFrequency": "4.70GHz",
+            "efficientCoreMaxTurboFrequency": "3.50GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "1 x 16GB Non-Removable",
+            "ramType": "LPDDR5",
+            "totalRamSlot": "No",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "16GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "No",
+            "storageUpgrade": "Installed SSD Can Not Be Replaced"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 13,
+            "displayType": "PixelSense Flow MultiTouch Display",
+            "displayResolution": "2880x1920",
+            "touchScreen": "Yes",
+            "displayRefreshRate": "120 Hz",
+            "displayFeatures": "Aspect Ratio - 3:2, Pixel Density - 267 ppi",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "usb2Port": "No",
+            "usb3Port": "No",
+            "usbCThunderboltPort": "2 x Thunderbolt 4",
+            "hdmiPort": "No",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "No",
+            "microphonePort": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6E",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "No",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeypad": "No",
+            "pointingDevice": "Touch Screen",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "Yes",
+            "tpm": "Yes",
+            "securityChip": "TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Graphite",
+            "dimensions": "287 x 208.3 x 10.2mm",
+            "weightKg": "0.879kg"
+        },
+        "productPower": {
+            "batteryCapacity": "47.7 Wh"
+        },
+        "productWarranty": {
+            "warranty": "1 Year",
+            "warrantyDetails": "1 Year international warranty",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 40 Days. It may take additional time up to 90 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ENERGY STAR",
+            "bestFor": "Working on documents, Browsing, making light photo and video edits, Office Work etc, Movies, Music and More",
+            "gamingFeature": "Not Applicable",
+            "specialty": "Microsoft Surface Pro 9, which combines the power of a laptop with the versatility of a tablet. Designed for everyday productivity, video conferencing, and gaming, this portable graphite colored system is updated with an Intel i7 10-core processor and 16GB of LPDDR5 memory, giving it the flexibility to quickly multitask applications such as Microsoft Word, Adobe Fresco, and more installed onto its replaceable 512GB SSD.",
+            "others": "Sensors - Accelerometer, Ambient Light Sensor, Gyroscope, Magnetometer, Built-In Speakers - 2 x 2 W, Built-In Microphones - 2, Camera System - 10 MP Sensor, Video Recording- Front: 1080p, Rear :UHD 4K",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Microsoft Surface Pro 9 (Wi-Fi) Intel Core i7 1265U 16GB RAM 512GB SSD 13 Inch Pixelsense Flow Multi Touch Display Platinum 2-in-1 Detachable Laptop (Type Cover is sold separately)",
+        "productImage": "https://www.ryans.com/storage/products/main/microsoft-surface-pro-9-wi-fi-intel-core-i7-11688641317.webp",
+        "productPrice": 255000,
+        "productLikes": 61,
+        "productUnlikes": 5,
+        "productQuantity": 7,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Microsoft",
+            "productModel": "Microsoft Surface Pro 9 (Wi-Fi)",
+            "productLaptopSeries": "Surface Pro",
+            "productPartNo": "QIY-00001"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i7 1265U",
+            "performanceCoreBaseFrequency": "1.80GHz",
+            "efficientCoreBaseFrequency": "1.30GHz",
+            "processorMaxTurboFrequency": "4.80GHz",
+            "performanceCoreMaxTurboFrequency": "4.80GHz",
+            "efficientCoreMaxTurboFrequency": "3.60GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "1 x 16GB Non-Removable",
+            "ramType": "LPDDR5",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "16GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "m2SsdExpansionSlot": "No",
+            "storageUpgrade": "Installed SSD Can Not Be Replaced"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 13,
+            "displayType": "PixelSense Flow MultiTouch Display",
+            "displayResolution": "2880x1920",
+            "touchScreen": "Yes",
+            "displayRefreshRate": "120 Hz",
+            "displayBezel": "Slim Bezel",
+            "brightness": "450nits",
+            "displayFeatures": "Aspect Ratio: 3:2, Contrast Ratio: 1200:1, Pixel Density: 267 ppi",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "No",
+            "usb2Port": "No",
+            "usb3Port": "No",
+            "usbCThunderboltPort": "2 x Thunderbolt 4",
+            "hdmiPort": "No",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "No",
+            "microphonePort": "No",
+            "securityLockSlot": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6E (802.11ax)",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 x 2W Speaker, 2 x Built-In Microphones",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeypad": "No",
+            "pointingDevice": "Touchscreen",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "tpm": "Yes",
+            "securityChip": "TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Pro",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Platinum",
+            "dimensions": "287 x 208 x 9.4mm",
+            "weightKg": "0.88 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "47.7Wh",
+            "backupTime": "Up to 15 Hrs."
+        },
+        "productWarranty": {
+            "warranty": "1 Year",
+            "warrantyDetails": "1 Year international warranty",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 40 Days. It may take additional time up to 90 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ENERGY STAR",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "others": "2-in-1 Detachable Laptop (Type Cover is sold separately), Camera System: Rear 10 MP Sensor, Video Recording: Front 1080p Rear UHD 4K, Sensors: Accelerometer, Ambient Light Sensor, Gyroscope, Magnetometer.",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Microsoft Surface Laptop Go 3 Intel Core i5 1235U 8GB RAM, 256GB SSD 12.4 Inch PixelSense MultiTouch Display Sandstone Surface Go Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/microsoft-surface-laptop-go-3-intel-core-i5-1235u-11704361278.webp",
+        "productPrice": 119000,
+        "productLikes": 59,
+        "productUnlikes": 3,
+        "productQuantity": 1,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Microsoft",
+            "productModel": "Microsoft Surface Laptop Go 3",
+            "productLaptopSeries": "Surface Laptop",
+            "productPartNo": "XK1-00011"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i5 1235U",
+            "performanceCoreBaseFrequency": "1.30GHz",
+            "efficientCoreBaseFrequency": "0.90GHz",
+            "processorMaxTurboFrequency": "4.40GHz",
+            "performanceCoreMaxTurboFrequency": "4.40GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Non-Removable",
+            "ramType": "LPDDR5",
+            "totalRamSlot": "No",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "8GB"
+        },
+        "productStorage": {
+            "storage": "256GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "No",
+            "storageUpgrade": "Installed SSD Can Not Be Replaced"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 12.4,
+            "displayType": "PixelSense MultiTouch Display",
+            "displayResolution": "1536x1024",
+            "touchScreen": "Yes",
+            "displayRefreshRate": "60 Hz",
+            "displayBezel": "Slim Bezel",
+            "brightness": "450nits",
+            "displayFeatures": "148 PPI, Aspect ratio: 3:2, Contrast ratio: 1000:1, Color profile: sRGB and Enhanced, Individually color-calibrated display, Corning Gorilla Glass 3",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "No",
+            "supportedMultimediaCard": "No",
+            "usb2Port": "No",
+            "usb3Port": "1 x USB 3.1 Type-A",
+            "usbCThunderboltPort": "1 x USB 3.2 Type-C",
+            "hdmiPort": "No",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6: 802.11ax",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "audioProperties": "Omnisonic Speakers with Dolby Audio Premium",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD Camera"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Activation: Moving keys, Layout: English, full row of function keys (F1 - F12), Windows key and dedicated buttons for media controls, screen brightness",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeypad": "No",
+            "pointingDevice": "Touchpad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "Yes",
+            "faceDetection": "Yes",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Aluminum",
+            "deviceLighting": "No",
+            "color": "Sandstone",
+            "dimensions": "109.5 x 81.2 x 6.2mm",
+            "weightKg": "1.12 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "41Wh",
+            "backupTime": "Up to 15 Hrs. (Typical Device Usage)"
+        },
+        "productWarranty": {
+            "warranty": "1 Year",
+            "warrantyDetails": "1 Year international warranty",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 40 Days. It may take additional time up to 90 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Browsing, working on documents, Create presentations, and enjoy music, books, movies, and more",
+            "specialty": "Surface Laptop Go 3 features an ultraportable design to help you breeze through work and play from anywhere. Get it all done with the performance you need, and stand apart from the crowd with a sleek design in stylish colors. Surface signature 3:2 ratio gives you the most vertical screen real estate on a laptop for getting it all done. Be heard loud and clear in video calls with built-in HD camera and dual studio mics. Type in comfort on the full-size keyboard with large, precision touchpad that lets you navigate, scroll, and select with ease.",
+            "others": "Touch: 10-point multi-touch Display. Windows Hello sign-in with Fingerprint Power Button. Dual far-field Studio Mics with Voice Clarity. Top: Anodized aluminum. Base: Aluminum and polycarbonate composite resin system with glass fiber and 30% post-consumer recycled content. Sensors: Ambient light sensor.",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors. Dual channel RAM required For Intel Iris Xe Graphics"
+        }
+    },
+    {
+        "productName": "Microsoft Surface Laptop Go 3 Intel Core i5 1235U 8GB RAM, 256GB SSD 12.4 Inch PixelSense MultiTouch Display Ice Blue Surface Go Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/microsoft-surface-laptop-go-3-intel-core-i5-1235u-11707985295.webp",
+        "productPrice": 119000,
+        "productLikes": 78,
+        "productUnlikes": 7,
+        "productQuantity": 9,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Microsoft",
+            "productModel": "Microsoft Surface Laptop Go 3",
+            "productLaptopSeries": "Surface Laptop",
+            "productPartNo": "XK1-00059"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i5 1235U",
+            "performanceCoreBaseFrequency": "1.30GHz",
+            "efficientCoreBaseFrequency": "0.90GHz",
+            "processorMaxTurboFrequency": "4.40GHz",
+            "performanceCoreMaxTurboFrequency": "4.40GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Non-Removable",
+            "ramType": "LPDDR5",
+            "totalRamSlot": "No",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "8GB"
+        },
+        "productStorage": {
+            "storage": "256GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "No",
+            "storageUpgrade": "Installed SSD Can Not Be Replaced"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 12.4,
+            "displayType": "PixelSense MultiTouch Display",
+            "displayResolution": "1536x1024",
+            "touchScreen": "Yes",
+            "displayRefreshRate": "60 Hz",
+            "displayFeatures": "148 PPI, Aspect ratio: 3:2, Contrast ratio: 1000:1, Color profile: sRGB and Enhanced, Individually color-calibrated display, Corning Gorilla Glass 3",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "usb2Port": "No",
+            "usb3Port": "1 x USB 3.1 Type-A",
+            "usbCThunderboltPort": "1 x USB 3.2 Type-C",
+            "hdmiPort": "No",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6: 802.11ax",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "audioProperties": "Omnisonic Speakers with Dolby Audio Premium",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Activation: Moving keys, Layout: English, full row of function keys (F1 - F12), Windows key and dedicated buttons for media controls, screen brightness",
+            "keyboardBacklit": "No",
+            "numKeypad": "No",
+            "pointingDevice": "Touchpad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "Yes",
+            "faceDetection": "Yes",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Aluminum",
+            "color": "Ice Blue",
+            "dimensions": "109.5 x 81.2 x 6.2mm",
+            "weightKg": "1.12 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "41Wh",
+            "backupTime": "Up to 15 Hrs."
+        },
+        "productWarranty": {
+            "warranty": "1 Year",
+            "warrantyDetails": "1 Year international warranty",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 40 Days. It may take additional time up to 90 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Browsing, working on documents, Create presentations, and enjoy music, books, movies, and more",
+            "specialty": "Touch: 10-point multi-touch. 720p HD front-facing camera. Windows Hello sign-in with Fingerprint Power Button.",
+            "others": "Dual far-field Studio Mics with Voice Clarity, Sensors: Ambient light sensor.",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors. Dual channel RAM required For Intel Iris Xe Graphics"
+        }
+    },
+    {
+        "productName": "Microsoft Surface Laptop 4 Intel Core i5 1135G7 16GB RAM 512GB SSD 13.5 Inch Pixelsense Multi Touch Display Ice Blue Alcantara Surface Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/microsoft-surface-laptop-4-intel-core-i5-1135g7-11683951977.webp",
+        "productPrice": 139000,
+        "productLikes": 57,
+        "productUnlikes": 22,
+        "productQuantity": 4,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Microsoft",
+            "productModel": "Microsoft Surface Laptop 4",
+            "productLaptopSeries": "Surface Laptop"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "11th (Intel)",
+            "processorModel": "Core i5 1135G7",
+            "processorBaseFrequency": "2.40GHz",
+            "processorMaxTurboFrequency": "4.20GHz",
+            "processorCore": 4,
+            "processorThread": 8,
+            "cpuCache": "8MB"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "ramType": "DDR4",
+            "emptyExpansionRamSlot": "Unmentioned"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "installedSsdType": "NVMe PCIe",
+            "storageUpgrade": "Installed SSD Can Not Be Replaced"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 13.5,
+            "displayType": "PixelSense MultiTouch Display",
+            "displayResolution": "2256x1504",
+            "touchScreen": "Yes"
+        },
+        "productPortsSlots": {
+            "usb3Port": "1 x USB-A",
+            "usbCThunderboltPort": "1 x USB Type-C",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6",
+            "bluetooth": "Bluetooth 5.0"
+        },
+        "productAudioCamera": {
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardBacklit": "No",
+            "numKeypad": "No",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "securityChip": "TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-10 Pro",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "color": "Ice Blue",
+            "dimensions": "307 x 224 x 14.5mm",
+            "weightKg": "1.27kg"
+        },
+        "productPower": {
+            "batteryCapacity": "47.4Wh",
+            "backupTime": "Up to 17 Hrs."
+        },
+        "productWarranty": {
+            "warranty": "1 Year",
+            "warrantyDetails": "1 Year international warranty"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Browsing, working on documents, and making light photo and video edits, Office Work etc, Movies, Music",
+            "specialty": "2.4 GHz Intel Core i5 Quad-Core 11th Gen, 16GB LPDDR4X | 512GB SSD, 13.5\" 2256 x 1504 PixelSense Touchscreen, Integrated Intel Iris Xe Graphics, 3.5mm Headphone Jack | Surface Connect.",
+            "others": "Aspect Ratio - 3:2, Webcam - User-Facing: 720p.",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Microsoft Surface Laptop 5 Intel Core i5 1235U 8GB RAM 256GB SSD 13.5 Inch Pixelsense Multi Touch Display Platinum Alcantara Surface Laptop #QZI-00001",
+        "productImage": "https://www.ryans.com/storage/products/main/microsoft-surface-laptop-5-intel-core-i5-1235u-11681038830.webp",
+        "productPrice": 144000,
+        "productLikes": 87,
+        "productUnlikes": 30,
+        "productQuantity": 3,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Microsoft",
+            "productModel": "Microsoft Surface Laptop 5",
+            "productLaptopSeries": "Surface Laptop",
+            "productPartNo": "QZI-00001"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i5 1235U",
+            "performanceCoreBaseFrequency": "1.30GHz",
+            "efficientCoreBaseFrequency": "0.90GHz",
+            "processorMaxTurboFrequency": "4.40GHz",
+            "performanceCoreMaxTurboFrequency": "4.40GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "ramType": "LPDDR5x",
+            "ramBus": "No",
+            "totalRamSlot": "No",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "8GB"
+        },
+        "productStorage": {
+            "storage": "256GB",
+            "installedHddType": "No HDD",
+            "installedSsdType": "NVMe PCIe",
+            "storageUpgrade": "Installed SSD Can Not Be Replaced"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 13.5,
+            "displayType": "PixelSense MultiTouch Display",
+            "displayResolution": "2256x1504",
+            "touchScreen": "Yes",
+            "displayBezel": "Slim Bezel",
+            "displayFeatures": "Aspect Ratio: 3:2, Contrast Ratio: 1300:1, Color profile: sRGB, and Vivid, Individually color-calibrated display Dolby Vision IQ support, Touch: 10-point multi-touch"
+        },
+        "productPortsSlots": {
+            "usb3Port": "1 x USB 3.1 Gen 1 Type-A",
+            "usbCThunderboltPort": "1 x Thunderbolt 4",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6 (802.11ax)",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "audioProperties": "Omnisonic Speakers with Dolby Atmos",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD Camera"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Activation: Moving keys, Backlight, Layout: English, full row of function keys (F1 - F12), Windows key and dedicated buttons for media controls, screen brightness",
+            "keyboardBacklit": "Yes",
+            "numKeypad": "No",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "Yes",
+            "securityChip": "Firmware TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Aluminum",
+            "deviceLighting": "No",
+            "color": "Platinum",
+            "dimensions": "308 x 223 x 14.5mm",
+            "weightKg": "1.3 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "45W",
+            "backupTime": "Up to 18 Hrs.",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "1 Year",
+            "warrantyDetails": "1 Year international warranty"
+        },
+        "productAdditionalInfo": {
+            "certifications": "Evo-Certified, ENERGY STAR",
+            "bestFor": "Working on documents, Browsing, making light photo and video edits, Office Work etc, Movies, Music",
+            "specialty": "Designed for both work and play with a stylish, platinum colored aluminum chassis and a Alcantara keyboard area and palm rest, the Microsoft 13.5 inch Multi-Touch Surface Laptop 5 delivers an optimal balance between portability, performance, and battery life.",
+            "others": "1 x 1/8 inch / 3.5 mm Headphone Output, Webcam: User-Facing: 720p, Security: Facial Recognition, Dual far-field Studio microphones, Ambient light sensor.",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Microsoft Surface Laptop 5 Intel Core i7 1265U 16GB RAM, 512GB SSD 15 Inch Pixelsense Multi Touch Display Matte Black Metal Surface Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/microsoft-surface-laptop-5-intel-core-i7-1265u-11697279015.webp",
+        "productPrice": 218000,
+        "productLikes": 49,
+        "productUnlikes": 13,
+        "productQuantity": 6,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Microsoft",
+            "productModel": "Microsoft Surface Laptop 5",
+            "productLaptopSeries": "Surface Laptop",
+            "productPartNo": "RIQ-00024"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i7 1265U",
+            "performanceCoreBaseFrequency": "1.80GHz",
+            "efficientCoreBaseFrequency": "1.30GHz",
+            "processorMaxTurboFrequency": "4.80GHz",
+            "performanceCoreMaxTurboFrequency": "4.80GHz",
+            "efficientCoreMaxTurboFrequency": "3.60GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "ramType": "LPDDR5x",
+            "ramBus": "No",
+            "totalRamSlot": "No",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "16GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "installedSsdType": "NVMe PCIe",
+            "storageUpgrade": "Installed SSD Can Not Be Replaced"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15,
+            "displayType": "PixelSense MultiTouch Display",
+            "displayResolution": "2496x1664",
+            "touchScreen": "Yes",
+            "displayRefreshRate": "60 Hz",
+            "brightness": "400nits",
+            "displayFeatures": "Aspect Ratio: 3:2, Contrast Ratio: 1300:1"
+        },
+        "productPortsSlots": {
+            "usb3Port": "1 x USB Type-A",
+            "usbCThunderboltPort": "1 x Thunderbolt 4",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6 (802.11ax)",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 x Far-Field Microphones",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Notebook Keyboard with Backlight",
+            "keyboardBacklit": "Yes",
+            "numKeypad": "No",
+            "pointingDevice": "TouchPad & Touchscreen"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "Yes",
+            "tpm": "Yes",
+            "securityChip": "TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Pro",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Aluminum",
+            "deviceLighting": "No",
+            "color": "Matte Black",
+            "dimensions": "340 x 244 x 14.7mm",
+            "weightKg": "1.56 kg"
+        },
+        "productWarranty": {
+            "warranty": "1 Year",
+            "warrantyDetails": "1 Year international warranty"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ENERGY STAR",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "specialty": "Metal Surface, MU-MIMO Support",
+            "others": "USB-C: (Thunderbolt 4) / Supports Video Alt Mode and Power Delivery.",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Microsoft Surface Laptop Studio 2 Intel Core i7 13700H 32GB RAM, 1TB SSD 14.4 Inch Pixelsense Flow Multi Touch Display Platinum Surface Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/microsoft-surface-laptop-studio-2-intel-core-i7-61709629653.webp",
+        "productPrice": 370000,
+        "productLikes": 67,
+        "productUnlikes": 4,
+        "productQuantity": 8,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Microsoft",
+            "productModel": "Microsoft Surface Laptop Studio 2",
+            "productLaptopSeries": "Surface Laptop",
+            "productPartNo": "Z1I-00001"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "13th (Intel)",
+            "processorModel": "Core i7 13700H",
+            "performanceCoreBaseFrequency": "2.40GHz",
+            "efficientCoreBaseFrequency": "1.80GHz",
+            "processorMaxTurboFrequency": "5.00GHz",
+            "performanceCoreMaxTurboFrequency": "5.00GHz",
+            "efficientCoreMaxTurboFrequency": "3.70GHz",
+            "processorCore": 14,
+            "performanceCores": 6,
+            "efficientCores": 8,
+            "processorThread": 20,
+            "cpuCache": "24MB"
+        },
+        "productMemory": {
+            "ram": "32GB",
+            "ramType": "Unmentioned",
+            "totalRamSlot": "No",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "32GB"
+        },
+        "productStorage": {
+            "storage": "1TB SSD",
+            "installedHddType": "No HDD",
+            "installedSsdType": "NVMe PCIe",
+            "storageUpgrade": "Installed SSD Can Not Be Replaced"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 4050 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "6GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 14.4,
+            "displayType": "PixelSense Flow MultiTouch Display",
+            "displayResolution": "2400x1600",
+            "touchScreen": "Yes",
+            "displayRefreshRate": "120 Hz",
+            "brightness": "400nits",
+            "displayFeatures": "Aspect Ratio: 3:2, Contrast Ratio: 1500:1"
+        },
+        "productPortsSlots": {
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "microSD/microSDHC/microSDXC",
+            "usb3Port": "1 x USB 3.1 Type-A",
+            "usbCThunderboltPort": "2 x Thunderbolt 4",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6E (802.11ax)",
+            "bluetooth": "Bluetooth 5.3"
+        },
+        "productAudioCamera": {
+            "audioProperties": "4 Built-In Speakers, 2 Built-In Microphones, Quad Omnisonic speakers with Dolby Atmos",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Built-In Chiclet-Style Keyboard with Backlight",
+            "keyboardBacklit": "Yes",
+            "numKeypad": "No",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "Yes",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "color": "Platinum",
+            "dimensions": "323.088 x 230.124 x 21.844mm",
+            "weightKg": "1.98 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "58Wh",
+            "powerAdapter": "120W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "1 Year",
+            "warrantyDetails": "1 Year international warranty"
+        },
+        "productAdditionalInfo": {
+            "certifications": "Evo-Certified, VESA Display HDR",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "specialty": "Thunderbolt 4 (with DisplayPort and Power Delivery)",
+            "others": "Surface Connect port",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    }
+]

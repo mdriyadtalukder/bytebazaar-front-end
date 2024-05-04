@@ -8,8 +8,9 @@ import img7 from '../../../assets/brand/huawei.png';
 import img8 from '../../../assets/brand/levono.png';
 import img9 from '../../../assets/brand/microsoft.png';
 import img10 from '../../../assets/brand/msi.png';
-import img11 from '../../../assets/brand/razer.png';
-import img12 from '../../../assets/brand/samsung.png';
+import img11 from '../../../assets/brand/avita.png';
+import img12 from '../../../assets/brand/infix.png';
+import img13 from '../../../assets/brand/chuwi.png';
 import Title from '../../title/Title';
 const Brand = () => {
     return (
@@ -28,6 +29,7 @@ const Brand = () => {
                 <div><img className='h-[80px] w-[90px] border-2 p-2 shadow-lg rounded-lg border-teal-400' src={img10} alt="" /></div>
                 <div><img className='h-[80px] w-[90px] border-2 p-2 shadow-lg rounded-lg border-indigo-400' src={img11} alt="" /></div>
                 <div><img className='h-[80px] w-[90px] border-2 p-2 shadow-lg rounded-lg border-teal-400' src={img12} alt="" /></div>
+                <div><img className='h-[80px] w-[90px] border-2 p-2 shadow-lg rounded-lg border-indigo-400' src={img13} alt="" /></div>
 
             </div>
         </div>

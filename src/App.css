@@ -87,3 +87,11 @@ div.swiper-button-prev::after {
 
 }
 
+.truncate-2-lines {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    -webkit-line-clamp: 2 !important;
+    /* Number of lines to show */
+    text-overflow: ellipsis !important;
+}

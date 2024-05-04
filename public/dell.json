@@ -1,0 +1,1366 @@
+[
+    {
+        "productName": "Dell G15 5530 Intel Core i5 13450HX 16GB RAM 512GB SSD 15.6 Inch FHD Display Platinum Silver Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/dell-g15-5530-intel-core-i5-13450hx-16gb-ram-11704868420.webp",
+        "productPrice": 158000,
+        "productLikes": 23,
+        "productUnlikes": 2,
+        "productQuantity": 12,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Dell",
+            "productModel": "Dell G15 5530",
+            "productLaptopSeries": "G Series",
+            "productPartNo": "GN55309K5K0001OGDDD"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "13th (Intel)",
+            "processorModel": "Core i5 13450HX",
+            "performanceCoreBaseFrequency": "2.40GHz",
+            "efficientCoreBaseFrequency": "1.80GHz",
+            "processorMaxTurboFrequency": "4.60GHz",
+            "performanceCoreMaxTurboFrequency": "4.60GHz",
+            "efficientCoreMaxTurboFrequency": "3.40GHz",
+            "processorCore": 10,
+            "performanceCores": 6,
+            "efficientCores": 4,
+            "processorThread": 16,
+            "cpuCache": "20MB"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "2 x 8GB Removable",
+            "ramType": "DDR5",
+            "ramBus": "4800 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "64GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCle",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Unmentioned"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 3050 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "6GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD LED Display",
+            "displayResolution": "1920x1080",
+            "touchScreen": "No",
+            "displayRefreshRate": "120 Hz"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "No",
+            "supportedMultimediaCard": "No",
+            "usb3Port": "3 x USB 3.2",
+            "usbCThunderboltPort": "1 x USB-C 3.2",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi 6 AX201 (2x2)",
+            "bluetooth": "Yes"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 tuned speakers with Dolby Audio",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD Camera"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "4-Zone RGB Backlit Keyboard",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "Yes",
+            "numKeyPad": "Yes (Numeric)",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Platinum Silver",
+            "dimensions": "357.26 x 274.52 x 26.95mm",
+            "weightKg": "2.81 kg"
+        },
+        "productPower": {
+            "battery": "3 Cell",
+            "batteryCapacity": "56WHr",
+            "backupTime": "Up to 3 Hrs.",
+            "powerAdapter": "240W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 Year (2 Year for Battery and Adapter)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work etc, Movies, Music and more.",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Dell Inspiron 15 3520 Intel Core i3 1215U 8GB RAM 512GB SSD 15.6 Inch FHD Display Platinum Silver Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/dell-inspiron-15-3520-intel-core-i3-1215u-8gb-ram-11699100385.webp",
+        "productPrice": 60500,
+        "productLikes": 40,
+        "productUnlikes": 12,
+        "productQuantity": 5,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Dell",
+            "productModel": "Dell Inspiron 15 3520",
+            "productLaptopSeries": "Inspiron",
+            "productPartNo": "WARMLKN15ADL23051004PLASPP-2Y"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i3",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i3 1215U",
+            "processorBaseFrequency": "1.20GHz",
+            "performanceCoreBaseFrequency": "1.20GHz",
+            "efficientCoreBaseFrequency": "0.90GHz",
+            "processorMaxTurboFrequency": "4.40GHz",
+            "performanceCoreMaxTurboFrequency": "4.40GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 6,
+            "performanceCores": 2,
+            "efficientCores": 4,
+            "processorThread": 8,
+            "cpuCache": "10MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Removable",
+            "ramType": "DDR4",
+            "ramBus": "3200 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": 1,
+            "maxRamSupport": "16GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "No",
+            "storageUpgrade": "Installed SSD can be upgradeable"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel UHD Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "Full HD Display",
+            "panelType": "WVA",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Anti-glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "120 Hz",
+            "displayBezel": "Narrow Bazel",
+            "brightness": "250nits",
+            "displayFeatures": "Brightness: 250 nits, WVA Display"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "1 x SD Card Reader",
+            "usb2Port": "1 x USB 2.0",
+            "usb3Port": "2 x USB 3.2 Gen 1 Type-A",
+            "usbCThunderboltPort": "No",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 W x 2 Stereo speakers",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD Webcam"
+        },
+        "productKeyboard": {
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeyPad": "Yes",
+            "pointingDevice": "Touchpad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "tpm": "No"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Plastic",
+            "deviceLighting": "No",
+            "color": "Platinum Silver",
+            "dimensions": "358.50 x 235.56 x 21.07mm",
+            "weightKg": "1.65 kg"
+        },
+        "productPower": {
+            "battery": "3 Cell",
+            "batteryCapacity": "41 Wh",
+            "batteryType": "Li-ion Polymer",
+            "backupTime": "Up to 3 Hrs.",
+            "powerAdapter": "65 Watt",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 Year (2 Year for Battery and Adapter)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ENERGY STAR, TUV Rheinland",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits, create presentations, and enjoy music, books, movies, and more",
+            "gamingFeature": "Not Applicable",
+            "specialty": "Daily to-do s, done, A modern, thoughtful design, All the sights and sounds, Purposeful features, Easy-to-use technology, Their latest. Our greatest.",
+            "others": "Benefit from roomy keycaps and a spacious touchpad that makes it easier to navigate your content and ComfortView software, which is a TUV Rheinland certified solution, reduces harmful blue light emissions to keep your eyes comfortable over extended viewing times. Also, sleek three-side narrow borders encase an optional FHD display.",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Dell Inspiron 15 3520 Intel Core i3 1215U 8GB RAM 512GB SSD 15.6 Inch FHD Display Carbon Black Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/dell-inspiron-15-3520-intel-core-i3-1215u-156-51693819612.webp",
+        "productPrice": 60500,
+        "productLikes": 0,
+        "productUnlikes": 0,
+        "productQuantity": 4,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Dell",
+            "productModel": "Dell Inspiron 15 3520",
+            "productLaptopSeries": "Inspiron",
+            "productPartNo": "WARMLKN15ADL23051004PLASPP-2Y"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i3",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i3 1215U",
+            "processorBaseFrequency": "1.20GHz",
+            "performanceCoreBaseFrequency": "1.20GHz",
+            "efficientCoreBaseFrequency": "0.90GHz",
+            "processorMaxTurboFrequency": "4.40GHz",
+            "performanceCoreMaxTurboFrequency": "4.40GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 6,
+            "performanceCores": 2,
+            "efficientCores": 4,
+            "processorThread": 8,
+            "cpuCache": "10MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Removable",
+            "ramType": "DDR4",
+            "ramBus": "3200 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": 1,
+            "maxRamSupport": "16GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "No",
+            "storageUpgrade": "Installed SSD can be upgradeable"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel UHD Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "Full HD Display",
+            "panelType": "WVA",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Anti-glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "120 Hz",
+            "displayBezel": "Narrow Bazel",
+            "brightness": "250nits",
+            "displayFeatures": "Brightness: 250 nits, WVA Display"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "1 x SD Card Reader",
+            "usb2Port": "No",
+            "usb3Port": "2 x USB 3.2 Gen 1",
+            "usbCThunderboltPort": "1 x 1 USB 3.2 Gen 1 Type-C",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 W x 2 Stereo speakers",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD Webcam"
+        },
+        "productKeyboard": {
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeyPad": "Yes",
+            "pointingDevice": "Touchpad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "tpm": "No"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Plastic",
+            "deviceLighting": "No",
+            "color": "Carbon Black",
+            "dimensions": "358.50 x 235.56 x 21.07mm",
+            "weightKg": "1.65 kg"
+        },
+        "productPower": {
+            "battery": "3 Cell",
+            "batteryCapacity": "41 Wh",
+            "batteryType": "Li-ion Polymer",
+            "backupTime": "Up to 3 Hrs.",
+            "powerAdapter": "65 Watt",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 Year (2 Year for Battery and Adapter)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ENERGY STAR, TUV Rheinland",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits, create presentations, and enjoy music, books, movies, and more",
+            "gamingFeature": "Not Applicable",
+            "specialty": "Daily to-do s, done, A modern, thoughtful design, All the sights and sounds, Purposeful features, Easy-to-use technology, Their latest. Our greatest.",
+            "others": "Benefit from roomy keycaps and a spacious touchpad that makes it easier to navigate your content and ComfortView software, which is a TUV Rheinland certified solution, reduces harmful blue light emissions to keep your eyes comfortable over extended viewing times. Also, sleek three-side narrow borders encase an optional FHD display.",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Dell Inspiron 15 3520 Intel Core i5 1235U 8GB RAM 512GB SSD 15.6 Inch FHD Display Platinum Silver Laptop#WARMLKN15ADL23051010PLASPP",
+        "productImage": "https://www.ryans.com/storage/products/main/dell-inspiron-15-3520-intel-core-i5-1235u-8gb-ram-71704696796.webp",
+        "productPrice": 78500,
+        "productLikes": 30,
+        "productUnlikes": 4,
+        "productQuantity": 24,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Dell",
+            "productModel": "Dell Inspiron 15 3520",
+            "productLaptopSeries": "Inspiron",
+            "productPartNo": "WARMLKN15ADL23051010PLASPP/WARMLKN15ADL23051010"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i5 1235U",
+            "performanceCoreBaseFrequency": "1.30GHz",
+            "efficientCoreBaseFrequency": "0.90GHz",
+            "processorMaxTurboFrequency": "4.40GHz",
+            "performanceCoreMaxTurboFrequency": "4.40GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Removable",
+            "ramType": "DDR4",
+            "ramBus": "2666 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": 1,
+            "maxRamSupport": "16GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Installed SSD can be upgradeable"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "Full HD Display",
+            "panelType": "WVA",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Anti- Glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "120 Hz",
+            "displayBezel": "Narrow Bazel",
+            "brightness": "250nits",
+            "displayFeatures": "Brightness: 250 nits, WVA Display"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "1 x SD Card Reader",
+            "usb2Port": "1 x USB 2.0 Type-A",
+            "usb3Port": "2 x USB 3.2 Gen 1 Type-A",
+            "usbCThunderboltPort": "No",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "WIFI 6",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 W x 2 Stereo speakers",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD Webcam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Non-Backlit Keyboard",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeyPad": "Yes",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "tpm": "No"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Plastic",
+            "deviceLighting": "No",
+            "color": "Platinum Silver",
+            "dimensions": "358.50 x 235.56 x 21.07mm",
+            "weightKg": "1.65 Kg"
+        },
+        "productPower": {
+            "battery": "3 Cell",
+            "batteryCapacity": "41 Wh",
+            "batteryType": "Li-ion",
+            "backupTime": "Up to 3 Hrs.",
+            "powerAdapter": "65 Watt",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 Year (2 Year for Battery and Adapter)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ENERGY STAR, TUV Rheinland, EPEAT Silver",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits, create presentations, and enjoy music, books, movies, and more",
+            "gamingFeature": "Not Applicable",
+            "specialty": "Daily to-do s, done, A modern, thoughtful design, All the sights and sounds, Purposeful features, Easy-to-use technology, Their latest. Our greatest.",
+            "others": "Benefit from roomy keycaps and a spacious touchpad that makes it easier to navigate your content and ComfortView software, which is a TUV Rheinland certified solution, reduces harmful blue light emissions to keep your eyes comfortable over extended viewing times. Also, sleek three-side narrow borders encase an optional FHD display.",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Dell Inspiron 15 3530 Intel Core i7 1355U 8GB RAM, 512GB SSD 15.6 Inch FHD Display Carbon Black Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/dell-inspiron-15-3530-intel-core-i7-1355u-8gb-11709107975.webp",
+        "productPrice": 27000,
+        "productLikes": 45,
+        "productUnlikes": 15,
+        "productQuantity": 56,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Dell",
+            "productModel": "Dell Inspiron 15 3530",
+            "productLaptopSeries": "Inspiron",
+            "productPartNo": "IN35308JMPY001OGDDD"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "13th (Intel)",
+            "processorModel": "Core i7 1355U",
+            "performanceCoreBaseFrequency": "1.70GHz",
+            "efficientCoreBaseFrequency": "1.20GHz",
+            "processorMaxTurboFrequency": "5.00GHz",
+            "performanceCoreMaxTurboFrequency": "5.00GHz",
+            "efficientCoreMaxTurboFrequency": "3.70GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Removable",
+            "ramType": "DDR4",
+            "ramBus": "2666 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": 1,
+            "maxRamSupport": "Unmentioned"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "No",
+            "storageUpgrade": "Installed SSD can be upgradeable"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD LED Display",
+            "panelType": "WVA",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Anti-glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "120 Hz",
+            "displayBezel": "Narrow Bezel",
+            "brightness": "250nits",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "SD Card",
+            "usb2Port": "1 x USB 2.0 Type-A",
+            "usb3Port": "2 x USB 3.2 Gen 1 Type-A",
+            "usbCThunderboltPort": "No",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Realtek Wi-Fi 6 RTL8852BE, 2x2",
+            "bluetooth": "Yes"
+        },
+        "productAudioCamera": {
+            "audioProperties": "Realtek ALC3204",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "English International Non-Backlit Keyboard with Numeric Keypad",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeyPad": "Yes (Numeric)",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "securityChip": "No"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Aluminum",
+            "deviceLighting": "No",
+            "color": "Carbon Black",
+            "dimensions": "358.50 x 234.90 x 15.52-17.50mm",
+            "weightKg": "1.62 kg"
+        },
+        "productPower": {
+            "battery": "3 Cell",
+            "batteryCapacity": "41Wh",
+            "powerAdapter": "65W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 Year (2 Year for Battery and Adapter)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ENERGY STAR",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors. Dual channel RAM required For Intel Iris Xe Graphics"
+        }
+    },
+    {
+        "productName": "Dell Latitude 15-3520 Intel Core i5 1135G7 8GB RAM 500GB SSD 15.6 Inch HD Display Black Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/dell-latitude-15-3520-11th-gen-intel-core-i5-11688989003.webp",
+        "productPrice": 74000,
+        "productLikes": 56,
+        "productUnlikes": 43,
+        "productQuantity": 23,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Dell",
+            "productModel": "Dell Latitude 15-3520",
+            "productLaptopSeries": "Latitude"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "11th (Intel)",
+            "processorModel": "Core i5 1135G7",
+            "processorBaseFrequency": "2.40 GHz",
+            "processorMaxTurboFrequency": "4.20 GHz",
+            "processorCore": 4,
+            "processorThread": 8,
+            "cpuCache": "8MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Removable",
+            "ramType": "DDR4",
+            "ramBus": "3200 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": 1,
+            "maxRamSupport": "32GB"
+        },
+        "productStorage": {
+            "storage": "500GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Installed SSD can be upgradeable"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "HD LED",
+            "panelType": "TN",
+            "displayResolution": "1366x768",
+            "displaySurface": "Anti-glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "60 Hz",
+            "displayBezel": "Narrow Bezel",
+            "brightness": "220nits",
+            "displayFeatures": "Anti-glare LED Backlight Non-touch Narrow Border Display",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "MicroSD card",
+            "usb2Port": "1 x USB 2.0 Type-A",
+            "usb3Port": "2 x USB 3.2 Gen 1 Type-A",
+            "usbCThunderboltPort": "1 x USB 3.2 Gen2 Type-C",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "Wedge Shaped Lock Slot"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi 6 AX201 2x2 802.11ax 160MHz",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "audioProperties": "Intelligent Audio",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeyPad": "Yes",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "securityChip": "Unmentioned"
+        },
+        "productSoftware": {
+            "operatingSystem": "Free-Dos",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Black",
+            "dimensions": "361 x 240.9 x 18.06mm",
+            "weightKg": "1.79 kg"
+        },
+        "productPower": {
+            "battery": "3 Cell",
+            "batteryCapacity": "41Wh",
+            "backupTime": "Up to 3.5 Hrs.",
+            "powerAdapter": "65W",
+            "adapterType": "AC Adapte"
+        },
+        "productWarranty": {
+            "warranty": "3 Year",
+            "warrantyDetails": "3 Year (Battery, Adapter 1 Year)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ENERGY STAR 8.0, EPEAT Gold",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors. Dual channel RAM required For Intel Iris Xe Graphics"
+        }
+    },
+    {
+        "productName": "Dell Latitude 3430 Intel Core i5 1235U 8GB RAM, 512GB SSD 14 Inch FHD Display Black Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/dell-latitude-3430-intel-core-i5-1235u-8gb-ram-11711611682.webp",
+        "productPrice": 83500,
+        "productLikes": 564,
+        "productUnlikes": 234,
+        "productQuantity": 87,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Dell",
+            "productModel": "Dell Latitude 3430",
+            "productLaptopSeries": "Latitude"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i5 1235U",
+            "performanceCoreBaseFrequency": "1.30GHz",
+            "efficientCoreBaseFrequency": "0.90GHz",
+            "processorMaxTurboFrequency": "4.40GHz",
+            "performanceCoreMaxTurboFrequency": "4.40GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Removable",
+            "ramType": "DDR4",
+            "ramBus": "3200 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": 1,
+            "maxRamSupport": "32GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCle",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Installed SSD can be upgradeable"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 14,
+            "displayType": "FHD LED Display",
+            "panelType": "WVA",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Anti-glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "60 Hz",
+            "brightness": "250nits",
+            "displayFeatures": "Color gamut: NTSC 45% Typ., Contrast ratio (typical): 700:1",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "MicroSD card",
+            "usb2Port": "1 x USB 2.0 Type-A",
+            "usb3Port": "2 x USB 3.2 Gen 1 Type-A",
+            "usbCThunderboltPort": "1 x USB 3.2 Gen 2 Type-C",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "1 x wedge-shaped lock slot"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi 6",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "Realtek ALC3204 High definition audio, Number of speakers Two, Supported (audio codec integrated), Stereo conversion.",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Standard non-backlit keyboard",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeyPad": "No",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No"
+        },
+        "productSoftware": {
+            "operatingSystem": "Free-Dos",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Black",
+            "dimensions": "326 x 226 x 17.60mm",
+            "weightKg": "1.53 kg"
+        },
+        "productPower": {
+            "battery": "3 Cell",
+            "batteryType": "Li-Ion",
+            "backupTime": "Up to 3.5 Hrs.",
+            "powerAdapter": "65W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warrantyDetails": "3 Year (Battery, Adapter 1 Year)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Browsing, working on documents, making light photo and video edits, create presentations, and enjoy music, books, movies, and more",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors. Dual channel RAM required For Intel Iris Xe Graphics"
+        }
+    },
+    {
+        "productName": "Dell Latitude 3430 Intel Core i7 1255U 8GB RAM, 512GB SSD 14 Inch FHD Display Black Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/dell-latitude-3430-intel-core-i7-1255u-8gb-ram-11709443672.webp",
+        "productPrice": 99000,
+        "productLikes": 34,
+        "productUnlikes": 12,
+        "productQuantity": 43,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Dell",
+            "productModel": "Dell Latitude 3430",
+            "productLaptopSeries": "Latitude"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i7 1255U",
+            "performanceCoreBaseFrequency": "1.70GHz",
+            "efficientCoreBaseFrequency": "1.20GHz",
+            "processorMaxTurboFrequency": "4.70GHz",
+            "performanceCoreMaxTurboFrequency": "4.70GHz",
+            "efficientCoreMaxTurboFrequency": "3.50GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Removable",
+            "ramType": "DDR4",
+            "ramBus": "3200 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": 1,
+            "maxRamSupport": "Unmentioned"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": 1,
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Additional HDD Can be added, SSD can be replaced"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 14,
+            "displayType": "FHD LED Display",
+            "panelType": "WVA",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Anti-glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "60 Hz",
+            "brightness": "250nits",
+            "displayFeatures": "Not Specified",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "MicroSD card",
+            "usb2Port": "1 x USB 2.0 Type-A",
+            "usb3Port": "2 x USB 3.2 Gen 1 Type-A",
+            "usbCThunderboltPort": "1 x USB 3.2 Gen 2 Type-C",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "networkConnectivity": {
+                "lan": "Yes",
+                "wifi": "Wi-Fi 6",
+                "bluetooth": "Yes"
+            }
+        },
+        "productAudioCamera": {
+            "audioProperties": "Realtek ALC3204 High definition audio, Number of speakers Two, Supported (audio codec integrated), Stereo conversion.",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Standard non-backlit keyboard without number pad",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeyPad": "No",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No"
+        },
+        "productSoftware": {
+            "operatingSystem": "Free-Dos",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Black",
+            "dimensions": "326 x 226 x 17.60mm",
+            "weightKg": "1.53 kg"
+        },
+        "productPower": {
+            "battery": "3 Cell",
+            "batteryType": "Li-Ion",
+            "backupTime": "Up to 3.5 Hrs.",
+            "powerAdapter": "65W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "3 Year",
+            "warrantyDetails": "3 Year (Battery, Adapter 1 Year)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors. Dual channel RAM required For Intel Iris Xe Graphics"
+        }
+    },
+    {
+        "productName": "Dell Vostro 15 3510 Intel Core i5 1135G7 8GB RAM 512GB SSD 15.6 Inch FHD Display Black Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/dell-vostro-15-3510-11th-gen-intel-core-i5-1135g7-21683519943.webp",
+        "productPrice": 84000,
+        "productLikes": 54,
+        "productUnlikes": 11,
+        "productQuantity": 9,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Dell",
+            "productModel": "Dell Vostro 15 3510",
+            "productLaptopSeries": "Vostro"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "11th (Intel)",
+            "processorModel": "Core i5 1135G7",
+            "processorBaseFrequency": "2.40GHz",
+            "processorMaxTurboFrequency": "4.20GHz",
+            "processorCore": 4,
+            "processorThread": 8,
+            "cpuCache": "8MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Removable",
+            "ramType": "DDR4",
+            "ramBus": "3200 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": 1,
+            "maxRamSupport": "16GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "No",
+            "storageUpgrade": "Installed SSD can be upgradeable"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia MX330 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "2GB",
+            "graphicsMemoryType": "GDDR5"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD LED Display",
+            "panelType": "WVA",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Anti-Glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "60 Hz",
+            "brightness": "220nits",
+            "displayFeatures": "Not Specified",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "SD, SDHC, SDXC",
+            "usb2Port": "1 x USB 2.0",
+            "usb3Port": "1 x USB 3.2 Gen 1",
+            "usbCThunderboltPort": "1 x USB 3.2 Gen 1 Type-C",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "Wedge-shaped security slot"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi 6",
+            "bluetooth": "Bluetooth 5.0"
+        },
+        "productAudioCamera": {
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD Webcam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Non-Backlit Keyboard with Numeric Keypad",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeyPad": "Yes (Numeric)",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "Yes",
+            "faceDetection": "No",
+            "tpm": "Yes",
+            "securityChip": "TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Free-Dos",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "color": "Black",
+            "weightKg": "1.69kg",
+            "packageContent": "Dell Essential Backpack 15"
+        },
+        "productPower": {
+            "battery": "3 Cell",
+            "batteryCapacity": "41WHrs.",
+            "backupTime": "Up to 2.5 Hrs.",
+            "powerAdapter": "65W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "3 Year",
+            "warrantyDetails": "3 Year (Battery, Adapter 1 Year)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ENERGY STAR, TUV Rheinland",
+            "bestFor": "Gaming, Creative Design Works, Video Editing, Office Work etc, Movies, Music",
+            "specialty": "TPM- Trusted Platform Module 2.0- FIPS 140-2 Certified.",
+            "others": "Camera integrated Widescreen HD 720P Webcam. Digital microphone Integrated Digital microphone array. Stereo Speakers with Waves Maxx Audio, Integrated 10/100/1000 Ethernet LAN, 2 X 2 802.11ax 160MHz + Bluetooth 5.0.",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Dell Vostro 14 3420 Intel Core i7 1255U 8GB RAM, 512GB SSD 14 Inch FHD Display Black Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/dell-vostro-14-3420-intel-core-i7-1255u-8gb-ram-41711609432.webp",
+        "productPrice": 98500,
+        "productLikes": 102,
+        "productUnlikes": 32,
+        "productQuantity": 5,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Dell",
+            "productModel": "Dell Vostro 14 3420",
+            "productLaptopSeries": "Vostro"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i7 1255U",
+            "performanceCoreBaseFrequency": "1.70GHz",
+            "efficientCoreBaseFrequency": "1.20GHz",
+            "processorMaxTurboFrequency": "4.70GHz",
+            "performanceCoreMaxTurboFrequency": "4.70GHz",
+            "efficientCoreMaxTurboFrequency": "3.50GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "ramType": "DDR4",
+            "emptyExpansionRamSlot": "Unmentioned",
+            "maxRamSupport": "Unmentioned"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Installed SSD can be upgradeable"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia MX550 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "2GB",
+            "graphicsMemoryType": "GDDR5"
+        },
+        "productDisplay": {
+            "displaySizeInch": 14,
+            "displayType": "FHD LED Display",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Glossy",
+            "touchScreen": "No",
+            "displayRefreshRate": "60 Hz",
+            "displayBezel": "Slim Bezel",
+            "brightness": "250nits",
+            "displayFeatures": "45% NTSC",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "SD Card",
+            "usb2Port": "1 x USB 2.0 Type-A",
+            "usb3Port": "2 x USB 3.2 Gen 1 Type-A",
+            "usbCThunderboltPort": "No",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "Wedge Shaped Lock Slot"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Yes",
+            "bluetooth": "Yes"
+        },
+        "productAudioCamera": {
+            "audioProperties": "Stereo speakers with Dialog, 2W x 2 = 4W total",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD Webcam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "No",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeyPad": "TouchPad",
+            "pointingDevice": "No",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "tpm": "No",
+            "securityChip": "No"
+        },
+        "productSoftware": {
+            "operatingSystem": "Free-Dos",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "color": "Black",
+            "dimensions": "321.27 x 220.26 x 18.62 - 23.02mm",
+            "weightKg": "1.49 kg"
+        },
+        "productPower": {
+            "battery": "3 Cell",
+            "batteryCapacity": "41Wh",
+            "backupTime": "Up to 3.5 Hrs."
+        },
+        "productWarranty": {
+            "warranty": "3 Year",
+            "warrantyDetails": "3 Year (Battery, Adapter 1 Year)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "countryOfOrigin": "USA",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    }
+]

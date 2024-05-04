@@ -8,8 +8,8 @@ import Signup from './authentication/signup/Signup'
 import ForgetPassword from './authentication/forgetPassword/ForgetPassword'
 import Dashboard from './components/dashboard/dashboard/Dashboard'
 import Asus from './components/dashboard/laptops/asus/Asus'
-import Samsung from './components/dashboard/laptops/samsung/Samsung'
-import Razer from './components/dashboard/laptops/razer/Razer'
+import Infinix from './components/dashboard/laptops/infinix/Infinix'
+import Avita from './components/dashboard/laptops/avita/Avita'
 import Msi from './components/dashboard/laptops/msi/Msi'
 import Microsoft from './components/dashboard/laptops/microsoft/Microsoft'
 import Lenovo from './components/dashboard/laptops/lenovo/Lenovo'
@@ -20,16 +20,25 @@ import Dell from './components/dashboard/laptops/dell/Dell'
 import Acer from './components/dashboard/laptops/acer/Acer'
 import Apple from './components/dashboard/laptops/apple/Apple'
 import UserProfile from './components/dashboard/userProfile/UserProfile'
+import { useGetReviewsQuery } from './RTK-Query/features/reviews/reviewsApi'
+import Loading from './components/loading/Loading'
+import Chuwi from './components/dashboard/laptops/chuwi/Chuwi'
+import AllCategory from './components/dashboard/laptops/allCategory/AllCategory'
+import Cart from './components/home/cart/Cart'
+import FavoriteProduct from './components/home/favoriteProduct/FavoriteProduct'
+import ViewLaptop from './components/dashboard/laptops/viewLaptop/ViewLaptop'
 
 function App() {
   const location = useLocation();
-  const noNavFooter = location.pathname.includes('login') || location.pathname.includes('signup') || location.pathname.includes('forget-password') || location.pathname.includes('dashboard')
+  const { isLoading, error } = useGetReviewsQuery();
+  console.log(isLoading, error?.status)
 
+  const noNavFooter = location.pathname.includes('login') || location.pathname.includes('signup') || location.pathname.includes('forget-password') || location.pathname.includes('dashboard')
   return (
     <div className='bg-indigo-100 h-screen'>
-      {noNavFooter || <Navbar></Navbar>}
+      {noNavFooter ? '' : (isLoading && !error?.status) ? <Loading></Loading> : <Navbar></Navbar>}
       <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
+        {(!isLoading || error?.status) && <Route path='/' element={<Home></Home>}></Route>}
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='/forget-password' element={<ForgetPassword></ForgetPassword>}></Route>
@@ -37,6 +46,9 @@ function App() {
         <Route path='/dashboard' element={<Dashboard></Dashboard>}>
 
           <Route path='user-profile' element={<UserProfile></UserProfile>}></Route>
+          <Route path='laptop/:id' element={<ViewLaptop></ViewLaptop>}></Route>
+          <Route path='cart' element={<Cart></Cart>}></Route>
+          <Route path='favoriteProduct' element={<FavoriteProduct></FavoriteProduct>}></Route>
           <Route path='acer' element={<Acer></Acer>}></Route>
           <Route path='apple' element={<Apple></Apple>}></Route>
           <Route path='asus' element={<Asus></Asus>}></Route>
@@ -47,8 +59,10 @@ function App() {
           <Route path='lenovo' element={<Lenovo></Lenovo>}></Route>
           <Route path='microsoft' element={<Microsoft></Microsoft>}></Route>
           <Route path='msi' element={<Msi></Msi>}></Route>
-          <Route path='razer' element={<Razer></Razer>}></Route>
-          <Route path='samsung' element={<Samsung></Samsung>}></Route>
+          <Route path='avita' element={<Avita></Avita>}></Route>
+          <Route path='infinix' element={<Infinix></Infinix>}></Route>
+          <Route path='chuwi' element={<Chuwi></Chuwi>}></Route>
+          <Route path='all-category-laptop' element={<AllCategory></AllCategory>}></Route>
 
 
         </Route>
@@ -56,7 +70,7 @@ function App() {
 
       </Routes>
 
-      {noNavFooter || <Footer></Footer>}
+      {noNavFooter ? '' : (isLoading && !error?.status) ? '' : <Footer></Footer>}
     </div>
   )
 }

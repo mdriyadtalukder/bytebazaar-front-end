@@ -7,19 +7,20 @@ import GetProduct from "../getProduct/GetProduct";
 import Reviews from "../reviews/Reviews";
 
 const Home = () => {
-    return (
-        <div className="bg-indigo-100">
-             <Helmet>
-                <title>ByteBazaar | Home</title>
-            </Helmet>
-            <Banner></Banner>
-            <Brand></Brand>
-            <GetProduct></GetProduct>
-            <BrandProduct></BrandProduct>
-            <GamingLaptop></GamingLaptop>
-            <Reviews></Reviews>
-        </div>
-    );
-};
+    
+        return (
+            <div className="bg-indigo-100 w-full">
+                <Helmet>
+                    <title>ByteBazaar | Home</title>
+                </Helmet>
+                <Banner></Banner>
+                <Brand></Brand>
+                <GetProduct></GetProduct>
+                <BrandProduct></BrandProduct>
+                <GamingLaptop></GamingLaptop>
+                <Reviews></Reviews>
+            </div>
+        );
+    };
 
-export default Home;
+    export default Home;

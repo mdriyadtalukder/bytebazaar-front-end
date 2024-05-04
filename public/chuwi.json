@@ -1,0 +1,452 @@
+[
+    {
+        "productName": "Chuwi MiniBook X 2 in 1 Intel Core N100 12GB RAM 512GB SSD 10.5 Inch FHD+ WUXGA Touch Display Grey Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/chuwi-minibook-x-2-in-1-intel-core-n100-12gb-ram-11703586835.webp",
+        "productPrice": 46900,
+        "productLikes": 6,
+        "productUnlikes": 2,
+        "productQuantity": 21,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Chuwi",
+            "productModel": "Chuwi MiniBook X 2 in 1",
+            "productLaptopSeries": "MiniBook"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core N100",
+            "generation": "12th Standard (Intel)",
+            "processorModel": "Core N100",
+            "processorMaxTurboFrequency": "3.40GHz",
+            "processorCore": 4,
+            "processorThread": 4,
+            "cpuCache": "6MB"
+        },
+        "productMemory": {
+            "ram": "12GB",
+            "ramType": "LPDDR4"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Unmentioned"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel UHD Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared"
+        },
+        "productDisplay": {
+            "displaySizeInch": 10.5,
+            "displayType": "FHD+ Display",
+            "panelType": "IPS",
+            "displayResolution": "1920x1200",
+            "touchScreen": "Yes",
+            "displayRefreshRate": "60 Hz"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "No",
+            "usbCThunderboltPort": "2 x USB Type-C",
+            "hdmiPort": "No",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "2.4G/5G WiFi 802.11a/ac/b/g",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "audioProperties": "Dual Speaker, Dual Microphone",
+            "webcam": "Yes"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Chiclet Keyboard",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeypad": "No",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Gray",
+            "dimensions": "244 x 166.4 x 17.2mm",
+            "weightKg": "920 gm"
+        },
+        "productPower": {
+            "batteryCapacity": "26.6Wh",
+            "backupTime": "Up to 4 Hrs.",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 Year (2 Year for Battery and Adapter)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "specialty": "7.6V/3800mA",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors."
+        }
+    },
+    {
+        "productName": "Chuwi HeroBook Pro Intel CDC N4020 8GB RAM 256GB SSD 14.1 Inch FHD Display Grey Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/chuwi-herobook-pro-intel-cdc-n4020-8gb-ram-256gb-11703585504.webp",
+        "productPrice": 28800,
+        "productLikes": 16,
+        "productUnlikes": 2,
+        "productQuantity": 43,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Chuwi",
+            "productModel": "Chuwi HeroBook Pro",
+            "productLaptopSeries": "HeroBook"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Intel Celeron",
+            "generation": "Not Applicable",
+            "processorModel": "CDC N4020",
+            "processorBaseFrequency": "1.10GHz",
+            "processorMaxTurboFrequency": "2.80GHz",
+            "processorCore": 2,
+            "processorThread": 2,
+            "cpuCache": "4MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "ramType": "LPDDR4"
+        },
+        "productStorage": {
+            "storage": "256GB SSD",
+            "installedHddType": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "M.2 SATA",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Unmentioned"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel UHD Graphics 600",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared"
+        },
+        "productDisplay": {
+            "displaySizeInch": 14,
+            "displayType": "FHD LED Display",
+            "panelType": "IPS",
+            "displayResolution": "1920x1080",
+            "touchScreen": "No",
+            "displayRefreshRate": "60 Hz",
+            "displayBezel": "Slim Bezel",
+            "displayFeatures": "16:9, IPS Display"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "MicroSD",
+            "usb2Port": "No",
+            "usb3Port": "2 x USB 3.0 Type-A",
+            "usbCThunderboltPort": "No",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "2.4GHz, 802.11b/g/n Wi-Fi",
+            "bluetooth": "Bluetooth 4.2"
+        },
+        "productAudioCamera": {
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "Yes"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Chiclet Keyboard",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeypad": "No",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Polycarbonate",
+            "deviceLighting": "No",
+            "color": "Gray",
+            "dimensions": "332 x 214 x 21.3mm",
+            "weightKg": "1390 gm"
+        },
+        "productPower": {
+            "batteryCapacity": "38Wh",
+            "backupTime": "Up to 5.5 Hrs.",
+            "powerAdapter": "24W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 Year (2 Year for Battery and Adapter)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "gamingFeature": "3.0MP Front Camera",
+            "others": "Battery: 7.6V/5000mAH",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors."
+        }
+    },
+    {
+        "productName": "Chuwi GemiBook XPro Intel Core N100 8GB RAM 256GB SSD 14.1 Inch FHD Display Grey Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/chuwi-gemibook-xpro-intel-core-n100-8gb-ram-256gb-11703580649.webp",
+        "productPrice": 34900,
+        "productLikes": 31,
+        "productUnlikes": 12,
+        "productQuantity": 32,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Chuwi",
+            "productModel": "Chuwi GemiBook XPro",
+            "productLaptopSeries": "GemiBook"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core N100",
+            "generation": "12th Standard (Intel)",
+            "processorModel": "Intel Core N100",
+            "processorMaxTurboFrequency": "3.40GHz",
+            "processorCore": 4,
+            "processorThread": 4,
+            "cpuCache": "6MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "ramType": "LPDDR5"
+        },
+        "productStorage": {
+            "storage": "256GB SSD",
+            "installedHddType": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "SATA",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Unmentioned"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel UHD Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared"
+        },
+        "productDisplay": {
+            "displaySizeInch": 14,
+            "displayType": "FHD LED Display",
+            "panelType": "IPS",
+            "displayResolution": "1920x1080",
+            "touchScreen": "No",
+            "displayRefreshRate": "Unmentioned"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "usb2Port": "No",
+            "usb3Port": "1 x USB 3.0",
+            "usbCThunderboltPort": "1 x USB Type-C",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "WiFi6 802.11ax",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "2.0M Front Camera"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Chiclet Keyboard",
+            "keyboardBacklit": "No",
+            "pointingDevice": "Touchpad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "color": "Gray",
+            "dimensions": "310 x 229.5 x 20.6mm",
+            "weightKg": "1.5 kg",
+            "packageContent": "1 x Laptop, 1 x DC Charger/ Cable (12V/2A), 1 x User Manual, 1 x Warranty card"
+        },
+        "productPower": {
+            "batteryCapacity": "38Wh",
+            "backupTime": "Up to 5.5 Hrs."
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 Year (2 Year for Battery and Adapter)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "others": "Battery: 7.6V/ 5000mAH, Speaker: 4R/ 1.5W",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors."
+        }
+    },
+    {
+        "productName": "Chuwi CoreBook XPro Intel Core i3 1215U 16GB RAM 512GB SSD 15.6 Inch FHD Display Grey Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/chuwi-corebook-xpro-intel-core-i3-1215u-16gb-ram-21703574434.webp",
+        "productPrice": 59900,
+        "productLikes": 23,
+        "productUnlikes": 6,
+        "productQuantity": 8,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Chuwi",
+            "productModel": "Chuwi CoreBook XPro",
+            "productLaptopSeries": "CoreBook"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i3",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i3 1215U",
+            "performanceCoreBaseFrequency": "1.20GHz",
+            "efficientCoreBaseFrequency": "0.90GHz",
+            "processorMaxTurboFrequency": "4.40GHz",
+            "performanceCoreMaxTurboFrequency": "4.40GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 6,
+            "performanceCores": 2,
+            "efficientCores": 4,
+            "processorThread": 8,
+            "cpuCache": "10MB"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "ramType": "DDR4"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Unmentioned"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Plus Graphics 655",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD LED Display",
+            "panelType": "IPS",
+            "displayResolution": "1920x1080",
+            "touchScreen": "No",
+            "displayRefreshRate": "Unmentioned",
+            "displayFeatures": "Aspect Ratio: 16:9, IPS Panel Display, 178 degree wide viewing angle"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "SD Card",
+            "usb2Port": "1 x USB 2.0",
+            "usb3Port": "2 x USB 3.0",
+            "usbCThunderboltPort": "1 x USB Type-C",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "WIFI6 (802.11ax1)",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "audioProperties": "Stereo Speaker",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "Yes"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Backlit Keyboard",
+            "keyboardBacklit": "Yes",
+            "pointingDevice": "Touchpad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Metal",
+            "color": "Gray",
+            "dimensions": "359.4 x 241.5 x 17.9mm",
+            "weightKg": "1.7 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "69.93Wh",
+            "backupTime": "Up to 4 Hrs."
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 Year (2 Year for Battery and Adapter)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors."
+        }
+    }
+]

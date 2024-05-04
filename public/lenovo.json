@@ -1,0 +1,1357 @@
+[
+    {
+        "productName": "Lenovo IdeaPad Slim 3i 15ITL6 Intel Core i7 1165G 8GB RAM, 512GB SSD 15.6 Inch FHD Display Arctic Grey Laptop (8GB RAM)",
+        "productImage": "https://www.ryans.com/storage/products/main/lenovo-ideapad-slim-3i-15itl6-intel-core-i7-1165g-71711601262.webp",
+        "productPrice": 79500,
+        "productLikes": 49,
+        "productUnlikes": 2,
+        "productQuantity": 6,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Lenovo",
+            "productModel": "Lenovo IdeaPad Slim 3i 15ITL6",
+            "productLaptopSeries": "IdeaPad",
+            "productPartNo": "82H803UCIN"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "11th (Intel)",
+            "processorModel": "Core i7 1165G7",
+            "processorBaseFrequency": "2.80GHz",
+            "processorMaxTurboFrequency": "4.70GHz",
+            "processorCore": 4,
+            "processorThread": 8,
+            "cpuCache": "12MB",
+            "chipset": "Intel SoC Platform"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Non-Removable",
+            "ramType": "DDR4",
+            "ramBus": "3200 MHz",
+            "totalRamSlot": 1,
+            "emptyExpansionRamSlot": 1,
+            "maxRamSupport": "16GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Unmentioned"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD LED Display",
+            "panelType": "TN",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Anti-Glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "Unmentioned",
+            "brightness": "250nits",
+            "displayFeatures": "TN 250nits Anti-glare",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": 1,
+            "supportedMultimediaCard": "SD Card",
+            "usb2Port": "1 x USB 2.0",
+            "usb3Port": "1 x USB 3.2 Gen 1",
+            "usbCThunderboltPort": "1 x USB-C 3.2 Gen 1 (support data transfer only)",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "Firmware TPM 2.0"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 5 11ac 2x2",
+            "bluetooth": "Bluetooth 5.0"
+        },
+        "productAudioCamera": {
+            "audioProperties": "High Definition(HD) Audio, Realtek ALC3287 codec. Stereo speakers, 1.5W x2, Dolby Audio. 2x, Array Microphone.",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Backlit KeyBoard",
+            "keyboardBacklit": "Yes",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "securityChip": "Yes"
+        },
+        "productSoftware": {
+            "operatingSystem": "Free-Dos",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "PC-ABS",
+            "deviceLighting": "No",
+            "color": "Arctic Grey",
+            "dimensions": "359.2 x 236.5 x 19.9mm",
+            "weightKg": "1.65 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "45Wh",
+            "powerAdapter": "65W",
+            "adapterType": "3-pin"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ErP Lot 3, RoHS compliant",
+            "bestFor": "Browsing, working on documents, making light photo and video edits, create presentations, and enjoy music, books, movies, and more",
+            "others": "Storage: 512GB SSD M.2 2242 PCIe 4.0x4 NVMe. Camera: HD 720p with Privacy Shutter. Surface Treatment: IMR (In-Mold Decoration by Roller). HDMI Version: 1.4b. Green Certifications: ErP Lot 3, RoHS compliant",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Lenovo IdeaPad Slim 3i 15IGL Intel CDC N4020 4GB RAM 1TB HDD 15.6 Inch HD Display Platinum Grey Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/lenovo-ideapad-slim-3i-15igl-intel-cdc-n4020-4gb-61711957012.webp",
+        "productPrice": 34500,
+        "productLikes": 54,
+        "productUnlikes": 5,
+        "productQuantity": 4,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Lenovo",
+            "productModel": "Lenovo IdeaPad Slim 3i 15IGL",
+            "productLaptopSeries": "IdeaPad",
+            "productPartNo": "81WQ00Q2IN"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Intel Celeron",
+            "generation": "Not Applicable",
+            "processorModel": "CDC N4020",
+            "processorBaseFrequency": "1.10GHz",
+            "processorMaxTurboFrequency": "2.80GHz",
+            "processorCore": 2,
+            "processorThread": 2,
+            "cpuCache": "4MB",
+            "chipset": "Intel SoC Platform"
+        },
+        "productMemory": {
+            "ram": "4GB",
+            "installedRamDetails": "1 x 4GB Non Removable",
+            "ramType": "DDR4",
+            "ramBus": "2400 MHz",
+            "totalRamSlot": "No",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "4GB"
+        },
+        "productStorage": {
+            "storage": "1TB HDD",
+            "installedHddType": "SATA",
+            "hddRpm": "5400RPM",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "No",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Can be added"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel UHD Graphics 600",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "HD LED",
+            "panelType": "TN",
+            "displayResolution": "1366x768",
+            "displaySurface": "Anti-Glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "Unmentioned",
+            "brightness": "220nits",
+            "displayFeatures": "Slim Bezel"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": 1,
+            "supportedMultimediaCard": "4-in-1 Card Reader",
+            "usb2Port": "1 x USB 2.0",
+            "usb3Port": "2 x USB 3.2 Gen 1",
+            "usbCThunderboltPort": "No",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "Firmware TPM 2.0"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Yes",
+            "bluetooth": "Bluetooth 5.0"
+        },
+        "productAudioCamera": {
+            "audioProperties": "High Definition (HD) Audio",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD Camera"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Non-backlit Keyboard",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeypad": "Yes (Numeric)",
+            "pointingDevice": "Touchpad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Free-Dos",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "PC + ABS",
+            "deviceLighting": "No",
+            "color": "Platinum Grey",
+            "dimensions": "362.2 x 253.4 x 19.9mm",
+            "weightKg": "1.7 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "35Wh",
+            "batteryType": "45W",
+            "adapterType": "Round Tip (2-Pin, Wall-Mount)"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ENERGY STAR 8.0, ErP Lot 3, RoHS compliant",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "specialty": "Camera privacy shutter, Green Certifications: ENERGY STAR 8.0, ErP Lot 3, RoHS compliant.",
+            "others": "Stereo speakers, 1.5W x2, Dolby Audio, 2x, Array Microphone, Surface Treatment: IMR (In-Mold Decoration by Roller), 11ac 2x2, 1x Power connector",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Lenovo IdeaPad Slim 3i 14IAU7 Intel Core i3 1215U 8GB RAM, 512GB SSD 14 Inch FHD Display Arctic Grey Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/lenovo-ideapad-slim-3i-14iau7-intel-core-i3-1215u-61711605544.webp",
+        "productPrice": 59500,
+        "productLikes": 41,
+        "productUnlikes": 8,
+        "productQuantity": 7,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Lenovo",
+            "productModel": "Lenovo IdeaPad Slim 3i 14IAU7",
+            "productLaptopSeries": "IdeaPad",
+            "productPartNo": "82RJ00E3IN"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i3",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i3 1215U",
+            "processorBaseFrequency": "Not Applicable",
+            "performanceCoreBaseFrequency": "1.20GHz",
+            "efficientCoreBaseFrequency": "0.90GHz",
+            "processorMaxTurboFrequency": "4.40GHz",
+            "performanceCoreMaxTurboFrequency": "4.60GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 6,
+            "performanceCores": 2,
+            "efficientCores": 4,
+            "processorThread": 8,
+            "chipset": "Intel SoC Platform"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Non-Removable",
+            "ramType": "DDR4",
+            "ramBus": "3200 MHz",
+            "totalRamSlot": 1,
+            "emptyExpansionRamSlot": 1,
+            "maxRamSupport": "16GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "Unmentioned",
+            "storageUpgrade": "Installed SSD can be upgradeable"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel UHD Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 14,
+            "displayType": "FHD LED Display",
+            "panelType": "TN",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Anti-glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "60 Hz",
+            "displayBezel": "Slim Bezel",
+            "brightness": "250nits",
+            "displayFeatures": "Brightness: 250nits, TN, Anti-glare"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": 1,
+            "supportedMultimediaCard": "SD Card",
+            "usb2Port": "1 x USB 2.0 Type-A",
+            "usb3Port": "1 x USB 3.2 Gen 1 Type-A",
+            "usbCThunderboltPort": "1 x USB 3.2 Gen 1 Type-C",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6, 11ax 2x2",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "audioProperties": "High Definition (HD) Audio, Stereo speakers, 1.5W x2, Dolby Audio",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "English (EU)",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeypad": "No",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Free-Dos",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "PC-ABS (Top), PC-ABS (Bottom)",
+            "deviceLighting": "No",
+            "color": "Arctic Grey",
+            "dimensions": "324.2 x 215.7 x 19.9mm",
+            "weightKg": "1.43 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "45Wh",
+            "powerAdapter": "65W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ErP Lot 3, RoHS compliant",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "specialty": "SSD M.2 2242 PCIe 4.0x4 NVMe, Camera privacy shutter.",
+            "others": "Surface Treatment: IMR (In-Mold Decoration by Roller), Green Certifications: ErP Lot 3, RoHS compliant.",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Lenovo LOQ Gaming 15IRH8 Intel Core i5 12450H 16GB RAM, 512GB SSD 15.6 Inch FHD Display Storm Grey Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/lenovo-loq-gaming-15irh8-intel-core-i5-12450h-11709713995.webp",
+        "productPrice": 120000,
+        "productLikes": 59,
+        "productUnlikes": 65,
+        "productQuantity": 1,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Lenovo",
+            "productModel": "Lenovo LOQ Gaming 15IRH8",
+            "productLaptopSeries": "LOQ",
+            "productPartNo": "82XV00SGLK"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i5 12450H",
+            "processorBaseFrequency": "Not Applicable",
+            "performanceCoreBaseFrequency": "2.00GHz",
+            "efficientCoreBaseFrequency": "1.50GHz",
+            "processorMaxTurboFrequency": "4.40GHz",
+            "performanceCoreMaxTurboFrequency": "4.40GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 8,
+            "performanceCores": 4,
+            "efficientCores": 4,
+            "processorThread": 12,
+            "chipset": "Intel SoC Platform"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "2 x 8GB Removable",
+            "ramType": "DDR5",
+            "ramBus": "4800 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "32GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Slot, Upgradeable Installed SSD"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 2050 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "4GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD LED Display",
+            "panelType": "IPS",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Anti-Glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "144 Hz",
+            "brightness": "350nits",
+            "displayFeatures": "IPS, 350nits Anti-glare, 45% NTSC, G-SYNC"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "No",
+            "supportedMultimediaCard": "No",
+            "usb2Port": "No",
+            "usb3Port": "2 x USB 3.2 Gen 2, 1 x USB 3.2 Gen 1",
+            "usbCThunderboltPort": "1 x USB-C 3.2 Gen 2",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi 6, 11ax 2x2",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "High Definition (HD) Audio, Realtek ALC3287 codec. Stereo speakers, 2W x2, optimized with Nahimic Gaming Audio",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "White Backlit Keyboard",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "No",
+            "numKeypad": "Yes (Numeric)",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "PC-ABS (Top), PC-ABS (Bottom)",
+            "deviceLighting": "No",
+            "color": "Storm Grey",
+            "dimensions": "359.6 x 264.8 x 22.1-25.2 mm",
+            "weightKg": "2.4 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "60Wh",
+            "powerAdapter": "135W",
+            "adapterType": "Slim Tip (3-pin)"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ErP Lot 3, RoHS compliant",
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work etc, Movies, Music etc.",
+            "specialty": "AI Chip: LA1",
+            "others": "Other Security: E-shutter. Graphics: NVIDIA GeForce RTX 2050 4GB GDDR6, Boost Clock 1575MHz, TGP 70W Camera : FHD 1080p with E-shutter, Touchpad: Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad (PTP), 75 x 120 mm (2.95 x 4.72 inches)",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Lenovo LOQ 15APH8 AMD Ryzen 7 7840HS 16GB RAM 15.6 Inch FHD Display Storm Grey Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/lenovo-loq-15aph8-amd-ryzen-7-7840hs-16gb-ram-11710312378.webp",
+        "productPrice": 172000,
+        "productLikes": 5,
+        "productUnlikes": 0,
+        "productQuantity": 2,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Lenovo",
+            "productModel": "Lenovo LOQ 15APH8",
+            "productLaptopSeries": "LOQ",
+            "productPartNo": "82XT00C1LK"
+        },
+        "productProcessor": {
+            "processorBrand": "AMD",
+            "processorType": "Ryzen 7",
+            "generation": "Not Applicable",
+            "processorModel": "Ryzen 7 7840HS",
+            "processorBaseFrequency": "3.80GHz",
+            "processorMaxTurboFrequency": "5.10GHz",
+            "processorCore": 8,
+            "processorThread": 16,
+            "cpuCache": "24MB",
+            "chipset": "AMD SoC Platform"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "2 x 8GB Removable",
+            "ramType": "DDR5",
+            "ramBus": "5600 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "32GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Slot, Upgradeable Installed SSD",
+            "storageSupport": "Up to two drives, 2x M.2 SSD, M.2 2242 SSD up to 1TB"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 4060 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "8GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD LED Display",
+            "panelType": "IPS",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Anti-Glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "144 Hz",
+            "brightness": "350nits",
+            "displayFeatures": "350nits, 45% NTSC, G-SYNC, FreeSync"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "No",
+            "usb2Port": "1 x USB 2.0",
+            "usb3Port": "2 x USB 3.2 Gen 2",
+            "usbCThunderboltPort": "1 x USB-C 3.2 Gen 2",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi 6, 11ax 2x2",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "High Definition (HD) Audio, Realtek ALC3287 codec, Stereo speakers, 2W x2, optimized with Nahimic Gaming Audio, Microphone: 2x, Array",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "White Backlit Keyboard",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "No",
+            "numKeypad": "Yes (Numeric)",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "securityChip": "Firmware TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "PC + ABS (Top & Bottom)",
+            "deviceLighting": "No",
+            "color": "Storm Grey",
+            "dimensions": "359.6 x 264.8 x 22.1-25.2mm",
+            "weightKg": "2.4 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "60Wh",
+            "powerAdapter": "170W",
+            "adapterType": "Slim Tip (3-pin)"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ErP Lot 6, ErP Lot 26, RoHS compliant",
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work etc, Movies, Music and more.",
+            "specialty": "Special: AI Chip: LA1, Touchpad: Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad (PTP), 75 x 120 mm (2.95 x 4.72 inches), Other Security: E-shutter",
+            "others": "Storage; 512GB SSD M.2 2242 PCIe 4.0x4 NVMe, Storage Support Up to two drives, 2x M.2 SSD, M.2 2242 SSD up to 1TB",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Lenovo Legion Slim 5i 16IRH8 Intel Core i5 13500H 16GB RAM, 512GB SSD 16 Inch 2.5K QHD WQXGA Display Storm Grey Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/lenovo-legion-slim-5i-16irh8-intel-core-i5-13500h-11709715097.webp",
+        "productPrice": 175000,
+        "productLikes": 98,
+        "productUnlikes": 30,
+        "productQuantity": 3,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Lenovo",
+            "productModel": "Lenovo Legion Slim 5i 16IRH8",
+            "productLaptopSeries": "Legion",
+            "productPartNo": "82YA00F0LK"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "13th (Intel)",
+            "processorModel": "Core i5 13500H",
+            "performanceCoreBaseFrequency": "2.60GHz",
+            "efficientCoreBaseFrequency": "1.90GHz",
+            "processorMaxTurboFrequency": "4.70GHz",
+            "performanceCoreMaxTurboFrequency": "4.70GHz",
+            "efficientCoreMaxTurboFrequency": "3.50GHz",
+            "processorCore": 12,
+            "performanceCores": 4,
+            "efficientCores": 8,
+            "processorThread": 16,
+            "cpuCache": "18MB",
+            "chipset": "Intel SoC Platform"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "2 x 8GB Removable",
+            "ramType": "DDR5",
+            "ramBus": "5200 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "32GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Slot, Upgradeable Installed SSD"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 4050 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "6GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 16,
+            "displayType": "2.5K QHD WQXGA Display",
+            "panelType": "IPS",
+            "displayResolution": "2560x1600",
+            "displaySurface": "Anti-Glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "240 Hz",
+            "brightness": "500nits",
+            "displayFeatures": "IPS, 500nits Anti-glare, 100% sRGB, DisplayHDR 400, Dolby Vision, G-SYNC, Low Blue Light"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "4-in-1 Card Reader",
+            "usb3Port": "1 x USB 3.2 Gen 2, 1 x USB 3.2 Gen 2 (Always On)",
+            "usbCThunderboltPort": "2 x USB 3.2 Gen2 Type-C",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi 6E, 11ax 2x2",
+            "bluetooth": "Bluetooth 5.3"
+        },
+        "productAudioCamera": {
+            "audioProperties": "High Definition (HD) Audio, Realtek ALC3287 codec. Stereo speakers, 2W x2, optimized with Nahimic Audio",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "RGB Backlit Keyboard",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "Yes",
+            "numKeypad": "Yes (Numeric)",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Aluminium (Top), PC-ABS (Bottom)",
+            "deviceLighting": "No",
+            "color": "Storm Grey",
+            "dimensions": "359.7 x 260.3 x 19.9-21.9mm",
+            "weightKg": "2.4 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "80Wh",
+            "powerAdapter": "170W",
+            "adapterType": "Slim Tip (3-pin)"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "TUV Rheinland, ErP Lot 6, ErP Lot 26, RoHS compliant",
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work , Movies etc",
+            "specialty": "AI Chip: LA1, Legion Coldfront 5.0 cooling system",
+            "others": "Other Security: E-shutter, Touchpad: Buttonless Mylar surface multi-touch touchpad, supports Precision TouchPad (PTP), 75 x 120 mm (2.95 x 4.72 inches) Microphone: 2x, Array, dual-channel capable Graphics: NVIDIA GeForce RTX 4050 6GB GDDR6, Boost Clock 2370MHz, TGP 100W",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors."
+        }
+    },
+    {
+        "productName": "Lenovo Legion 7i Gaming 16IAX7 Intel Core i9 12900HX 32GB RAM 1TB SSD 16 Inch 2.5K QHD WQXGA IPS Anti-Glare Display Storm Grey-Black Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/lenovo-legion-7i-gaming-16iax7-intel-core-i9-11704775240.webp",
+        "productPrice": 338000,
+        "productLikes": 7,
+        "productUnlikes": 0,
+        "productQuantity": 8,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Lenovo",
+            "productModel": "Lenovo Legion 7i Gaming 16IAX7",
+            "productLaptopSeries": "Legion",
+            "productPartNo": "82TD009KIN"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i9",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i9 12900HX",
+            "processorBaseFrequency": "2.30GHz",
+            "performanceCoreBaseFrequency": "1.70GHz",
+            "processorMaxTurboFrequency": "5.00GHz",
+            "performanceCoreMaxTurboFrequency": "5.00GHz",
+            "efficientCoreMaxTurboFrequency": "3.60GHz",
+            "processorCore": 16,
+            "performanceCores": 8,
+            "efficientCores": 8,
+            "processorThread": 24,
+            "cpuCache": "30MB",
+            "chipset": "Intel HM670"
+        },
+        "productMemory": {
+            "ram": "32GB",
+            "installedRamDetails": "2 x 16GB Non Removable",
+            "ramType": "DDR5",
+            "ramBus": "4800 MHz",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "32GB"
+        },
+        "productStorage": {
+            "storage": "1TB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Can be added"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 3080 Ti Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "16GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 16,
+            "displayType": "2.5K QHD WQXGA Display",
+            "panelType": "IPS",
+            "displayResolution": "2560x1600",
+            "displaySurface": "Anti-Glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "165 Hz",
+            "brightness": "500nits",
+            "displayFeatures": "500nits Anti-glare, 100% sRGB, 165Hz, DisplayHDR 400, Dolby Vision, G-SYNC, Low Blue Light, High Gaming Performance"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "No",
+            "usb3Port": "2 x USB 3.2 Gen 1",
+            "usbCThunderboltPort": "2 x USB-C 3.2, 2 x Thunderbolt 4",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Intel Killer Wi-Fi 6E AX1675i, 11ax 2x2",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "audioProperties": "High Definition (HD) Audio, Realtek ALC3306 codec",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD Camera"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Per-key RGB Backlit, English",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "Yes",
+            "numKeypad": "Yes (Numeric)",
+            "pointingDevice": "TouchPad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "Yes",
+            "faceDetection": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "Microsoft Office"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Aluminium (Top & Bottom)",
+            "deviceLighting": "No",
+            "color": "Storm Grey-Black",
+            "dimensions": "358.1 x 263.5 x 19.4mm",
+            "weightKg": "2.53 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "99.99Wh",
+            "powerAdapter": "300W",
+            "adapterType": "Slim Tip (3-pin)"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "ErP Lot 3, RoHS compliant, TUV Rheinland",
+            "bestFor": "Business Communication,internet banking, bill payment, listening to music, watching movies, playing games, online education, internet surfing, etc.",
+            "specialty": "Fingerprint Reader: Touch Style, Integrated in Power Button,Surface Treatment: Iron Sandblasting (Anodized), CERTIFICATIONS: Green Certifications-ErP Lot 3, RoHS compliant, Other Certifications- TUV Rheinland High Gaming Performance, TUV Rheinland Low Blue Light (Hardware Solution)",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors."
+        }
+    },
+    {
+        "productName": "Lenovo ThinkBook 15 G2 ITL Intel Core i5 1135G7 8GB RAM 512GB SSD 15.6 Inch FHD Display Mineral Grey Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/lenovo-thinkbook-15-g2-itl-intel-core-i5-1135g7-11673682288.webp",
+        "productPrice": 79000,
+        "productLikes": 54,
+        "productUnlikes": 19,
+        "productQuantity": 4,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Lenovo",
+            "productModel": "Lenovo ThinkBook 15 G2 ITL",
+            "productLaptopSeries": "ThinkBook",
+            "productPartNo": "20VE015VIN"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "11th (Intel)",
+            "processorModel": "Core i5 1135G7",
+            "processorBaseFrequency": "2.40GHz",
+            "processorMaxTurboFrequency": "4.20GHz",
+            "processorCore": 4,
+            "processorThread": 8,
+            "cpuCache": "8MB",
+            "chipset": "Intel SoC Platform"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "installedRamDetails": "1 x 8GB Non-Removable",
+            "ramType": "DDR4",
+            "ramBus": "3200 MHz",
+            "totalRamSlot": 1,
+            "emptyExpansionRamSlot": 1,
+            "maxRamSupport": "24GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "No",
+            "storageUpgrade": "Installed SSD can be upgradeable"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD",
+            "panelType": "IPS",
+            "displayResolution": "1920x1080",
+            "displaySurface": "Anti-Glare",
+            "touchScreen": "No",
+            "displayRefreshRate": "60 Hz",
+            "displayBezel": "Slim Bezel",
+            "brightness": "250nits",
+            "displayFeatures": "250nits, 45% NTSC"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "1",
+            "supportedMultimediaCard": "1 x SD Card Reader",
+            "usb2Port": "No",
+            "usb3Port": "2 x USB 3.2 Gen 1",
+            "usbCThunderboltPort": "1x USB 3.2 Gen 1 Type-C, 1 x Thunderbolt 4",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "Kensington Nano Security Slot"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Yes",
+            "bluetooth": "Bluetooth 5.0"
+        },
+        "productAudioCamera": {
+            "audioProperties": "Realtek ALC3287 codec",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD Camera"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Standard Keyboard",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeypad": "Yes",
+            "pointingDevice": "Touchpad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "Yes",
+            "faceDetection": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Free-Dos",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Aluminum (Top), PC/ABS Plastic (Bottom)",
+            "deviceLighting": "No",
+            "color": "Mineral Gray",
+            "dimensions": "357 x 235 x 18.9mm",
+            "weightKg": "1.7 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "45Wh",
+            "backupTime": "Up to 2.5 Hrs.",
+            "powerAdapter": "65W",
+            "adapterType": "USB-C (3-pin)"
+        },
+        "productWarranty": {
+            "warranty": "3 Year",
+            "warrantyDetails": "3 Year (Battery, Adapter 1 Year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "Military Grade, EPEAT Silver, TUV Rheinland, ENERGY STAR 8.0, ErP Lot 3, RoHS compliant",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits, create presentations, and enjoy music, books, movies, and more",
+            "specialty": "ThinkShutter camera cover. TUV Rheinland Low Blue Light.",
+            "others": "Speakers: Stereo speakers, 2W x2, Dolby Audio. Camera: HD 720p with Privacy Shutter, Microphone: 2x, Array, Surface Treatment: Anodizing Sandblasting, 1x Ethernet (RJ-45), 1x Headphone / microphone combo jack (3.5mm)",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors."
+        }
+    },
+    {
+        "productName": "Lenovo Yoga Slim 6i 14IRH8 Intel Core i7 13700H 16GB RAM 512GB SSD 14 Inch FHD+ WUXGA OLED Display Storm Grey Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/lenovo-yoga-slim-6i-14irh8-intel-core-i7-13700h-11699867386.webp",
+        "productPrice": 165000,
+        "productLikes": 765,
+        "productUnlikes": 34,
+        "productQuantity": 5,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Lenovo",
+            "productModel": "Lenovo Yoga Slim 6i 14IRH8",
+            "productLaptopSeries": "Yoga",
+            "productPartNo": "83E0001FLK"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "13th (Intel)",
+            "processorModel": "Core i7 13700H",
+            "processorBaseFrequency": "Not Applicable",
+            "performanceCoreBaseFrequency": "2.40GHz",
+            "efficientCoreBaseFrequency": "1.80GHz",
+            "processorMaxTurboFrequency": "5.00GHz",
+            "performanceCoreMaxTurboFrequency": "5.00GHz",
+            "efficientCoreMaxTurboFrequency": "3.70GHz",
+            "processorCore": 14,
+            "performanceCores": 6,
+            "efficientCores": 8,
+            "processorThread": 20,
+            "cpuCache": "24MB",
+            "chipset": "Intel SoC Platform"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "1 x 16GB Non-Removable",
+            "ramType": "DDR5",
+            "ramBus": "5200 MHz",
+            "totalRamSlot": "No",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "16GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "No",
+            "storageUpgrade": "Installed SSD can be upgradeable"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 14,
+            "displayType": "FHD+ WUXGA Display",
+            "panelType": "OLED",
+            "displayResolution": "1920x1200",
+            "displaySurface": "Glossy",
+            "touchScreen": "No",
+            "displayRefreshRate": "60 Hz",
+            "displayBezel": "Slim Bezel",
+            "brightness": "400nits",
+            "displayFeatures": "Brightness: 400nits, 100% DCI-P3, Eyesafe, Dolby Vision, DisplayHDR True Black 500"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "usb2Port": "No",
+            "usb3Port": "1 x USB 3.2 Gen 1",
+            "usbCThunderboltPort": "2 x Thunderbolt 4 (USB 4)",
+            "hdmiPort": "1",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6E, 11ax 2x2",
+            "bluetooth": "Bluetooth 5.1"
+        },
+        "productAudioCamera": {
+            "audioProperties": "High Definition (HD) Audio",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD Camera"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Backlit, English (EU) Keyboard",
+            "keyboardBacklit": "Yes",
+            "numKeypad": "No",
+            "pointingDevice": "Touchpad"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "Yes",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "Microsoft Office"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Aluminum",
+            "color": "Storm Grey",
+            "dimensions": "312 x 221 x 14.9mm",
+            "weightKg": "1.35 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "65Wh",
+            "powerAdapter": "65W",
+            "adapterType": "USB-C (3-pin)"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "Evo-Certified, Military Grade",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits",
+            "specialty": "Surface Treatment: Aluminium Stamping (Anodized with Sandblasting), IR camera for Windows Hello, Green Certifications: Intel Evo Platform, TUV Rheinland Flicker Reduce, Eyesafe Certified 2.0, TUV Rheinland Low Blue Light (Hardware Solution), Mil-Spec Test: MIL-STD-810H military test passed (21 test items).",
+            "others": "Speakers: Stereo speakers, 2W x2, optimized with Dolby Atmos, Camera: FHD 1080p + IR with Privacy Shutter, ToF Sensor, Microphone: 2x, Array, Ports: 1x Headphone / microphone combo jack (3.5mm)",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors."
+        }
+    },
+    {
+        "productName": "Lenovo Yoga Book 9i 13IRU8 Intel Core i7 1355U 16GB RAM 1TB SSD Dual 13.3 Inch 2.8K OLED WQHD Touch Display Digital Pen, Tidal Teal Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/lenovo-yoga-book-9i-13iru8-intel-core-i7-1355u-11709644794.webp",
+        "productPrice": 375000,
+        "productLikes": 804,
+        "productUnlikes": 12,
+        "productQuantity": 78,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Lenovo",
+            "productModel": "Lenovo Yoga Book 9i 13IRU8",
+            "productLaptopSeries": "Yoga",
+            "productPartNo": "82YQ004CIN"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "13th (Intel)",
+            "processorModel": "Core i7 1355U",
+            "processorBaseFrequency": "Not Applicable",
+            "performanceCoreBaseFrequency": "1.70GHz",
+            "efficientCoreBaseFrequency": "1.20GHz",
+            "processorMaxTurboFrequency": "5.00GHz",
+            "performanceCoreMaxTurboFrequency": "5.00GHz",
+            "efficientCoreMaxTurboFrequency": "3.70GHz",
+            "processorCore": 10,
+            "performanceCores": 2,
+            "efficientCores": 8,
+            "processorThread": 12,
+            "cpuCache": "12MB",
+            "chipset": "Intel SoC Platform"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "1 x 16GB Non-Removable",
+            "ramType": "LPDDR5x",
+            "ramBus": "6400 MHz",
+            "totalRamSlot": "No",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "16GB"
+        },
+        "productStorage": {
+            "storage": "1TB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "No",
+            "storageUpgrade": "Installed SSD Can Not Be Replaced"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Intel Iris Xe Graphics",
+            "graphicsMemoryAccessibility": "Integrated",
+            "graphicsMemory": "Shared",
+            "graphicsMemoryType": "Not Applicable"
+        },
+        "productDisplay": {
+            "displaySizeInch": 13.3,
+            "displayType": "2.8K OLED WQHD",
+            "panelType": "OLED",
+            "displayResolution": "2880x1800",
+            "displaySurface": "Glossy",
+            "touchScreen": "Yes",
+            "displayRefreshRate": "60 Hz",
+            "brightness": "400nits",
+            "displayFeatures": "OLED 400nits Glossy / Anti-fingerprint, 100% DCI-P3, 60Hz, Eyesafe, Dolby Vision, DisplayHDR True Black 500, Glass, Touch",
+            "secondaryScreenSize": "13.3 Inch",
+            "secondaryScreenTechnology": "2.8K OLED WQHD Display",
+            "secondaryScreenResolution": "2880x1800"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "No",
+            "supportedMultimediaCard": "Not Applicable",
+            "usb2Port": "No",
+            "usb3Port": "No",
+            "usbCThunderboltPort": "3 x USB Type-C (Thunderbolt 4 / USB4 40Gbps), with USB PD 3.0 and DisplayPort 1.4",
+            "hdmiPort": "No",
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "No",
+            "microphonePort": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6E, 11ax 2x2",
+            "bluetooth": "Bluetooth 5.3"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 x Array, 4 stereo speakers, 2W x 2 (woofers), 2W x 2 (user-facing tweeters), optimized with Dolby Atmos, Smart Amplifier (AMP), audio by Bowers & Wilkins",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "5.0MP + IR with E-shutter"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Non-backlit, English",
+            "keyboardBacklit": "No",
+            "rgbKeyboard": "No",
+            "numKeypad": "No",
+            "pointingDevice": "No",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "Yes",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM 2.0"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Pro",
+            "licensedApplication": "Microsoft Office"
+        },
+        "productPhysicalDescription": {
+            "bodyMaterial": "Aluminium (Top & Bottom)",
+            "color": "Tidal Teal",
+            "dimensions": "299.1 x 203.9 x 15.95mm",
+            "weightKg": "1.34 kg",
+            "packageContent": "Lenovo Yoga Book 9i 13IRU8 Laptop, Digital Pen, Folio Stand, Power Adapter"
+        },
+        "productPower": {
+            "batteryCapacity": "80Wh",
+            "powerAdapter": "65W",
+            "adapterType": "USB-C Slim (Wall-mount)"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "Evo-Certified, Eyesafe Certified 2.0, TUV Rheinland Low Blue Light (Hardware Solution), Carbon Neutral Certified, ENERGY STAR 8.0, EPEAT Gold Registered, ErP Lot 6, ErP Lot 26, RoHS compliant",
+            "bestFor": "Browsing, working on documents, and making light photo and video edits, Office Work etc, Movies, Music",
+            "others": "Audio Chip: High Definition (HD) Audio, Realtek ALC3306 codec, Touchscreen: OGM, 10-point Multi-touch, Surface Treatment: Aluminium CNC (Anodized with Sandblasting), Other Security: IR camera for Windows Hello, E-shutter, Dual channel RAM required For Intel Iris Xe Graphics",
+            "countryOfOrigin": "China",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors. Dual channel RAM required For Intel Iris Xe Graphics"
+        }
+    }
+]

@@ -1,0 +1,1352 @@
+[
+    {
+        "productName": "Gigabyte Gaming G5 MF Intel Core i5 12500H 8GB RAM 512GB SSD 15.6 Inch FHD Display Matte Black Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/gigabyte-gaming-g5-mf-12th-gen-intel-core-i5-11689484613.webp",
+        "productPrice": 121500,
+        "productLikes": 654,
+        "productUnlikes": 23,
+        "productQuantity": 54,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Gigabyte",
+            "productModel": "Gigabyte Gaming G5 MF",
+            "productLaptopSeries": "Gaming"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i5 12500H",
+            "performanceCoreBaseFrequency": "2.50GHz",
+            "efficientCoreBaseFrequency": "1.80GHz",
+            "processorMaxTurboFrequency": "4.50 GHz",
+            "performanceCoreMaxTurboFrequency": "4.50GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 12,
+            "performanceCores": 4,
+            "efficientCores": 8,
+            "processorThread": 16,
+            "cpuCache": "18MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "ramType": "DDR4",
+            "ramBus": "3200 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "Unmentioned",
+            "maxRamSupport": "64GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Can be added"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 4050 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "6GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD LED Display",
+            "displayResolution": "1920x1080",
+            "touchScreen": "No",
+            "displayRefreshRate": "144 Hz",
+            "displayBezel": "Slim Bezel",
+            "displayFeatures": "72% NTSC",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": 1,
+            "supportedMultimediaCard": "MicroSD card",
+            "usb2Port": "1 x USB 2.0 Type-A",
+            "usb3Port": "1 x USB 3.2 Gen 1 Type-A",
+            "usbCThunderboltPort": "2 x USB 3.2 Gen 1 Type-C",
+            "hdmiPort": 1,
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": 1,
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "Kensington lock slot"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi 6E",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 x 2W Speaker, Microphone DTS:X Ultra Audio Technology",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Multi languages 15 color illuminated full size keyboard with numeric pad",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "Yes",
+            "numKeyPad": "Yes (Numeric)",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "tpm": "Yes",
+            "securityChip": "TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Matt Black",
+            "dimensions": "360 x 238 x 22.7mm",
+            "weightKg": "2.08 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "54Wh",
+            "batteryType": "Li-ion",
+            "powerAdapter": "150W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDurationApproximate": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work etc, Movies, Music",
+            "countryOfOrigin": "Taiwan",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Gigabyte Gaming G5 KE Intel Core i5 12500H 8GB RAM 512GB SSD 15.6 Inch FHD Display Matte Black Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/gigabyte-gaming-g5-ke-intel-core-i5-12500h-156-31671437317.webp",
+        "productPrice": 128000,
+        "productLikes": 54,
+        "productUnlikes": 1,
+        "productQuantity": 4,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Gigabyte",
+            "productModel": "Gigabyte Gaming G5 KE",
+            "productLaptopSeries": "Gaming"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i5 12500H",
+            "processorBaseFrequency": "2.5GHz",
+            "performanceCoreBaseFrequency": "2.50GHz",
+            "efficientCoreBaseFrequency": "1.80GHz",
+            "processorMaxTurboFrequency": "4.50GHz",
+            "performanceCoreMaxTurboFrequency": "4.50GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 12,
+            "performanceCores": 4,
+            "efficientCores": 8,
+            "processorThread": 16,
+            "cpuCache": "18MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "ramType": "DDR4",
+            "ramBus": "3200 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "Unmentioned",
+            "maxRamSupport": "64GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Can be added"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 3060 Max-Q Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "6GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD",
+            "displayResolution": "1920x1080",
+            "touchScreen": "No",
+            "displayRefreshRate": "144 Hz",
+            "displayBezel": "Thin Bezel",
+            "displayFeatures": "72% NTSC",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": 1,
+            "supportedMultimediaCard": "MicroSD",
+            "usb2Port": "1 x USB 2.0 Type A",
+            "usb3Port": "1 x USB 3.2 Gen 1 Type A",
+            "usbCThunderboltPort": "1 x USB 3.2 Gen 2 Type C, 1 x Thunderbolt 4 Type C",
+            "hdmiPort": 1,
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": 1,
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "Kensington Lock Slot"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "WiFi 6",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "DTS:X Ultra Audio Technology, 2x 2W Speaker",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD Webcam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Multi languages 15 color illuminated full size keyboard with numeric pad",
+            "keyboardBacklit": "Yes",
+            "numKeyPad": "Yes",
+            "pointingDevice": "Touchpad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Matt Black",
+            "dimensions": "360 x 238 x 23.9mm",
+            "weightKg": "1.9 Kg",
+            "packageContent": "Gigabyte Gaming G5 KE Laptop, Power adapter."
+        },
+        "productPower": {
+            "batteryCapacity": "54Whr",
+            "batteryType": "Li-ion",
+            "backupTime": "Up to 4.5 Hrs.",
+            "powerAdapter": "180W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Gaming, Video Editing, Office Work etc",
+            "gamingFeature": "Boost Performance With AI, Ray Tracing is the holy grail of graphics. It simulates how light behaves in the real-world to produce the most realistic and immersive graphics for gamers and creators - and runs fast thanks to 2nd gen RT Cores.",
+            "specialty": "The G5 gaming laptop is equipped with the 12th Gen Intel Core i5 12 cores processor. Users can stream, record gameplay, and run multiple applications without compromise. The G5 offers fast multimedia processing and the smoothest gaming experience.",
+            "others": "Thin-bezel design screen enables GIGABYTE Gaming Laptop to be a thin laptop with a lightweight body, which has been reduced by 22% in size and is easy to be grasped handily, without compromising its high performance. Storage - 512GB PCIe SSD Gen 4x4.",
+            "countryOfOrigin": "Taiwan",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Gigabyte AORUS 15 9MF Intel Core i5 12500H 8GB RAM 512GB SSD 15.6 Inch FHD Display Matte Black Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/gigabyte-aorus-15-9mf-intel-core-i5-12500h-156-11689500348.webp",
+        "productPrice": 142500,
+        "productLikes": 34,
+        "productUnlikes": 12,
+        "productQuantity": 41,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Gigabyte",
+            "productModel": "Gigabyte AORUS 15 9MF",
+            "productLaptopSeries": "AORUS"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i5 12500H",
+            "performanceCoreBaseFrequency": "2.50GHz",
+            "efficientCoreBaseFrequency": "1.80GHz",
+            "processorMaxTurboFrequency": "4.50 GHz",
+            "performanceCoreMaxTurboFrequency": "4.50GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 12,
+            "performanceCores": 4,
+            "efficientCores": 8,
+            "processorThread": 16,
+            "cpuCache": "18MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "ramType": "DDR4",
+            "ramBus": "4800 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "Unmentioned",
+            "maxRamSupport": "64GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Can be added"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 4050 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "6GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD LED Display",
+            "displayResolution": "1920x1080",
+            "touchScreen": "No",
+            "displayRefreshRate": "360 Hz",
+            "displayBezel": "Slim Bezel",
+            "displayFeatures": "up to 100% sRGB, TUV Rheinland-certified",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": "No",
+            "usb2Port": "No",
+            "usb3Port": "1 x USB 3.2 Gen 1 Type-A, 2 x USB 3.2 Gen 2 Type-A",
+            "usbCThunderboltPort": "1 x Thunderbolt 4, 1 x USB 3.2 Gen 2 Type-C",
+            "hdmiPort": 1,
+            "microHdmiPort": "No",
+            "miniHdmiPort": 1,
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "No"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi 6E (802.11ax) (Triple band) 2x2",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 x 2W Speaker, Microphone DTS:X Ultra Audio Technology, Build-in array Microphone",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Three-Zone RGB Keyboard, Per Key Macro",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "Yes",
+            "numKeyPad": "No",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "Yes",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Matt Black",
+            "dimensions": "360.68 x 271.78 x 20.828mm",
+            "weightKg": "2.39 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "99Wh",
+            "batteryType": "Li-Polymer",
+            "powerAdapter": "240W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "TUV Rheinland",
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work etc, Movies, Music",
+            "gamingFeature": "Support Windows Hello Face Authentication",
+            "others": "M.2 SSD slots (Type 2280, supports 2x NVMe PCIe Gen 4.0x4)",
+            "countryOfOrigin": "Taiwan",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Gigabyte Gaming G5 KF Intel Core i5 12500H 8GB RAM 512GB SSD 15.6 Inch FHD Display Matte Black Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/gigabyte-gaming-g5-kf-12th-gen-intel-core-i5-11689486305.webp",
+        "productPrice": 131500,
+        "productLikes": 34,
+        "productUnlikes": 11,
+        "productQuantity": 5,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Gigabyte",
+            "productModel": "Gigabyte Gaming G5 KF",
+            "productLaptopSeries": "Gaming"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i5",
+            "generation": "12th (Intel)",
+            "processorModel": "Core i5 12500H",
+            "performanceCoreBaseFrequency": "2.50GHz",
+            "efficientCoreBaseFrequency": "1.80GHz",
+            "processorMaxTurboFrequency": "4.50 GHz",
+            "performanceCoreMaxTurboFrequency": "4.50GHz",
+            "efficientCoreMaxTurboFrequency": "3.30GHz",
+            "processorCore": 12,
+            "performanceCores": 4,
+            "efficientCores": 8,
+            "processorThread": 16,
+            "cpuCache": "18MB"
+        },
+        "productMemory": {
+            "ram": "8GB",
+            "ramType": "DDR4",
+            "ramBus": "3200 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "Unmentioned",
+            "maxRamSupport": "64GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Can be added"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 4060 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "8GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD LED Display",
+            "displayResolution": "1920x1080",
+            "touchScreen": "No",
+            "displayRefreshRate": "144 Hz",
+            "displayBezel": "Slim Bezel",
+            "displayFeatures": "72% NTSC",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": 1,
+            "supportedMultimediaCard": "MicroSD card",
+            "usb2Port": "1 x USB 2.0 Type-A",
+            "usb3Port": "1 x USB 3.2 Gen 1 Type-A",
+            "usbCThunderboltPort": "2 x USB 3.2 Gen 1 Type-C",
+            "hdmiPort": 1,
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": 1,
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo",
+            "securityLockSlot": "Kensington lock slot"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi 6E",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 x 2W Speaker, Microphone DTS:X Ultra Audio Technology",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Multi languages 15 color illuminated full size keyboard with numeric pad",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "Yes",
+            "numKeyPad": "Yes (Numeric)",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "No",
+            "tpm": "Yes",
+            "securityChip": "TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Matt Black",
+            "dimensions": "360 x 238 x 22.7mm",
+            "weightKg": "2.08 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "54Wh",
+            "batteryType": "Li-ion",
+            "powerAdapter": "150W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work etc, Movies, Music",
+            "countryOfOrigin": "Taiwan",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Gigabyte Gaming G5 MF5 Intel Core i7 13620H 16GB RAM, 1TB SSD 15.6 Inch FHD Display Matte Black Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/gigabyte-gaming-g5-mf5-intel-core-i7-13620h-16gb-11711969375.webp",
+        "productPrice": 139000,
+        "productLikes": 34,
+        "productUnlikes": 2,
+        "productQuantity": 7,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Gigabyte",
+            "productModel": "Gigabyte Gaming G5 MF5",
+            "productLaptopSeries": "Gaming"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "13th (Intel)",
+            "processorModel": "Core i7 13620H",
+            "performanceCoreBaseFrequency": "2.40GHz",
+            "efficientCoreBaseFrequency": "1.80GHz",
+            "processorMaxTurboFrequency": "4.90GHz",
+            "performanceCoreMaxTurboFrequency": "4.90GHz",
+            "efficientCoreMaxTurboFrequency": "3.60GHz",
+            "processorCore": 10,
+            "performanceCores": 6,
+            "efficientCores": 4,
+            "processorThread": 16,
+            "cpuCache": "24MB"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "2 x 8GB Removable",
+            "ramType": "GDDR5",
+            "ramBus": "4800 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "64GB"
+        },
+        "productStorage": {
+            "storage": "1TB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Slot, Upgradeable Installed SSD"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 4050 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "6GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD LED Display",
+            "displayResolution": "1920x1080",
+            "touchScreen": "No",
+            "displayRefreshRate": "144 Hz",
+            "displayFeatures": "144Hz, 72% NTSC",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": 1,
+            "supportedMultimediaCard": "MicroSD",
+            "usb2Port": "1 x USB 2.0 port (Type A)",
+            "usb3Port": "1 x USB 3.2 Gen 1 port (Type A)",
+            "usbCThunderboltPort": "2 x USB 3.2 Gen 2 port (Type C)",
+            "hdmiPort": 1,
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": 1,
+            "vgaDSub": "No",
+            "headphonePort": "1 x Headphone-out",
+            "microphonePort": "1 x Mic-in",
+            "securityLockSlot": "Kensington Lock Slot"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi 6E",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 x 2W Speaker, Microphone DTS: X Ultra Audio Technology",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Full size keyboard with numeric pad",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "Yes",
+            "numKeyPad": "Yes (Numeric)",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Matte Black",
+            "dimensions": "360 x 238 x 22.7mm",
+            "weightKg": "2.08kg"
+        },
+        "productPower": {
+            "batteryCapacity": "54Wh",
+            "batteryType": "Lithium-Ion",
+            "powerAdapter": "150W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work , Movies etc",
+            "others": "Storage: Gen4 512GB M.2 2280 x 2 (PCIe Gen3x4 x 1 , PCIe Gen4x4 x 1 )",
+            "countryOfOrigin": "Taiwan",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Gigabyte Gaming G5 KF5 Intel Core i7 13620H 16GB RAM, 512GB SSD 15.6 Inch FHD Display Matte Black Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/gigabyte-gaming-g5-kf5-intel-core-i7-13620h-16gb-11712041395.webp",
+        "productPrice": 199000,
+        "productLikes": 49,
+        "productUnlikes": 6,
+        "productQuantity": 5,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Gigabyte",
+            "productModel": "Gigabyte Gaming G5 KF5",
+            "productLaptopSeries": "Gaming"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "13th (Intel)",
+            "processorModel": "Core i7 13620H",
+            "performanceCoreBaseFrequency": "2.40GHz",
+            "efficientCoreBaseFrequency": "1.80GHz",
+            "processorMaxTurboFrequency": "4.90GHz",
+            "performanceCoreMaxTurboFrequency": "4.90GHz",
+            "efficientCoreMaxTurboFrequency": "3.60GHz",
+            "processorCore": 10,
+            "performanceCores": 6,
+            "efficientCores": 4,
+            "processorThread": 16,
+            "cpuCache": "24MB"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "2 x 8GB Removable",
+            "ramType": "DDR5",
+            "ramBus": "4800 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "64GB"
+        },
+        "productStorage": {
+            "storage": "512GB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Slot, Upgradeable Installed SSD"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 4060 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "8GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 15.6,
+            "displayType": "FHD LED Display",
+            "displayResolution": "1920x1080",
+            "touchScreen": "No",
+            "displayRefreshRate": "144 Hz",
+            "displayFeatures": "72% NTSC",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": 1,
+            "supportedMultimediaCard": "MicroSD",
+            "usb2Port": "1 x USB 2.0 port (Type A)",
+            "usb3Port": "1 x USB 3.2 Gen 1 port (Type A)",
+            "usbCThunderboltPort": "2 x USB 3.2 Gen 2 port (Type C)",
+            "hdmiPort": 1,
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": 1,
+            "vgaDSub": "No",
+            "headphonePort": "1 x Headphone-out",
+            "microphonePort": "1 x Mic-in",
+            "securityLockSlot": "Kensington Lock Slot"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi 6E",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 x 2W Speaker, Microphone DTS: X Ultra Audio Technology",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "HD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Full size keyboard with numeric pad",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "Yes",
+            "numKeyPad": "Yes (Numeric)",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Matte Black",
+            "dimensions": "360 x 238 x 22.7mm",
+            "weightKg": "2.08kg"
+        },
+        "productPower": {
+            "batteryCapacity": "54Wh",
+            "batteryType": "Lithium-Ion",
+            "powerAdapter": "150W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work , Movies etc",
+            "others": "Storage: Gen4 512GB M.2 2280 x 2 (PCIe Gen3x4 x 1 , PCIe Gen4x4 x 1 )",
+            "countryOfOrigin": "Taiwan",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors"
+        }
+    },
+    {
+        "productName": "Gigabyte AERO 14 OLED BMF Intel Core i7 13700H 16GB RAM, 1TB SSD 14 Inch 2.8K QHD+ OLED Display Twilight Silver Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/gigabyte-aero-14-oled-bmf-intel-core-i7-13700h-11699190083.webp",
+        "productPrice": 179000,
+        "productLikes": 21,
+        "productUnlikes": 3,
+        "productQuantity": 9,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Gigabyte",
+            "productModel": "Gigabyte AERO 14 OLED BMF",
+            "productLaptopSeries": "AERO"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "13th (Intel)",
+            "processorModel": "Core i7 13700H",
+            "performanceCoreBaseFrequency": "2.40GHz",
+            "efficientCoreBaseFrequency": "1.80GHz",
+            "processorMaxTurboFrequency": "5.00GHz",
+            "performanceCoreMaxTurboFrequency": "5.00GHz",
+            "efficientCoreMaxTurboFrequency": "3.70GHz",
+            "processorCore": 14,
+            "performanceCores": 6,
+            "efficientCores": 8,
+            "processorThread": 20,
+            "cpuCache": "24MB"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "1 x 16GB Non-Removable",
+            "ramType": "DDR5",
+            "ramBus": "5200 MHz",
+            "totalRamSlot": "No",
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "16GB"
+        },
+        "productStorage": {
+            "storage": "1TB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": "No",
+            "storageUpgrade": "Installed SSD can be upgradeable"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 4050 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "6GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 14,
+            "displayType": "2.8K OLED QHD+ Display",
+            "panelType": "OLED",
+            "displayResolution": "2880x1800",
+            "touchScreen": "No",
+            "displayRefreshRate": "90 Hz",
+            "displayBezel": "Thin Bezel",
+            "brightness": "600nits",
+            "displayFeatures": "16:10 Display (VESA DisplayHDR 600 True Black, 100% DCI-P3, TUV Rheinland-certified, Eyesafe 2.0)",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": 1,
+            "supportedMultimediaCard": "MicroSD card",
+            "usb2Port": "No",
+            "usb3Port": "1 x USB 3.2 Gen1 Type-A",
+            "usbCThunderboltPort": "2 x Thunderbolt 4, 1 x USB Type-C",
+            "hdmiPort": 1,
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6E (802.11ax) (Triple band) 2x2",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 x 2W Speaker Microphone DTS, X Ultra Audio Technology, Build-in array Microphone",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Backlit Keyboard (Single Color, white, N-key Rllover, Up to 1.7mm Key-travel)",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "No",
+            "numKeyPad": "No",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Twilight Silver",
+            "dimensions": "311 x 220.8 x 17mm",
+            "weightKg": "1.49 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "63Wh",
+            "batteryType": "Lithium polymer",
+            "powerAdapter": "130W",
+            "adapterType": "AC Adapter (TYPE-C)"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "TUV Rheinland, Eyesafe 2.0, VESA Display HDR, Pantone, X-Rite Certified",
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work etc, Movies, Music",
+            "specialty": "M.2 SSD slots (Type 2280, supports 1x NVMe PCIe Gen 4.0x4), Thunderbolt 4 Support DisplayPort / High-speed Transferring, microSD Card Reader with UHS-II support, HDMI2.1, DC-in (Type C)",
+            "others": "Security: (Firmware-based TPM, supports Intel Platform Trust Technology (Intel PTT))"
+        }
+    },
+    {
+        "productName": "Gigabyte AERO 16 OLED BKF Intel Core i7 13700H 16GB RAM, 1TB SSD 16 Inch 4K UHD+ OLED Display Twilight Silver Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/gigabyte-aero-16-oled-bkf-intel-core-i7-13700h-11699190200.webp",
+        "productPrice": 189000,
+        "productLikes": 51,
+        "productUnlikes": 1,
+        "productQuantity": 2,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Gigabyte",
+            "productModel": "Gigabyte AERO 16 OLED BKF",
+            "productLaptopSeries": "AERO"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "13th (Intel)",
+            "processorModel": "Core i7 13700H",
+            "performanceCoreBaseFrequency": "2.40GHz",
+            "efficientCoreBaseFrequency": "1.80GHz",
+            "processorMaxTurboFrequency": "5.00GHz",
+            "performanceCoreMaxTurboFrequency": "5.00GHz",
+            "efficientCoreMaxTurboFrequency": "3.70GHz",
+            "processorCore": 14,
+            "performanceCores": 6,
+            "efficientCores": 8,
+            "processorThread": 20,
+            "cpuCache": "24MB"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "2 x 8GB Removable",
+            "ramType": "DDR5",
+            "ramBus": "5200 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "64GB"
+        },
+        "productStorage": {
+            "storage": "1TB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "Unmentioned",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Slot, Upgradeable Installed SSD"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 4060 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "8GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 16,
+            "displayType": "4K UHD+ OLED Display",
+            "panelType": "OLED",
+            "displayResolution": "3840x2400",
+            "displaySurface": "Glossy",
+            "touchScreen": "No",
+            "displayRefreshRate": "60 Hz",
+            "displayBezel": "Thin Bezel",
+            "brightness": "600nits",
+            "displayFeatures": "16:10 Display (VESA DisplayHDR 600 True Black, 100% DCI-P3, 60Hz, TUV Rheinland-certified, Eyesafe 2.0)",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": 1,
+            "supportedMultimediaCard": "MicroSD card",
+            "usb3Port": "1 x USB3.2 Gen 1",
+            "usbCThunderboltPort": "2 x Thunderbolt 4 (USB Type-C), 1 x USB 3.2 Gen 2",
+            "hdmiPort": 1,
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "No",
+            "wifi": "Wi-Fi 6E (802.11ax)",
+            "bluetooth": "Bluetooth 5.2"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 x 2W Speaker Microphone DTS, X Ultra Audio Technology",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD Webcam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "Backlit Keyboard (Single Color, white, N-key Rllover, Up to 1.7mm Key-travel)",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "No",
+            "numKeyPad": "No",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "preLoadedApplication": "No",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "No",
+            "color": "Twilight Silver",
+            "dimensions": "354 x 255 x (18-22)mm",
+            "weightKg": "1.9 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "88Wh",
+            "batteryType": "Lithium polymer",
+            "powerAdapter": "240W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "certifications": "TUV Rheinland, Eyesafe 2.0, VESA Display HDR, Pantone, X-Rite Certified",
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work etc, Movies, Music",
+            "specialty": "2x M.2 SSD slots (Type 2280, supports 2x NVMe PCIe Gen 4.0x4), 2x Thunderbolt 4 Support DisplayPort/ one port support Power Delivery / High-speed Transferring, microSD Card Reader with UHS-II support, HDMI2.1, DC-in",
+            "others": "Security- Firmware-based TPM, supports Intel Platform Trust Technology (Intel PTT), Webcam- FHD (1080p ) Webcam Build-in array Microphone Support Windows Hello Face Authentication"
+        }
+    },
+    {
+        "productName": "Gigabyte AORUS 16X AKG Intel Core i7 14650HX 16GB RAM, 1TB SSD 16 Inch 2.5K QHD WQXGA Display Midnight Gray Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/gigabyte-aorus-16x-akg-intel-core-i7-14650hx-16gb-41712042979.webp",
+        "productPrice": 225000,
+        "productLikes": 511,
+        "productUnlikes": 11,
+        "productQuantity": 72,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Gigabyte",
+            "productModel": "Gigabyte AORUS 16X AKG",
+            "productLaptopSeries": "AORUS"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "14th (Intel)",
+            "processorModel": "Core i7 14650HX",
+            "performanceCoreBaseFrequency": "2.20GHz",
+            "efficientCoreBaseFrequency": "1.60GHz",
+            "processorMaxTurboFrequency": "5.20GHz",
+            "performanceCoreMaxTurboFrequency": "5.20GHz",
+            "efficientCoreMaxTurboFrequency": "3.70GHz",
+            "processorCore": 16,
+            "performanceCores": 8,
+            "efficientCores": 8,
+            "processorThread": 24,
+            "cpuCache": "30MB"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "2 x 8GB Removable",
+            "ramType": "DDR5",
+            "ramBus": "5600 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "64GB"
+        },
+        "productStorage": {
+            "storage": "1TB SSD",
+            "installedHddType": "No HDD",
+            "hddRpm": "No HDD",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Slot, Upgradeable Installed SSD"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 4060 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "8GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 16,
+            "displayType": "2.5K QHD WQXGA Display",
+            "displayResolution": "2560x1600",
+            "touchScreen": "No",
+            "displayRefreshRate": "165 Hz",
+            "displayFeatures": "100% sRGB, Pantone Validated, TUV Rheinland-certified, Dolby Vision, NVIDIA Advanced Optimus, G-SYNC",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": 1,
+            "supportedMultimediaCard": "microSD",
+            "usb3Port": "2 x USB 3.2 Gen 2 Type-A",
+            "usbCThunderboltPort": "1 x USB 4 / Thunderbolt4, 1 x USB 3.2 Gen 2 Type-C",
+            "hdmiPort": 1,
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi-6",
+            "bluetooth": "Yes"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 x 2W Speaker Microphone Dolby Atmos, Smart Amp Technology",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "3-zone RGB Backlit Keyboard, Up to 1.7mm Key-travel (Support N-Key)",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "Yes",
+            "numKeyPad": "No",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "Windows Hello Face Authentication",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "RGB",
+            "color": "Midnight Grey",
+            "dimensions": "356 x 254 x 27mm",
+            "weightKg": "2.30 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "99Wh",
+            "batteryType": "Lithium Polymer",
+            "powerAdapter": "240W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work etc, Movies, Music.",
+            "specialty": "HDMI 2.1, Type-C with Thunderbolt 4 (support USB4, DisplayPort 1.4 and Power Delivery 3.0), Audio Jack support mic / headphone combo, FHD (1080p) IR Webcam Build-in array Microphone Support Windows Hello Face Authentication",
+            "countryOfOrigin": "Taiwan",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors."
+        }
+    },
+    {
+        "productName": "Gigabyte AORUS 16X ASG Intel Core i7 14650HX 16GB RAM, 1TB SSD 16 Inch 2.5K QHD WQXGA Display Midnight Gray Gaming Laptop",
+        "productImage": "https://www.ryans.com/storage/products/main/gigabyte-aorus-16x-asg-intel-core-i7-14650hx-16gb-31712043551.webp",
+        "productPrice": 239000,
+        "productLikes": 43,
+        "productUnlikes": 2,
+        "productQuantity": 5,
+        "productReviews": [],
+        "productGeneral": {
+            "productBrand": "Gigabyte",
+            "productModel": "Gigabyte AORUS 16X ASG",
+            "productLaptopSeries": "AORUS"
+        },
+        "productProcessor": {
+            "processorBrand": "Intel",
+            "processorType": "Core i7",
+            "generation": "14th (Intel)",
+            "processorModel": "Core i7 14650HX",
+            "performanceCoreBaseFrequency": "2.20GHz",
+            "efficientCoreBaseFrequency": "1.60GHz",
+            "processorMaxTurboFrequency": "5.20GHz",
+            "performanceCoreMaxTurboFrequency": "5.20GHz",
+            "efficientCoreMaxTurboFrequency": "3.70GHz",
+            "processorCore": 16,
+            "performanceCores": 8,
+            "efficientCores": 8,
+            "processorThread": 24,
+            "cpuCache": "30MB"
+        },
+        "productMemory": {
+            "ram": "16GB",
+            "installedRamDetails": "2 x 8GB Removable",
+            "ramType": "DDR5",
+            "ramBus": "5600 MHz",
+            "totalRamSlot": 2,
+            "emptyExpansionRamSlot": "No",
+            "maxRamSupport": "64GB"
+        },
+        "productStorage": {
+            "storage": "1TB",
+            "installedHddType": "1TB",
+            "hddRpm": "1TB",
+            "hddExpansionSlot": "No",
+            "installedSsdType": "NVMe PCIe",
+            "m2SsdExpansionSlot": 1,
+            "storageUpgrade": "Additional SSD Slot, Upgradeable Installed SSD"
+        },
+        "productGraphics": {
+            "graphicsChipset": "Nvidia RTX 4070 Graphics",
+            "graphicsMemoryAccessibility": "Dedicated",
+            "graphicsMemory": "8GB",
+            "graphicsMemoryType": "GDDR6"
+        },
+        "productDisplay": {
+            "displaySizeInch": 16,
+            "displayType": "2.5K QHD WQXGA Display",
+            "displayResolution": "2560x1600",
+            "touchScreen": "No",
+            "displayRefreshRate": "165 Hz",
+            "displayFeatures": "100% sRGB, Pantone Validated, TUV Rheinland-certified, Dolby Vision, NVIDIA Advanced Optimus, G-SYNC",
+            "secondaryScreenSize": "No Secondary Screen",
+            "secondaryScreenTechnology": "No Secondary Screen",
+            "secondaryScreenResolution": "No Secondary Screen"
+        },
+        "productPortsSlots": {
+            "opticalDrive": "No",
+            "multimediaCardSlot": 1,
+            "supportedMultimediaCard": "microSD",
+            "usb3Port": "2 x USB 3.2 Gen 2 Type-A",
+            "usbCThunderboltPort": "1 x USB 4 / Thunderbolt4, 1 x USB 3.2 Gen 2 Type-C",
+            "hdmiPort": 1,
+            "microHdmiPort": "No",
+            "miniHdmiPort": "No",
+            "displayPort": "No",
+            "miniDpPort": "No",
+            "vgaDSub": "No",
+            "headphonePort": "Combo",
+            "microphonePort": "Combo"
+        },
+        "productNetworkConnectivity": {
+            "lan": "Yes",
+            "wifi": "Wi-Fi-6",
+            "bluetooth": "Yes"
+        },
+        "productAudioCamera": {
+            "audioProperties": "2 x 2W Speaker Microphone Dolby Atmos, Smart Amp Technology",
+            "speaker": "Yes",
+            "microphone": "Yes",
+            "webcam": "FHD WebCam"
+        },
+        "productKeyboard": {
+            "keyboardLayout": "3-zone RGB Backlit Keyboard, Up to 1.7mm Key-travel (Support N-Key)",
+            "keyboardBacklit": "Yes",
+            "rgbKeyboard": "Yes",
+            "numKeyPad": "No",
+            "pointingDevice": "TouchPad",
+            "dedicatedNavigationKey": "No"
+        },
+        "productSecurity": {
+            "fingerPrintSensor": "No",
+            "faceDetection": "Windows Hello Face Authentication",
+            "tpm": "Yes",
+            "securityChip": "Firmware TPM"
+        },
+        "productSoftware": {
+            "operatingSystem": "Win-11 Home",
+            "licensedApplication": "No"
+        },
+        "productPhysicalDescription": {
+            "deviceLighting": "RGB",
+            "color": "Midnight Grey",
+            "dimensions": "356 x 254 x 27mm",
+            "weightKg": "2.30 kg"
+        },
+        "productPower": {
+            "batteryCapacity": "99Wh",
+            "batteryType": "Lithium Polymer",
+            "powerAdapter": "240W",
+            "adapterType": "AC Adapter"
+        },
+        "productWarranty": {
+            "warranty": "2 Year",
+            "warrantyDetails": "2 year (Battery, Adapter 1 year)",
+            "warrantyClaimDuration": "Estimated Warranty Claim Duration 20 Days. It may take additional time up to 40 days"
+        },
+        "productAdditionalInfo": {
+            "bestFor": "Gaming, Creative Design Works, browsing, Video Editing, Office Work etc, Movies, Music.",
+            "specialty": "HDMI 2.1, Type-C with Thunderbolt 4 (support USB4, DisplayPort 1.4 and Power Delivery 3.0), Audio Jack support mic / headphone combo, FHD (1080p) IR Webcam Build-in array Microphone Support Windows Hello Face Authentication.",
+            "countryOfOrigin": "Taiwan",
+            "madeInAssemble": "China",
+            "disclaimer": "Mentioned Battery Backup information is collected from manufacturer. As per manufacturer the backup time may vary for different use case, settings, applications and some other factors."
+        }
+    }
+]
