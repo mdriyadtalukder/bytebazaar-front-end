@@ -108,7 +108,7 @@ const Navbar = () => {
                     <Link to='/dashboard/favoriteProduct' className="pe-4">
                         <div className="indicator">
                             <MdFavorite className="h-7 w-7 text-pink-600"></MdFavorite>
-                            <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{favorites?.length}</span>
+                            <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{favorites?.length || 0}</span>
                         </div>
                     </Link>
 

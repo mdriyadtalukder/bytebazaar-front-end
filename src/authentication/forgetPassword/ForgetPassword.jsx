@@ -16,7 +16,7 @@ const ForgetPassword = () => {
         e.preventDefault();
         setError('');
         const form = e.target;
-        const email = form.email.value;
+        const email = form.email?.value;
         forgetPassword(email)
             .then(() => {
                 setLoading(false);

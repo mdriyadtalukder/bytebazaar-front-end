@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useAddToCartMutation, useEditCartMutation, useEditLaptopMutation, useGetAProductQuery, useGetCartQuery } from "../../../../RTK-Query/features/allProduct/allProductApi";
+import { useAddToCartMutation, useEditCartMutation, useEditLaptopMutation, useGetAProductQuery, useGetAllProductQuery, useGetCartQuery } from "../../../../RTK-Query/features/allProduct/allProductApi";
 import Loading from "../../../loading/Loading";
 import Swal from "sweetalert2";
 import { useContext, useState } from "react";
@@ -23,6 +23,8 @@ const ViewLaptop = () => {
     const [rating, setRating] = useState(null);
     const [review, setReview] = useState('');
     const [editLaptop] = useEditLaptopMutation();
+    const { data: laptops } = useGetAllProductQuery();
+
 
 
 
@@ -31,8 +33,9 @@ const ViewLaptop = () => {
     const handleCart = (e) => {
         e.preventDefault();
         const cart = carts.find(c => c?.cartId === data?._id);
-        console.log(cart)
-        if (cart?._id) {
+        const laptop = laptops?.find(c => c?._id === cart?.cartId);
+
+        if (cart?._id && laptop?.productQuantity > cart?.quantity) {
             editCart({
                 id: cart?._id,
                 data: {
@@ -47,9 +50,19 @@ const ViewLaptop = () => {
                 timer: 1500
             });
         }
-        else {
+        if (cart?._id && laptop?.productQuantity <= cart?.quantity) {
+            Swal.fire({
+                position: "top-end",
+                icon: "warning",
+                title: `You already added all quantity of ${data?.productGeneral?.productModel} in your cart!`,
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+        if (!cart?._id) {
             addToCart({
                 productName: data?.productName,
+                email: user?.email,
                 cartId: data?._id,
                 productImage: data?.productImage,
                 productPrice: data?.productPrice,
@@ -135,7 +148,7 @@ const ViewLaptop = () => {
     return (
         <>
             {
-                isLoading  ? <Loading></Loading> : rloading ? <Loading></Loading> : isError ? <p className='text-red-600 font-bold text-center'>{error?.status}</p> : err?  <p className='text-red-600 font-bold text-center'>{err?.status}</p>:
+                isLoading ? <Loading></Loading> : rloading ? <Loading></Loading> : isError ? <p className='text-red-600 font-bold text-center'>{error?.status}</p> : err ? <p className='text-red-600 font-bold text-center'>{err?.status}</p> :
                     <>
                         <div className="bg-base-100 w-full dark:bg-gray-800 py-8">
                             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

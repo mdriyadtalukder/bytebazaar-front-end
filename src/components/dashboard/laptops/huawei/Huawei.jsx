@@ -1,9 +1,12 @@
+import { useGetAllProductQuery } from "../../../../RTK-Query/features/allProduct/allProductApi";
+import AllCategory from "../allCategory/AllCategory";
 
 const Huawei = () => {
+    const { data, isError, isLoading, error } = useGetAllProductQuery()
+
     return (
-        <div>
-            Huawei
-        </div>
+        <AllCategory data={data?.filter(d => d?.productGeneral?.productBrand === "Huawei")} isError={isError} isLoading={isLoading} error={error}  ></AllCategory>
+
     );
 };
 

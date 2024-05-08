@@ -64,7 +64,7 @@ const Dashboard = () => {
 
                                     <Link to='/dashboard/favoriteProduct' className="indicator">
                                         <MdFavorite className="h-7 w-7 text-pink-600"></MdFavorite>
-                                        <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{favorites?.length}</span>
+                                        <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{favorites?.length || 0}</span>
                                     </Link>
 
                                 </div>
@@ -85,6 +85,8 @@ const Dashboard = () => {
                                 <li className='font-bold'><Link to='/dashboard/microsoft'>Microsoft Surface</Link></li>
                                 <div className="divider"></div>
                                 <li className='bg-indigo-400 rounded-md font-bold text-white'><NavLink to='/'><FaHome></FaHome>Home</NavLink></li>
+                                <li className='font-bold'><Link to='/dashboard/addLaptop'>Add Laptop</Link></li>
+
                             </ul>
 
                         </div>

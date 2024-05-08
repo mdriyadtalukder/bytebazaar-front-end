@@ -17,8 +17,8 @@ const Login = () => {
         e.preventDefault();
         setError('');
         const form = e.target;
-        const email = form.email.value;
-        const password = form.password.value;
+        const email = form.email?.value;
+        const password = form.password?.value;
         logIn(email, password)
             .then((result) => {
                 const user = result.user;

@@ -23,10 +23,12 @@ import UserProfile from './components/dashboard/userProfile/UserProfile'
 import { useGetReviewsQuery } from './RTK-Query/features/reviews/reviewsApi'
 import Loading from './components/loading/Loading'
 import Chuwi from './components/dashboard/laptops/chuwi/Chuwi'
-import AllCategory from './components/dashboard/laptops/allCategory/AllCategory'
 import Cart from './components/home/cart/Cart'
 import FavoriteProduct from './components/home/favoriteProduct/FavoriteProduct'
 import ViewLaptop from './components/dashboard/laptops/viewLaptop/ViewLaptop'
+import AllLaptops from './components/dashboard/laptops/allCategory/AllLaptops'
+import Create from './components/dashboard/laptops/cu/create/Create'
+import Update from './components/dashboard/laptops/cu/update/Update'
 
 function App() {
   const location = useLocation();
@@ -62,7 +64,9 @@ function App() {
           <Route path='avita' element={<Avita></Avita>}></Route>
           <Route path='infinix' element={<Infinix></Infinix>}></Route>
           <Route path='chuwi' element={<Chuwi></Chuwi>}></Route>
-          <Route path='all-category-laptop' element={<AllCategory></AllCategory>}></Route>
+          <Route path='all-category-laptop' element={<AllLaptops></AllLaptops>}></Route>
+          <Route path='addLaptop' element={<Create></Create>}></Route>
+          <Route path='editLaptop/:id' element={<Update></Update>}></Route>
 
 
         </Route>

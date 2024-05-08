@@ -170,6 +170,7 @@
             "installedSsdType": "NVMe PCIe",
             "m2SsdExpansionSlot": 1,
             "storageUpgrade": "Additional SSD Can be added"
+            
         },
         "productGraphics": {
             "graphicsChipset": "Intel Iris Xe Graphics",

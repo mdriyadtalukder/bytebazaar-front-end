@@ -17,6 +17,15 @@ export const allProductApi = apiSlice.injectEndpoints({
                 { type: "laptop", id: arg }
             ]
         }),
+        addLaptop: builder.mutation({
+            query: (data) => ({
+                url: '/alllaptops',
+                method: "POST",
+                body: data,
+            }),
+            invalidatesTags: ['laptops', 'cart'],
+
+        }),
         editLaptop: builder.mutation({
             query: ({ id, data }) => ({
                 url: `/alllaptops/${id}`,
@@ -27,6 +36,26 @@ export const allProductApi = apiSlice.injectEndpoints({
                 "laptops", 'cart',
                 { type: "laptop", id: arg.id }
             ],
+
+        }),
+        updateLaptop: builder.mutation({
+            query: ({ id, data }) => ({
+                url: `/alllaptop/${id}`,
+                method: "PATCH",
+                body: data,
+            }),
+            invalidatesTags: (result, error, arg) => [
+                "laptops", 'cart',
+                { type: "laptop", id: arg.id }
+            ],
+
+        }),
+        deleteLaptop: builder.mutation({
+            query: (id) => ({
+                url: `/alllaptops/${id}`,
+                method: "DELETE",
+            }),
+            invalidatesTags: ['favorite', 'laptops', 'cart']
 
         }),
         getCart: builder.query({
@@ -68,4 +97,4 @@ export const allProductApi = apiSlice.injectEndpoints({
         }),
     })
 })
-export const { useGetAllProductQuery, useGetAProductQuery, useAddToCartMutation, useGetCartQuery, useEditCartMutation, useDeleteCartMutation, useEditLaptopMutation } = allProductApi;
+export const { useGetAllProductQuery, useGetAProductQuery, useAddToCartMutation, useGetCartQuery, useEditCartMutation, useDeleteCartMutation, useEditLaptopMutation, useAddLaptopMutation, useUpdateLaptopMutation,useDeleteLaptopMutation } = allProductApi;

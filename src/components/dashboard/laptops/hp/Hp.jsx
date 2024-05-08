@@ -1,9 +1,12 @@
+import { useGetAllProductQuery } from "../../../../RTK-Query/features/allProduct/allProductApi";
+import AllCategory from "../allCategory/AllCategory";
 
 const Hp = () => {
+    const { data, isError, isLoading, error } = useGetAllProductQuery()
+
     return (
-        <div>
-           Hp 
-        </div>
+        <AllCategory data={data?.filter(d => d?.productGeneral?.productBrand === "HP")} isError={isError} isLoading={isLoading} error={error}  ></AllCategory>
+
     );
 };
 
