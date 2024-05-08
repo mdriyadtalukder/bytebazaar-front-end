@@ -6,18 +6,34 @@ import Loading from "../../loading/Loading";
 import { useContext } from "react";
 import { AuthContext } from "../../../authentication/authProvider/AuthProvider";
 import { useGetFavoriteQuery } from "../../../RTK-Query/features/favorite/favoriteApi";
+import { useDispatch } from "react-redux";
+import { getGeneration, getMemory, getRam, getSSD, getSeries, getType } from "../../../RTK-Query/features/allProduct/allProductSlice";
 
 const Dashboard = () => {
     const { user } = useContext(AuthContext);
     const { data: favorites, isLoading: loadings, error: err } = useGetFavoriteQuery(user?.email);
     const { data, isLoading, error } = useGetCartQuery(user?.email);
-
+    const dispatch = useDispatch();
     let totalQuantity = 0;
 
     for (let i = 0; i < data?.length; i++) {
         totalQuantity = totalQuantity + Number(data[i]?.quantity);
     }
+    const handleClick = (e) => {
+        e.preventDefault();
+        dispatch(getType(''))
 
+        dispatch(getGeneration(''))
+
+        dispatch(getRam(''))
+
+        dispatch(getSSD(''))
+
+        dispatch(getMemory(''))
+
+        dispatch(getSeries(''))
+
+    }
     return (
         <>
             {
@@ -69,20 +85,20 @@ const Dashboard = () => {
 
                                 </div>
                                 <li className='font-bold'><Link to='/dashboard/user-profile'>My profile</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/all-category-laptop'>All Category Laptop</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/acer'>Acer</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/apple'>Apple</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/asus'>Asus</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/avita'>Avita</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/chuwi'>Chuwi</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/dell'>Dell</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/gigabyte'>Gigabyte</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/hp'>HP</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/huawei'>Huawei</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/infinix'>Infinix</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/lenovo'>Lenovo</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/msi'>MSI</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/microsoft'>Microsoft Surface</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/all-category-laptop'>All Category Laptop</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/acer'>Acer</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/apple'>Apple</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/asus'>Asus</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/avita'>Avita</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/chuwi'>Chuwi</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/dell'>Dell</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/gigabyte'>Gigabyte</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/hp'>HP</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/huawei'>Huawei</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/infinix'>Infinix</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/lenovo'>Lenovo</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/msi'>MSI</Link></li>
+                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/microsoft'>Microsoft Surface</Link></li>
                                 <div className="divider"></div>
                                 <li className='bg-indigo-400 rounded-md font-bold text-white'><NavLink to='/'><FaHome></FaHome>Home</NavLink></li>
                                 <li className='font-bold'><Link to='/dashboard/addLaptop'>Add Laptop</Link></li>

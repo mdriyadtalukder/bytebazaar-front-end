@@ -164,7 +164,7 @@ const SingleProduct = ({ d }) => {
                         <Link to={`/dashboard/laptop/${d?._id}`}>
                             <p><span className="font-bold">Brand: </span>{d?.productGeneral?.productBrand}</p>
                             <p><span className="font-bold">Processor Type: </span>{d?.productProcessor?.processorType}</p>
-                            <p><span className="font-bold">Generation: </span>{d?.productProcessor?.processorGeneration}</p>
+                            <p><span className="font-bold">Generation: </span>{d?.productProcessor?.processorGeneration || "Not Applicable"}</p>
                             <p><span className="font-bold">RAM: </span>{d?.productMemory?.ram}</p>
                             <p><span className="font-bold">Storage: </span>{d?.productStorage?.storage}</p>
                             <p><span className="font-bold">Graphics Memory: </span>{d?.productGraphics?.graphicsMemory}</p>

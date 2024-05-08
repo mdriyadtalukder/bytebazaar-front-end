@@ -6,61 +6,80 @@ import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { FunnelIcon, MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
+import { useDispatch, useSelector } from "react-redux";
+import { getGeneration, getMemory, getRam, getSSD, getSeries, getType } from "../../../../RTK-Query/features/allProduct/allProductSlice";
 
-
-const filters = [
-    {
-        id: 'color',
-        name: 'Color',
-        options: [
-            { value: 'white', label: 'White', checked: false },
-            { value: 'beige', label: 'Beige', checked: false },
-            { value: 'blue', label: 'Blue', checked: true },
-            { value: 'brown', label: 'Brown', checked: false },
-            { value: 'green', label: 'Green', checked: false },
-            { value: 'purple', label: 'Purple', checked: false },
-        ],
-    },
-    {
-        id: 'category',
-        name: 'Category',
-        options: [
-            { value: 'new-arrivals', label: 'New Arrivals', checked: false },
-            { value: 'sale', label: 'Sale', checked: false },
-            { value: 'travel', label: 'Travel', checked: true },
-            { value: 'organization', label: 'Organization', checked: false },
-            { value: 'accessories', label: 'Accessories', checked: false },
-        ],
-    },
-    {
-        id: 'size',
-        name: 'Size',
-        options: [
-            { value: '2l', label: '2L', checked: false },
-            { value: '6l', label: '6L', checked: false },
-            { value: '12l', label: '12L', checked: false },
-            { value: '18l', label: '18L', checked: false },
-            { value: '20l', label: '20L', checked: false },
-            { value: '40l', label: '40L', checked: true },
-        ],
-    },
-]
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const AllCategory = ({ data, isError, isLoading, error }) => {
+const AllCategory = ({ data, isError, isLoading, error, filtering }) => {
 
-    const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
-
-
+    const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+    const { processor_Type, processor_Generation, ram_Options, ssd_Options, graphicsMemory_Options, laptopSeries_Options } = useSelector(state => state.allProduct);
+    const dispatch = useDispatch();
+    const filters = filtering || undefined;
+    console.log(processor_Type.length)
 
     let content;
     if (!isLoading && isError) content = <p className='text-red-600 font-bold text-center'>{error?.status}</p>
     if (!isLoading && !isError && data?.length === 0) content = <p className='text-teal-400 font-bold  text-center'>No Products found!!</p>
     if (!isLoading && !isError && data?.length > 0) {
-        content = data?.map((d) => <SingleProduct key={d?._id} d={d}></SingleProduct>)
+        content = data?.filter((d) => {
+            if (processor_Type.length > 0) {
+                return processor_Type.includes(d?.productProcessor?.processorType);
+            }
+            else {
+                return true;
+            }
+        })
+            .filter((d) => {
+
+                if (processor_Generation.length > 0) {
+                    return processor_Generation.includes(d?.productProcessor?.processorGeneration);
+                }
+                else {
+                    return true;
+                }
+
+            }).filter((d) => {
+
+                if (ram_Options.length > 0) {
+                    return ram_Options.includes(d?.productMemory?.ram);
+                }
+                else {
+                    return true;
+                }
+
+            }).filter((d) => {
+
+                if (ssd_Options.length > 0) {
+                    return ssd_Options.includes(d?.productStorage?.storage.split(' ')[0]);
+                }
+                else {
+                    return true;
+                }
+
+            }).filter((d) => {
+
+                if (graphicsMemory_Options.length > 0) {
+                    return graphicsMemory_Options.includes(d?.productGraphics?.graphicsMemory);
+                }
+                else {
+                    return true;
+                }
+
+            }).filter((d) => {
+
+                if (laptopSeries_Options.length > 0) {
+                    return laptopSeries_Options.includes(d?.productGeneral?.productLaptopSeries);
+                }
+                else {
+                    return true;
+                }
+            })
+            ?.map((d) => <SingleProduct key={d?._id} d={d}></SingleProduct>)
     }
     return (
         <>
@@ -109,7 +128,7 @@ const AllCategory = ({ data, isError, isLoading, error }) => {
                                             <form className="mt-4 border-t border-gray-200">
 
 
-                                                {filters.map((section) => (
+                                                {filters?.map((section) => (
                                                     <Disclosure as="div" key={section.id} className="border-t border-gray-200 px-4 py-6">
                                                         {({ open }) => (
                                                             <>
@@ -127,7 +146,7 @@ const AllCategory = ({ data, isError, isLoading, error }) => {
                                                                 </h3>
                                                                 <Disclosure.Panel className="pt-6">
                                                                     <div className="space-y-6">
-                                                                        {section.options.map((option, optionIdx) => (
+                                                                        {section.options?.map((option, optionIdx) => (
                                                                             <div key={option.value} className="flex items-center">
                                                                                 <input
                                                                                     id={`filter-mobile-${section.id}-${optionIdx}`}
@@ -184,7 +203,7 @@ const AllCategory = ({ data, isError, isLoading, error }) => {
                                     <form className="hidden lg:block bg-base-100 p-4 mb-16 rounded-lg">
 
 
-                                        {filters.map((section) => (
+                                        {filters?.map((section) => (
                                             <Disclosure as="div" key={section.id} className={`border-b lg:${section?.name === 'Color' && 'hidden'}  border-gray-200 py-6`}>
                                                 {({ open }) => (
                                                     <>
@@ -202,12 +221,33 @@ const AllCategory = ({ data, isError, isLoading, error }) => {
                                                         </h3>
                                                         <Disclosure.Panel className="pt-6">
                                                             <div className="space-y-4">
-                                                                {section.options.map((option, optionIdx) => (
+                                                                {section.options?.map((option, optionIdx) => (
                                                                     <div key={option.value} className="flex items-center">
-                                                                        <input
+                                                                        <input onClick={(e) => {
+                                                                            if (section?.name === "Processor Type") {
+                                                                                dispatch(getType(e.target.value))
+                                                                            }
+                                                                            else if (section?.name === "Processor Generation") {
+                                                                                dispatch(getGeneration(e.target.value))
+                                                                            }
+                                                                            else if (section?.name === "RAM") {
+                                                                                dispatch(getRam(e.target.value))
+                                                                            }
+                                                                            else if (section?.name === "Solid-State Drive (SSD)") {
+                                                                                dispatch(getSSD(e.target.value))
+                                                                            }
+                                                                            else if (section?.name === "Graphics Memory") {
+                                                                                dispatch(getMemory(e.target.value))
+                                                                            }
+                                                                            else {
+                                                                                dispatch(getSeries(e.target.value))
+                                                                            }
+
+
+                                                                        }}
                                                                             id={`filter-${section.id}-${optionIdx}`}
                                                                             name={`${section.id}[]`}
-                                                                            defaultValue={option.value}
+                                                                            defaultValue={option.label}
                                                                             type="checkbox"
                                                                             defaultChecked={option.checked}
                                                                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"

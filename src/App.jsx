@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
 import './App.css'
 import Home from './components/home/home/Home'
 import Navbar from './components/navbar/Navbar'
@@ -33,9 +33,9 @@ import Update from './components/dashboard/laptops/cu/update/Update'
 function App() {
   const location = useLocation();
   const { isLoading, error } = useGetReviewsQuery();
-  console.log(isLoading, error?.status)
+  const noNavFooter = location.pathname.includes('login') || location.pathname.includes('signup') || location.pathname.includes('forget-password') || location.pathname.includes('dashboard');
 
-  const noNavFooter = location.pathname.includes('login') || location.pathname.includes('signup') || location.pathname.includes('forget-password') || location.pathname.includes('dashboard')
+
   return (
     <div className='bg-indigo-100 h-screen'>
       {noNavFooter ? '' : (isLoading && !error?.status) ? <Loading></Loading> : <Navbar></Navbar>}
@@ -51,6 +51,7 @@ function App() {
           <Route path='laptop/:id' element={<ViewLaptop></ViewLaptop>}></Route>
           <Route path='cart' element={<Cart></Cart>}></Route>
           <Route path='favoriteProduct' element={<FavoriteProduct></FavoriteProduct>}></Route>
+
           <Route path='acer' element={<Acer></Acer>}></Route>
           <Route path='apple' element={<Apple></Apple>}></Route>
           <Route path='asus' element={<Asus></Asus>}></Route>
@@ -65,6 +66,7 @@ function App() {
           <Route path='infinix' element={<Infinix></Infinix>}></Route>
           <Route path='chuwi' element={<Chuwi></Chuwi>}></Route>
           <Route path='all-category-laptop' element={<AllLaptops></AllLaptops>}></Route>
+
           <Route path='addLaptop' element={<Create></Create>}></Route>
           <Route path='editLaptop/:id' element={<Update></Update>}></Route>
 
