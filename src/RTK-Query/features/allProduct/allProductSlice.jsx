@@ -6,6 +6,8 @@ const initialState = {
     ssd_Options: [],
     graphicsMemory_Options: [],
     laptopSeries_Options: [],
+    oneModel: 'All',
+    models: [],
 }
 const allProductSlice = createSlice({
     name: 'allProduct',
@@ -90,9 +92,25 @@ const allProductSlice = createSlice({
                 state.laptopSeries_Options.push(action.payload);
             }
 
-        }
+        },
+        getAModel: (state, action) => {
+            state.oneModel = action.payload;
+        },
+        getModels: (state, action) => {
+
+            if (state.models.includes(action.payload)) {
+                state.models = state.models.filter(f => f !== action.payload)
+            }
+            else if (action.payload === '') {
+                state.models = [];
+            }
+            else {
+                state.models.push(action.payload);
+            }
+
+        },
     }
 
 })
 export default allProductSlice.reducer;
-export const { getGeneration, getMemory, getRam, getSSD, getSeries, getType } = allProductSlice.actions;
+export const { getGeneration, getMemory, getRam, getSSD, getSeries, getType, getAModel, getModels } = allProductSlice.actions;

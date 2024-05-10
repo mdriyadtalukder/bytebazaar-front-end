@@ -29,6 +29,8 @@ import ViewLaptop from './components/dashboard/laptops/viewLaptop/ViewLaptop'
 import AllLaptops from './components/dashboard/laptops/allCategory/AllLaptops'
 import Create from './components/dashboard/laptops/cu/create/Create'
 import Update from './components/dashboard/laptops/cu/update/Update'
+import LikedProduct from './components/dashboard/likedProduct/LikedProduct'
+import DislikedProduct from './components/dashboard/dislikedProduct/DislikedProduct'
 
 function App() {
   const location = useLocation();
@@ -51,6 +53,8 @@ function App() {
           <Route path='laptop/:id' element={<ViewLaptop></ViewLaptop>}></Route>
           <Route path='cart' element={<Cart></Cart>}></Route>
           <Route path='favoriteProduct' element={<FavoriteProduct></FavoriteProduct>}></Route>
+          <Route path='likedProduct' element={<LikedProduct></LikedProduct>}></Route>
+          <Route path='dislikedProduct' element={<DislikedProduct></DislikedProduct>}></Route>
 
           <Route path='acer' element={<Acer></Acer>}></Route>
           <Route path='apple' element={<Apple></Apple>}></Route>

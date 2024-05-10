@@ -74,7 +74,7 @@ const Asus = () => {
                 { value: 'proart-studiobook', label: 'ProArt StudioBook', checked: false },
                 { value: 'rog', label: 'ROG', checked: false },
                 { value: 'tuf', label: 'TUF', checked: false },
-                { value: 'vivobook', label: 'VivoBook', checked: false },
+                { value: 'vivobook', label: 'Vivobook', checked: false },
                 { value: 'zenbook', label: 'ZenBook', checked: false },
             ],
         }

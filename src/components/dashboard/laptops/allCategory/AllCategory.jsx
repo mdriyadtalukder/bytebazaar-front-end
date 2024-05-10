@@ -7,21 +7,20 @@ import { Dialog, Disclosure, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { FunnelIcon, MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
 import { useDispatch, useSelector } from "react-redux";
-import { getGeneration, getMemory, getRam, getSSD, getSeries, getType } from "../../../../RTK-Query/features/allProduct/allProductSlice";
+import { getAModel, getGeneration, getMemory, getModels, getRam, getSSD, getSeries, getType } from "../../../../RTK-Query/features/allProduct/allProductSlice";
 
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-const AllCategory = ({ data, isError, isLoading, error, filtering }) => {
+const AllCategory = ({ data, isError, isLoading, error, filtering, model }) => {
 
     const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
-    const { processor_Type, processor_Generation, ram_Options, ssd_Options, graphicsMemory_Options, laptopSeries_Options } = useSelector(state => state.allProduct);
+    const { processor_Type, processor_Generation, ram_Options, ssd_Options, graphicsMemory_Options, laptopSeries_Options, oneModel, models } = useSelector(state => state.allProduct);
     const dispatch = useDispatch();
     const filters = filtering || undefined;
-    console.log(processor_Type.length)
-
+    const series = filters?.filter(f => f?.id === 'laptopSeriesOptions');
     let content;
     if (!isLoading && isError) content = <p className='text-red-600 font-bold text-center'>{error?.status}</p>
     if (!isLoading && !isError && data?.length === 0) content = <p className='text-teal-400 font-bold  text-center'>No Products found!!</p>
@@ -74,6 +73,23 @@ const AllCategory = ({ data, isError, isLoading, error, filtering }) => {
 
                 if (laptopSeries_Options.length > 0) {
                     return laptopSeries_Options.includes(d?.productGeneral?.productLaptopSeries);
+                }
+                else {
+                    return true;
+                }
+            }).filter((d) => {
+
+                if (models.length > 0 && !models.includes('All')) {
+                    return models.includes(d?.productGeneral?.productBrand);
+                }
+                else {
+                    return true;
+                }
+            })
+            .filter((d) => {
+
+                if (oneModel && oneModel !== 'All') {
+                    return d?.productGeneral?.productBrand === oneModel;
                 }
                 else {
                     return true;
@@ -149,9 +165,36 @@ const AllCategory = ({ data, isError, isLoading, error, filtering }) => {
                                                                         {section.options?.map((option, optionIdx) => (
                                                                             <div key={option.value} className="flex items-center">
                                                                                 <input
+                                                                                    onClick={(e) => {
+                                                                                        if (section?.name === "Processor Type") {
+                                                                                            dispatch(getType(e.target.value))
+                                                                                        }
+                                                                                        else if (section?.name === "Processor Generation") {
+                                                                                            dispatch(getGeneration(e.target.value))
+                                                                                        }
+                                                                                        else if (section?.name === "RAM") {
+                                                                                            dispatch(getRam(e.target.value))
+                                                                                        }
+                                                                                        else if (section?.name === "Solid-State Drive (SSD)") {
+                                                                                            dispatch(getSSD(e.target.value))
+                                                                                        }
+                                                                                        else if (section?.name === "Graphics Memory") {
+                                                                                            dispatch(getMemory(e.target.value))
+                                                                                        }
+                                                                                        else {
+                                                                                            if (model) {
+                                                                                                dispatch(getModels(e.target.value))
+                                                                                            }
+                                                                                            else {
+                                                                                                dispatch(getSeries(e.target.value))
+                                                                                            }
+                                                                                        }
+
+
+                                                                                    }}
                                                                                     id={`filter-mobile-${section.id}-${optionIdx}`}
                                                                                     name={`${section.id}[]`}
-                                                                                    defaultValue={option.value}
+                                                                                    defaultValue={option.label}
                                                                                     type="checkbox"
                                                                                     defaultChecked={option.checked}
                                                                                     className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
@@ -240,7 +283,12 @@ const AllCategory = ({ data, isError, isLoading, error, filtering }) => {
                                                                                 dispatch(getMemory(e.target.value))
                                                                             }
                                                                             else {
-                                                                                dispatch(getSeries(e.target.value))
+                                                                                if (model) {
+                                                                                    dispatch(getModels(e.target.value))
+                                                                                }
+                                                                                else {
+                                                                                    dispatch(getSeries(e.target.value))
+                                                                                }
                                                                             }
 
 
@@ -272,9 +320,18 @@ const AllCategory = ({ data, isError, isLoading, error, filtering }) => {
                                     <div className="lg:col-span-5">
                                         <div className="text-center hidden lg:block">
                                             <ul className="menu menu-horizontal px-1">
-                                                <li className='bg-indigo-400 rounded-md font-bold text-white me-2' ><p>Home</p></li>
-                                                <li className='me-2 font-bold'><p >Dashboard</p></li>
-                                                <li className='me-2 font-bold'><p >Acer</p></li>
+                                                {
+                                                    series && series[0]?.options?.map(s => <li onClick={() => {
+                                                        if (model) {
+                                                            dispatch(getAModel(s?.label))
+                                                        }
+                                                        else {
+                                                            dispatch(getSeries(s?.label))
+                                                        }
+                                                    }} key={s?.value} className='me-2 font-bold'><p >{s?.label}</p></li>)
+                                                }
+                                                {/* <li className='bg-indigo-400 rounded-md font-bold text-white me-2' ><p>Home</p></li> */}
+
                                             </ul>
                                         </div>
                                         <section className="flex flex-col justify-center w-full min-h-screen px-4 py-10 mx-auto sm:px-6 bg-indigo-100 ">

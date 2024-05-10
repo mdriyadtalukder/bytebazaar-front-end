@@ -6,6 +6,9 @@ import { useContext } from "react";
 import { AuthContext } from "../../../../authentication/authProvider/AuthProvider";
 import { useAddFavoriteMutation, useDeleteFavoriteMutation, useGetFavoriteQuery } from "../../../../RTK-Query/features/favorite/favoriteApi";
 import { Rating } from "@smastrom/react-rating";
+import { AiFillDislike, AiFillLike } from "react-icons/ai";
+import { useAddLikedProductMutation, useDeleteLikedProductMutation, useGetLikedProductQuery, useUpdateLikesMutation } from "../../../../RTK-Query/features/likes/likedProductApi";
+import { useAddDislikedProductMutation, useDeleteDislikedProductMutation, useGetDislikedProductQuery, useUpdateDislikesMutation } from "../../../../RTK-Query/features/dislikes/dislikedProductApi";
 
 const SingleProduct = ({ d }) => {
     const { user } = useContext(AuthContext);
@@ -13,8 +16,20 @@ const SingleProduct = ({ d }) => {
     const [addToCart] = useAddToCartMutation();
     const [addFavorite] = useAddFavoriteMutation();
     const [editCart] = useEditCartMutation();
+    const [updateLikes] = useUpdateLikesMutation();
+    const [updateDislikes] = useUpdateDislikesMutation();
+
     const { data: laptops } = useGetAllProductQuery();
     const { data: favorites } = useGetFavoriteQuery(user?.email);
+
+    const { data: likes } = useGetLikedProductQuery(user?.email);
+    const [addLikedProduct] = useAddLikedProductMutation();
+    const [deleteLikedProduct] = useDeleteLikedProductMutation();
+
+    const { data: dislikes } = useGetDislikedProductQuery(user?.email);
+    const [addDislikedProduct] = useAddDislikedProductMutation();
+    const [deleteDislikedProduct] = useDeleteDislikedProductMutation();
+
     const [deleteFavorite] = useDeleteFavoriteMutation()
     const [deleteLaptop] = useDeleteLaptopMutation()
 
@@ -131,6 +146,97 @@ const SingleProduct = ({ d }) => {
         });
     }
 
+    const handleLike = (e) => {
+        e.preventDefault();
+        const liked = likes.find(f => f?.likeId === d?._id);
+        const disliked = dislikes.find(f => f?.dislikeId === d?._id);
+
+        console.log(liked)
+        if (liked?._id && !disliked?._id) {
+            updateLikes({
+                id: d?._id,
+                data: {
+                    productLikes: Number(d?.productLikes) - 1
+                }
+            });
+            deleteLikedProduct(liked?._id);
+
+        }
+        if (!liked?._id && disliked?._id) {
+            updateLikes({
+                id: d?._id,
+                data: {
+                    productLikes: Number(d?.productLikes) + 1
+                }
+            });
+            addLikedProduct({
+                productName: d?.productName,
+                email: user?.email,
+                likeId: d?._id,
+                like: true,
+                likes: Number(d?.productLikes) + 1,
+                dislikes: Number(d?.productUnlikes),
+                productImage: d?.productImage,
+                productPrice: d?.productPrice,
+                quantity: d?.productQuantity,
+            });
+            updateDislikes({
+                id: d?._id,
+                data: {
+                    productUnlikes: Number(d?.productUnlikes) - 1
+                }
+            });
+            deleteDislikedProduct(disliked?._id);
+
+        }
+    }
+
+    const handleDislike = (e) => {
+        e.preventDefault();
+        const disliked = dislikes.find(f => f?.dislikeId === d?._id);
+        const liked = likes.find(f => f?.likeId === d?._id);
+
+        if (disliked?._id && !liked?._id) {
+            updateDislikes({
+                id: d?._id,
+                data: {
+                    productUnlikes: Number(d?.productUnlikes) - 1
+                }
+            });
+            deleteDislikedProduct(disliked?._id);
+
+        }
+        if (!disliked?._id && liked?._id) {
+            updateDislikes({
+                id: d?._id,
+                data: {
+                    productUnlikes: Number(d?.productUnlikes) + 1
+                }
+            });
+            addDislikedProduct({
+                productName: d?.productName,
+                email: user?.email,
+                dislikeId: d?._id,
+                dislike: true,
+                likes: Number(d?.productLikes),
+                dislikes: Number(d?.productUnlikes) + 1,
+                productImage: d?.productImage,
+                productPrice: d?.productPrice,
+                quantity: d?.productQuantity,
+            });
+            updateLikes({
+                id: d?._id,
+                data: {
+                    productLikes: Number(d?.productLikes) - 1
+                }
+            });
+            deleteLikedProduct(liked?._id);
+
+        }
+    }
+
+
+
     const productReviews = d?.productReviews || [];
 
     // Calculate the total number of reviews and the sum of all ratings
@@ -192,6 +298,14 @@ const SingleProduct = ({ d }) => {
                         <button onClick={handleCart} className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-2 rounded">
                             Add to cart
                         </button>
+                    </div>
+                    <div className="divider"></div>
+                    <div className="flex items-center justify-between text-lg">
+                        <p>{d?.productLikes} <AiFillLike onClick={handleLike} className="text-indigo-500 text-2xl cursor-pointer"></AiFillLike></p>
+                        <p>{d?.productUnlikes} <AiFillDislike onClick={handleDislike} className="text-indigo-500 text-2xl cursor-pointer" ></AiFillDislike ></p>
+
+
+
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../../authentication/authProvider/AuthProvider";
 import { useGetFavoriteQuery } from "../../../RTK-Query/features/favorite/favoriteApi";
 import { useDispatch } from "react-redux";
-import { getGeneration, getMemory, getRam, getSSD, getSeries, getType } from "../../../RTK-Query/features/allProduct/allProductSlice";
+import { getAModel, getGeneration, getMemory, getModels, getRam, getSSD, getSeries, getType } from "../../../RTK-Query/features/allProduct/allProductSlice";
 
 const Dashboard = () => {
     const { user } = useContext(AuthContext);
@@ -32,6 +32,8 @@ const Dashboard = () => {
         dispatch(getMemory(''))
 
         dispatch(getSeries(''))
+        dispatch(getAModel('All'))
+        dispatch(getModels(''))
 
     }
     return (
@@ -102,6 +104,8 @@ const Dashboard = () => {
                                 <div className="divider"></div>
                                 <li className='bg-indigo-400 rounded-md font-bold text-white'><NavLink to='/'><FaHome></FaHome>Home</NavLink></li>
                                 <li className='font-bold'><Link to='/dashboard/addLaptop'>Add Laptop</Link></li>
+                                <li className='font-bold'><Link to='/dashboard/likedProduct'>Liked Laptop</Link></li>
+                                <li className='font-bold'><Link to='/dashboard/dislikedProduct'>Disliked Laptop</Link></li>
 
                             </ul>
 
