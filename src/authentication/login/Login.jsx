@@ -5,12 +5,14 @@ import { useContext, useState } from 'react';
 import { AuthContext } from '../authProvider/AuthProvider';
 import Loading from '../../components/loading/Loading';
 import Swal from 'sweetalert2';
+import { useAddUsersMutation } from '../../RTK-Query/features/users/usersApi';
 const Login = () => {
     const { logIn, logOut, googleSignIn } = useContext(AuthContext);
     const navigate = useNavigate('');
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
     const location = useLocation();
+    const [addUsers, { isLoading, isError, error: err }] = useAddUsersMutation()
     const from = location.state?.from?.pathname || '/'
     const handleLogin = (e) => {
         setLoading(true);
@@ -38,7 +40,10 @@ const Login = () => {
                     });
                 }
                 else {
-                    console.log(user);
+                    addUsers({
+                        email: result.user?.email,
+                        name: result.user?.displayName,
+                    })
                     setLoading(false);
                     navigate(from, { replace: true });
                     Swal.fire({
@@ -64,17 +69,10 @@ const Login = () => {
         googleSignIn()
             .then((result) => {
                 console.log(result.user)
-                // const userInfo = {
-                //     email: result.user?.email,
-                //     name: result.user?.displayName,
-                // }
-                // axios.post('https://bistro-boss-restuarant-server.onrender.com/users', userInfo)
-                //     .then(res => {
-
-                //         console.log(res.data)
-                //         navigate('/')
-
-                //     })
+                addUsers({
+                    email: result.user?.email,
+                    name: result.user?.displayName,
+                })
                 Swal.fire({
                     position: "top-end",
                     icon: "success",
@@ -157,7 +155,7 @@ const Login = () => {
                                         <input
                                             className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-indigo-400 focus:bg-white mt-5"
                                             type="password" name='password' placeholder="Password" required />
-                                        {error && <p className='text-center font-bold text-red-600 mt-4'>{error}</p>}
+                                        {error ? <p className='text-center font-bold text-red-600 mt-4'>{error}</p> : err ? <p className='text-center font-bold text-red-600 mt-4'>{err}</p> : ''}
                                         <button
                                             className="mt-5 tracking-wide font-semibold bg-indigo-400 text-gray-100 w-full py-4 rounded-lg hover:bg-indigo-400 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
                                             <svg className="w-6 h-6 -ml-2" fill="none" stroke="currentColor" strokeWidth="2"

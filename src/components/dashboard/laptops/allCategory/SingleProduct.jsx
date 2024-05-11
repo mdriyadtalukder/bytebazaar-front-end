@@ -160,9 +160,16 @@ const SingleProduct = ({ d }) => {
                 }
             });
             deleteLikedProduct(liked?._id);
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `This liked item deleted!`,
+                showConfirmButton: false,
+                timer: 1500
+            });
 
         }
-        if (!liked?._id && disliked?._id) {
+        if (!liked?._id) {
             updateLikes({
                 id: d?._id,
                 data: {
@@ -180,13 +187,23 @@ const SingleProduct = ({ d }) => {
                 productPrice: d?.productPrice,
                 quantity: d?.productQuantity,
             });
-            updateDislikes({
-                id: d?._id,
-                data: {
-                    productUnlikes: Number(d?.productUnlikes) - 1
-                }
+            if (disliked?._id) {
+                updateDislikes({
+                    id: d?._id,
+                    data: {
+                        productUnlikes: Number(d?.productUnlikes) - 1
+                    }
+                });
+                deleteDislikedProduct(disliked?._id);
+            }
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `This liked item added!`,
+                showConfirmButton: false,
+                timer: 1500
             });
-            deleteDislikedProduct(disliked?._id);
+
 
         }
     }
@@ -204,9 +221,17 @@ const SingleProduct = ({ d }) => {
                 }
             });
             deleteDislikedProduct(disliked?._id);
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `This disliked item deleted!`,
+                showConfirmButton: false,
+                timer: 1500
+            });
+
 
         }
-        if (!disliked?._id && liked?._id) {
+        if (!disliked?._id) {
             updateDislikes({
                 id: d?._id,
                 data: {
@@ -224,13 +249,23 @@ const SingleProduct = ({ d }) => {
                 productPrice: d?.productPrice,
                 quantity: d?.productQuantity,
             });
-            updateLikes({
-                id: d?._id,
-                data: {
-                    productLikes: Number(d?.productLikes) - 1
-                }
+            if (liked?._id) {
+                updateLikes({
+                    id: d?._id,
+                    data: {
+                        productLikes: Number(d?.productLikes) - 1
+                    }
+                });
+                deleteLikedProduct(liked?._id);
+            }
+
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `This disliked item added!`,
+                showConfirmButton: false,
+                timer: 1500
             });
-            deleteLikedProduct(liked?._id);
 
         }
     }
@@ -245,6 +280,11 @@ const SingleProduct = ({ d }) => {
 
     // Calculate the average rating
     const averageRating = totalReviews > 0 ? totalRatingSum / totalReviews : 0;
+
+
+    const fav = favorites.find(f => f?.favoriteId === d?._id);
+    const like = likes?.find(f => f?.likeId === d?._id);
+    const dislike = dislikes?.find(f => f?.dislikeId === d?._id);
     return (
 
         <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col">
@@ -285,7 +325,7 @@ const SingleProduct = ({ d }) => {
                         <span className="font-bold">Tk {d?.productPrice}</span>
 
 
-                        <MdFavorite onClick={handleFavorite} className="h-7 w-7 text-pink-600 cursor-pointer"></MdFavorite>
+                        <MdFavorite onClick={handleFavorite} className={`${fav?._id && 'text-pink-600'} h-7 w-7 cursor-pointer `} ></MdFavorite>
                         <Link to={`/dashboard/editLaptop/${d?._id}`}>
                             <button className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-2 rounded">
                                 Edit
@@ -301,8 +341,8 @@ const SingleProduct = ({ d }) => {
                     </div>
                     <div className="divider"></div>
                     <div className="flex items-center justify-between text-lg">
-                        <p>{d?.productLikes} <AiFillLike onClick={handleLike} className="text-indigo-500 text-2xl cursor-pointer"></AiFillLike></p>
-                        <p>{d?.productUnlikes} <AiFillDislike onClick={handleDislike} className="text-indigo-500 text-2xl cursor-pointer" ></AiFillDislike ></p>
+                        <p>{d?.productLikes} <AiFillLike onClick={handleLike} className={`${like?._id && 'text-indigo-500'} text-2xl cursor-pointer `}></AiFillLike></p>
+                        <p>{d?.productUnlikes} <AiFillDislike onClick={handleDislike} className={`${dislike?._id && 'text-indigo-500'} text-2xl cursor-pointer `} ></AiFillDislike ></p>
 
 
 

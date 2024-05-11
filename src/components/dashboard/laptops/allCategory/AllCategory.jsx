@@ -2,12 +2,14 @@
 import Loading from "../../../loading/Loading";
 import SingleProduct from "./SingleProduct";
 
-import { Fragment, useState } from 'react'
+import { Fragment, useContext, useState } from 'react'
 import { Dialog, Disclosure, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { FunnelIcon, MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
 import { useDispatch, useSelector } from "react-redux";
 import { getAModel, getGeneration, getMemory, getModels, getRam, getSSD, getSeries, getType } from "../../../../RTK-Query/features/allProduct/allProductSlice";
+import { AuthContext } from "../../../../authentication/authProvider/AuthProvider";
+import { useGetLikedProductQuery } from "../../../../RTK-Query/features/likes/likedProductApi";
 
 
 function classNames(...classes) {
@@ -16,12 +18,16 @@ function classNames(...classes) {
 
 const AllCategory = ({ data, isError, isLoading, error, filtering, model }) => {
 
+    const { user } = useContext(AuthContext);
     const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
     const { processor_Type, processor_Generation, ram_Options, ssd_Options, graphicsMemory_Options, laptopSeries_Options, oneModel, models } = useSelector(state => state.allProduct);
     const dispatch = useDispatch();
     const filters = filtering || undefined;
     const series = filters?.filter(f => f?.id === 'laptopSeriesOptions');
+    const { data: likes } = useGetLikedProductQuery(user?.email);
+
     let content;
+
     if (!isLoading && isError) content = <p className='text-red-600 font-bold text-center'>{error?.status}</p>
     if (!isLoading && !isError && data?.length === 0) content = <p className='text-teal-400 font-bold  text-center'>No Products found!!</p>
     if (!isLoading && !isError && data?.length > 0) {
@@ -328,7 +334,7 @@ const AllCategory = ({ data, isError, isLoading, error, filtering, model }) => {
                                                         else {
                                                             dispatch(getSeries(s?.label))
                                                         }
-                                                    }} key={s?.value} className='me-2 font-bold'><p >{s?.label}</p></li>)
+                                                    }} key={s?.value} className={` ${(laptopSeries_Options.includes(s?.label) || oneModel === s?.label) && 'bg-indigo-400 rounded-md text-white'} me-2 font-bold`}><p >{s?.label}</p></li>)
                                                 }
                                                 {/* <li className='bg-indigo-400 rounded-md font-bold text-white me-2' ><p>Home</p></li> */}
 

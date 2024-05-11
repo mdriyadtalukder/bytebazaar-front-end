@@ -43,18 +43,6 @@ const Signup = () => {
 
                 updateUserProfile(name, photo)
                     .then(() => {
-                        // const userInfo = {
-                        //     name, email
-                        // }
-                        // axios.post('https://bistro-boss-restuarant-server.onrender.com/users', userInfo)
-                        //     .then(res => {
-                        //         if (res.data.insertedId) {
-                        //             console.log("User profile info updated!")
-                        //             e.target.reset();
-                        //             naviage('/')
-                        //         }
-                        //     })
-
                     })
                     .catch(err => setError(err))
                 sentEmailVerify()

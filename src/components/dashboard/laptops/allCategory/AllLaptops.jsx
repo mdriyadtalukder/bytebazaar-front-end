@@ -93,7 +93,7 @@ const AllLaptops = () => {
                 { value: 'chuwi', label: 'Chuwi', checked: false },
                 { value: 'dell', label: 'Dell', checked: false },
                 { value: 'gigabyte', label: 'Gigabyte', checked: false },
-                { value: 'hp', label: 'Hp', checked: false },
+                { value: 'hp', label: 'HP', checked: false },
                 { value: 'huawei', label: 'Huawei', checked: false },
                 { value: 'infinix', label: 'Infinix', checked: false },
                 { value: 'lenovo', label: 'Lenovo', checked: false },

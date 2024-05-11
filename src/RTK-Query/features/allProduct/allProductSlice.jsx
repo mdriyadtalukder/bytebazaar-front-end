@@ -8,6 +8,8 @@ const initialState = {
     laptopSeries_Options: [],
     oneModel: 'All',
     models: [],
+    navbar:"",
+    dashboard:""
 }
 const allProductSlice = createSlice({
     name: 'allProduct',
@@ -109,8 +111,14 @@ const allProductSlice = createSlice({
             }
 
         },
+        getNavbar: (state, action) => {
+            state.navbar = action.payload;
+        },
+        getDashboard: (state, action) => {
+            state.dashboard = action.payload;
+        }
     }
 
 })
 export default allProductSlice.reducer;
-export const { getGeneration, getMemory, getRam, getSSD, getSeries, getType, getAModel, getModels } = allProductSlice.actions;
+export const { getGeneration, getMemory, getRam, getSSD, getSeries, getType, getAModel, getModels,getNavbar,getDashboard } = allProductSlice.actions;

@@ -9,6 +9,10 @@ import { useGetRelatedQuery } from "../../../../RTK-Query/features/related/relat
 import { Rating } from "@smastrom/react-rating";
 import SingleReview from "./SingleReview";
 import SingleRelated from "./SingleRelated";
+import { AiFillDislike, AiFillLike } from "react-icons/ai";
+import { useAddLikedProductMutation, useDeleteLikedProductMutation, useGetLikedProductQuery, useUpdateLikesMutation } from "../../../../RTK-Query/features/likes/likedProductApi";
+import { useAddDislikedProductMutation, useDeleteDislikedProductMutation, useGetDislikedProductQuery, useUpdateDislikesMutation } from "../../../../RTK-Query/features/dislikes/dislikedProductApi";
+import { MdGroups } from "react-icons/md";
 
 const ViewLaptop = () => {
     const { id } = useParams();
@@ -24,11 +28,21 @@ const ViewLaptop = () => {
     const [review, setReview] = useState('');
     const [editLaptop] = useEditLaptopMutation();
     const { data: laptops } = useGetAllProductQuery();
+    const { data: relateds, isLoading: rloading, error: err } = useGetRelatedQuery(id);
+
+    const [updateLikes] = useUpdateLikesMutation();
+    const [updateDislikes] = useUpdateDislikesMutation();
+
+    const { data: likes } = useGetLikedProductQuery(user?.email);
+    const [addLikedProduct] = useAddLikedProductMutation();
+    const [deleteLikedProduct] = useDeleteLikedProductMutation();
+
+    const { data: dislikes } = useGetDislikedProductQuery(user?.email);
+    const [addDislikedProduct] = useAddDislikedProductMutation();
+    const [deleteDislikedProduct] = useDeleteDislikedProductMutation();
 
 
 
-
-    const { data: relateds, isLoading: rloading, error: err } = useGetRelatedQuery(id)
 
     const handleCart = (e) => {
         e.preventDefault();
@@ -134,6 +148,129 @@ const ViewLaptop = () => {
         });
     }
 
+    const handleLike = (e) => {
+        e.preventDefault();
+        const liked = likes.find(f => f?.likeId === data?._id);
+        const disliked = dislikes.find(f => f?.dislikeId === data?._id);
+
+        console.log(liked)
+        if (liked?._id && !disliked?._id) {
+            updateLikes({
+                id: data?._id,
+                data: {
+                    productLikes: Number(data?.productLikes) - 1
+                }
+            });
+            deleteLikedProduct(liked?._id);
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `This liked item deleted!`,
+                showConfirmButton: false,
+                timer: 1500
+            });
+
+        }
+        if (!liked?._id) {
+            updateLikes({
+                id: data?._id,
+                data: {
+                    productLikes: Number(data?.productLikes) + 1
+                }
+            });
+            addLikedProduct({
+                productName: data?.productName,
+                email: user?.email,
+                likeId: data?._id,
+                like: true,
+                likes: Number(data?.productLikes) + 1,
+                dislikes: Number(data?.productUnlikes),
+                productImage: data?.productImage,
+                productPrice: data?.productPrice,
+                quantity: data?.productQuantity,
+            });
+            if (disliked?._id) {
+                updateDislikes({
+                    id: data?._id,
+                    data: {
+                        productUnlikes: Number(data?.productUnlikes) - 1
+                    }
+                });
+                deleteDislikedProduct(disliked?._id);
+            }
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `This liked item added!`,
+                showConfirmButton: false,
+                timer: 1500
+            });
+
+
+        }
+    }
+
+    const handleDislike = (e) => {
+        e.preventDefault();
+        const disliked = dislikes.find(f => f?.dislikeId === data?._id);
+        const liked = likes.find(f => f?.likeId === data?._id);
+
+        if (disliked?._id && !liked?._id) {
+            updateDislikes({
+                id: data?._id,
+                data: {
+                    productUnlikes: Number(data?.productUnlikes) - 1
+                }
+            });
+            deleteDislikedProduct(disliked?._id);
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `This disliked item deleted!`,
+                showConfirmButton: false,
+                timer: 1500
+            });
+
+
+        }
+        if (!disliked?._id) {
+            updateDislikes({
+                id: data?._id,
+                data: {
+                    productUnlikes: Number(data?.productUnlikes) + 1
+                }
+            });
+            addDislikedProduct({
+                productName: data?.productName,
+                email: user?.email,
+                dislikeId: data?._id,
+                dislike: true,
+                likes: Number(data?.productLikes),
+                dislikes: Number(data?.productUnlikes) + 1,
+                productImage: data?.productImage,
+                productPrice: data?.productPrice,
+                quantity: data?.productQuantity,
+            });
+            if (liked?._id) {
+                updateLikes({
+                    id: data?._id,
+                    data: {
+                        productLikes: Number(data?.productLikes) - 1
+                    }
+                });
+                deleteLikedProduct(liked?._id);
+            }
+
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `This disliked item added!`,
+                showConfirmButton: false,
+                timer: 1500
+            });
+
+        }
+    }
 
     const productReviews = data?.productReviews || [];
 
@@ -144,7 +281,9 @@ const ViewLaptop = () => {
     // Calculate the average rating
     const averageRating = totalReviews > 0 ? totalRatingSum / totalReviews : 0;
 
-
+    const fav = favorites.find(f => f?.favoriteId === data?._id);
+    const like = likes?.find(f => f?.likeId === data?._id);
+    const dislike = dislikes?.find(f => f?.dislikeId === data?._id);
     return (
         <>
             {
@@ -162,17 +301,28 @@ const ViewLaptop = () => {
                                                 <button className="w-full bg-indigo-400 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-indigo-400 dark:hover:bg-indigo-400">Add to Cart</button>
                                             </div>
                                             <div className="w-1/2 px-2">
-                                                <button onClick={handleFavorite} className="w-full bg-pink-400 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-pink-400 dark:hover:bg-gray-600">Add to Wishlist</button>
+                                                <button onClick={handleFavorite} className={`${fav?._id ? 'bg-pink-400 text-white' : 'bg-slate-200 text-gray-800'} w-full   dark:bg-gray-700  dark:text-white py-2 px-4 rounded-full font-bold hover:bg-pink-400 dark:hover:bg-gray-600 `}>Add to Wishlist</button>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="md:flex-1 px-4">
                                         <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">{data?.productName}</h2>
-                                        <Rating
-                                            style={{ maxWidth: 180 }}
-                                            value={averageRating}
-                                            readOnly
-                                        />
+                                        <div className="flex items-center justify-start"> 
+                                            <Rating
+                                                style={{ maxWidth: 180 }}
+                                                value={averageRating}
+                                                readOnly
+                                            />
+                                            <MdGroups className="text-3xl text-indigo-400 ms-5"></MdGroups>
+                                            <span className="ms-2 text-lg font-bold"> {totalReviews}</span>
+                                        </div>
+                                        <div className="flex items-center justify-start text-lg">
+                                            <p>{data?.productLikes} <AiFillLike onClick={handleLike} className={`${like?._id && 'text-indigo-500'} text-2xl cursor-pointer me-2 `}></AiFillLike></p>
+                                            <p>{data?.productUnlikes} <AiFillDislike onClick={handleDislike} className={`${dislike?._id && 'text-indigo-500'} text-2xl cursor-pointer `} ></AiFillDislike ></p>
+
+
+
+                                        </div>
                                         <div className="flex my-4">
                                             <div className="mr-4">
 

@@ -6,21 +6,21 @@ import Loading from "../../loading/Loading";
 import { useContext } from "react";
 import { AuthContext } from "../../../authentication/authProvider/AuthProvider";
 import { useGetFavoriteQuery } from "../../../RTK-Query/features/favorite/favoriteApi";
-import { useDispatch } from "react-redux";
-import { getAModel, getGeneration, getMemory, getModels, getRam, getSSD, getSeries, getType } from "../../../RTK-Query/features/allProduct/allProductSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { getAModel, getDashboard, getGeneration, getMemory, getModels, getNavbar, getRam, getSSD, getSeries, getType } from "../../../RTK-Query/features/allProduct/allProductSlice";
 
 const Dashboard = () => {
     const { user } = useContext(AuthContext);
     const { data: favorites, isLoading: loadings, error: err } = useGetFavoriteQuery(user?.email);
     const { data, isLoading, error } = useGetCartQuery(user?.email);
+    const { dashboard } = useSelector(state => state.allProduct)
     const dispatch = useDispatch();
     let totalQuantity = 0;
 
     for (let i = 0; i < data?.length; i++) {
         totalQuantity = totalQuantity + Number(data[i]?.quantity);
     }
-    const handleClick = (e) => {
-        e.preventDefault();
+    const handleClick = (name) => {
         dispatch(getType(''))
 
         dispatch(getGeneration(''))
@@ -34,7 +34,11 @@ const Dashboard = () => {
         dispatch(getSeries(''))
         dispatch(getAModel('All'))
         dispatch(getModels(''))
-
+        dispatch(getDashboard(name))
+    }
+    const handleHome = (name) => {
+        dispatch(getNavbar(name));
+        dispatch(getDashboard(name))
     }
     return (
         <>
@@ -56,10 +60,10 @@ const Dashboard = () => {
                         </div>
                         <div className="drawer-side">
                             <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-                            <ul className="menu p-4 w-80 min-h-full bg-indigo-200 text-base-content">
+                            <ul className="menu p-4 w-80 min-h-full bg-indigo-200">
                                 {/* Sidebar content here */}
                                 <div className="flex justify-evenly items-center">
-                                    <Link to='/' className="text-xl font-bold uppercase mt-4 mb-4 flex justify-center items-center">
+                                    <Link to='/' onClick={() => handleHome("Home")} className="text-xl font-bold uppercase mt-4 mb-4 flex justify-center items-center">
                                         <div>
                                             <span className='text-indigo-400'>B</span>
                                             <span className='text-teal-400'>y</span>
@@ -86,26 +90,26 @@ const Dashboard = () => {
                                     </Link>
 
                                 </div>
-                                <li className='font-bold'><Link to='/dashboard/user-profile'>My profile</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/all-category-laptop'>All Category Laptop</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/acer'>Acer</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/apple'>Apple</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/asus'>Asus</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/avita'>Avita</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/chuwi'>Chuwi</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/dell'>Dell</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/gigabyte'>Gigabyte</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/hp'>HP</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/huawei'>Huawei</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/infinix'>Infinix</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/lenovo'>Lenovo</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/msi'>MSI</Link></li>
-                                <li onClick={handleClick} className='font-bold'><Link to='/dashboard/microsoft'>Microsoft Surface</Link></li>
+                                <li className={` mt-2 ${dashboard === 'My profile' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('My profile')}><Link to='/dashboard/user-profile'>My profile</Link></li>
+                                <li className={` mt-2 ${dashboard === 'All Category Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('All Category Laptop')} ><Link to='/dashboard/all-category-laptop'>All Category Laptop</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Acer' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Acer')} ><Link to='/dashboard/acer'>Acer</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Apple' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Apple')}><Link to='/dashboard/apple'>Apple</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Asus' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Asus')} ><Link to='/dashboard/asus'>Asus</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Avita' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Avita')} ><Link to='/dashboard/avita'>Avita</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Chuwi' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Chuwi')} ><Link to='/dashboard/chuwi'>Chuwi</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Dell' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Dell')} ><Link to='/dashboard/dell'>Dell</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Gigabyte' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Gigabyte')} ><Link to='/dashboard/gigabyte'>Gigabyte</Link></li>
+                                <li className={` mt-2 ${dashboard === 'HP' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('HP')} ><Link to='/dashboard/hp'>HP</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Huawei' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Huawei')} ><Link to='/dashboard/huawei'>Huawei</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Infinix' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Infinix')} ><Link to='/dashboard/infinix'>Infinix</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Lenovo' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Lenovo')} ><Link to='/dashboard/lenovo'>Lenovo</Link></li>
+                                <li className={` mt-2 ${dashboard === 'MSI' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('MSI')} ><Link to='/dashboard/msi'>MSI</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Microsoft Surface' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Microsoft Surface')} ><Link to='/dashboard/microsoft'>Microsoft Surface</Link></li>
                                 <div className="divider"></div>
-                                <li className='bg-indigo-400 rounded-md font-bold text-white'><NavLink to='/'><FaHome></FaHome>Home</NavLink></li>
-                                <li className='font-bold'><Link to='/dashboard/addLaptop'>Add Laptop</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/likedProduct'>Liked Laptop</Link></li>
-                                <li className='font-bold'><Link to='/dashboard/dislikedProduct'>Disliked Laptop</Link></li>
+                                <li onClick={() => handleHome("Home")} className={` mt-2 ${dashboard === 'Home' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`}><NavLink to='/'><FaHome></FaHome>Home</NavLink></li>
+                                <li className={` mt-2 ${dashboard === 'Add Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Add Laptop')} ><Link to='/dashboard/addLaptop'>Add Laptop</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Liked Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Liked Laptop')} ><Link to='/dashboard/likedProduct'>Liked Laptop</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Disliked Laptop' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Disliked Laptop')} ><Link to='/dashboard/dislikedProduct'>Disliked Laptop</Link></li>
 
                             </ul>
 

@@ -4,11 +4,15 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../authentication/authProvider/AuthProvider";
 import { useGetCartQuery } from "../../RTK-Query/features/allProduct/allProductApi";
 import { useGetFavoriteQuery } from "../../RTK-Query/features/favorite/favoriteApi";
+import { getDashboard, getNavbar } from "../../RTK-Query/features/allProduct/allProductSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
     const { data: favorites, isLoading: loadings, error: err } = useGetFavoriteQuery(user?.email);
     const { data, isLoading, isError, error } = useGetCartQuery(user?.email);
+    const { dashboard, navbar } = useSelector(state => state.allProduct)
+    const dispatch = useDispatch();
     let totalQuantity = 0;
 
     for (let i = 0; i < data?.length; i++) {
@@ -21,6 +25,15 @@ const Navbar = () => {
             .then(() => {
             })
             .catch(err => console.log(err))
+    }
+    const handleClick = (name) => {
+        
+        dispatch(getNavbar(''));
+        dispatch(getDashboard(name))
+    }
+    const handleHome = (name) => {
+        dispatch(getNavbar(name));
+        dispatch(getDashboard(''))
     }
     return (
         <div className="fixed z-10 bg-opacity-80 bg-base-100 w-screen pe-5">
@@ -42,25 +55,25 @@ const Navbar = () => {
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1]  p-2 shadow bg-base-100 rounded-box w-52">
 
-                            <li className='bg-indigo-400 rounded-md font-bold text-white' ><a>Home</a></li>
-                            <li className='font-bold'><Link to='/dashboard/user-profile'>Dashboard</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/acer'>Acer</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/apple'>Apple</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/asus'>Asus</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/avita'>Avita</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/chuwi'>Chuwi</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/dell'>Dell</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/gigabyte'>Gigabyte</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/hp'>HP</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/huawei'>Huawei</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/infinix'>Infinix</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/lenovo'>Lenovo</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/msi'>MSI</Link></li>
-                            <li className='font-bold'><Link to='/dashboard/microsoft'>Microsoft Surface</Link></li>
+                            <li onClick={() => handleHome("Home")} className={` me-1 ${navbar === 'Home' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} ><Link to='/'>Home</Link></li>
+                            <li className={` me-1 ${dashboard === 'My profile' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('My profile')}><Link to='/dashboard/user-profile'>Dashboard</Link></li>
+                            <li className={` me-1 ${dashboard === 'Acer' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Acer')} ><Link to='/dashboard/acer'>Acer</Link></li>
+                            <li className={` me-1 ${dashboard === 'Apple' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Apple')}><Link to='/dashboard/apple'>Apple</Link></li>
+                            <li className={` me-1 ${dashboard === 'Asus' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Asus')} ><Link to='/dashboard/asus'>Asus</Link></li>
+                            <li className={` me-1 ${dashboard === 'Avita' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Avita')} ><Link to='/dashboard/avita'>Avita</Link></li>
+                            <li className={` me-1 ${dashboard === 'Chuwi' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Chuwi')} ><Link to='/dashboard/chuwi'>Chuwi</Link></li>
+                            <li className={` me-1 ${dashboard === 'Dell' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Dell')} ><Link to='/dashboard/dell'>Dell</Link></li>
+                            <li className={` me-1 ${dashboard === 'Gigabyte' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Gigabyte')} ><Link to='/dashboard/gigabyte'>Gigabyte</Link></li>
+                            <li className={` me-1 ${dashboard === 'HP' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('HP')} ><Link to='/dashboard/hp'>HP</Link></li>
+                            <li className={` me-1 ${dashboard === 'Huawei' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Huawei')} ><Link to='/dashboard/huawei'>Huawei</Link></li>
+                            <li className={` me-1 ${dashboard === 'Infinix' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Infinix')} ><Link to='/dashboard/infinix'>Infinix</Link></li>
+                            <li className={` me-1 ${dashboard === 'Lenovo' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Lenovo')} ><Link to='/dashboard/lenovo'>Lenovo</Link></li>
+                            <li className={` me-1 ${dashboard === 'MSI' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('MSI')} ><Link to='/dashboard/msi'>MSI</Link></li>
+                            <li className={` me-1 ${dashboard === 'Microsoft Surface' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Microsoft Surface')} ><Link to='/dashboard/microsoft'>Microsoft Surface</Link></li>
 
                         </ul>
                     </div>
-                    <Link to='/' className="text-xl font-bold uppercase">
+                    <Link to='/' onClick={() => handleHome("Home")} className="text-xl font-bold uppercase">
                         <span className='text-indigo-400'>B</span>
                         <span className='text-teal-400'>y</span>
                         <span className='text-indigo-400'>t</span>
@@ -77,22 +90,21 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
 
-                        <li className='bg-indigo-400 rounded-md font-bold text-white' ><a>Home</a></li>
-                        <li className='font-bold'><Link to='/dashboard/user-profile'>Dashboard</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/acer'>Acer</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/apple'>Apple</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/asus'>Asus</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/avita'>Avita</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/chuwi'>Chuwi</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/dell'>Dell</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/gigabyte'>Gigabyte</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/hp'>HP</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/huawei'>Huawei</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/infinix'>Infinix</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/lenovo'>Lenovo</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/msi'>MSI</Link></li>
-                        <li className='font-bold'><Link to='/dashboard/microsoft'>Microsoft Surface</Link></li>
-
+                        <li onClick={() => handleHome("Home")} className={` me-1 ${navbar === 'Home' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} ><Link to='/'>Home</Link></li>
+                        <li className={` me-1 ${dashboard === 'My profile' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('My profile')}><Link to='/dashboard/user-profile'>Dashboard</Link></li>
+                        <li className={` me-1 ${dashboard === 'Acer' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Acer')} ><Link to='/dashboard/acer'>Acer</Link></li>
+                        <li className={` me-1 ${dashboard === 'Apple' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Apple')}><Link to='/dashboard/apple'>Apple</Link></li>
+                        <li className={` me-1 ${dashboard === 'Asus' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Asus')} ><Link to='/dashboard/asus'>Asus</Link></li>
+                        <li className={` me-1 ${dashboard === 'Avita' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Avita')} ><Link to='/dashboard/avita'>Avita</Link></li>
+                        <li className={` me-1 ${dashboard === 'Chuwi' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Chuwi')} ><Link to='/dashboard/chuwi'>Chuwi</Link></li>
+                        <li className={` me-1 ${dashboard === 'Dell' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Dell')} ><Link to='/dashboard/dell'>Dell</Link></li>
+                        <li className={` me-1 ${dashboard === 'Gigabyte' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Gigabyte')} ><Link to='/dashboard/gigabyte'>Gigabyte</Link></li>
+                        <li className={` me-1 ${dashboard === 'HP' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('HP')} ><Link to='/dashboard/hp'>HP</Link></li>
+                        <li className={` me-1 ${dashboard === 'Huawei' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Huawei')} ><Link to='/dashboard/huawei'>Huawei</Link></li>
+                        <li className={` me-1 ${dashboard === 'Infinix' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Infinix')} ><Link to='/dashboard/infinix'>Infinix</Link></li>
+                        <li className={` me-1 ${dashboard === 'Lenovo' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Lenovo')} ><Link to='/dashboard/lenovo'>Lenovo</Link></li>
+                        <li className={` me-1 ${dashboard === 'MSI' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('MSI')} ><Link to='/dashboard/msi'>MSI</Link></li>
+                        <li className={` me-1 ${dashboard === 'Microsoft Surface' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Microsoft Surface')} ><Link to='/dashboard/microsoft'>Microsoft Surface</Link></li>
 
 
                     </ul>
