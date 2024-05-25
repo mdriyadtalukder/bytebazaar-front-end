@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import './App.css'
 import Home from './components/home/home/Home'
 import Navbar from './components/navbar/Navbar'
@@ -31,6 +31,11 @@ import Create from './components/dashboard/laptops/cu/create/Create'
 import Update from './components/dashboard/laptops/cu/update/Update'
 import LikedProduct from './components/dashboard/likedProduct/LikedProduct'
 import DislikedProduct from './components/dashboard/dislikedProduct/DislikedProduct'
+import Users from './components/dashboard/users/Users'
+import Checkout from './components/dashboard/payment/checkout/Checkout'
+import Payment from './components/dashboard/payment/payment/Payment'
+import CreditCard from './components/dashboard/payment/payment/methods/CreditCard'
+import BKash from './components/dashboard/payment/payment/methods/BKash'
 
 function App() {
   const location = useLocation();
@@ -73,6 +78,11 @@ function App() {
 
           <Route path='addLaptop' element={<Create></Create>}></Route>
           <Route path='editLaptop/:id' element={<Update></Update>}></Route>
+          <Route path='users' element={<Users></Users>}></Route>
+          <Route path='checkout' element={<Checkout></Checkout>}></Route>
+          <Route path='payment' element={<Payment></Payment>}></Route>
+          <Route path='card' element={<CreditCard></CreditCard>}></Route>
+          <Route path='bkash' element={<BKash></BKash>}></Route>
 
 
         </Route>

@@ -7,6 +7,7 @@ import relatedSlice from "../features/related/relatedSlice";
 import likeProductSlice from "../features/likes/likeProductSlice";
 import dislikedProductSlice from "../features/dislikes/dislikedProductSlice";
 import usersSlice from "../features/users/usersSlice";
+import checkoutSlice from "../features/checkout/checkoutSlice";
 
 export const store = configureStore({
     reducer: {
@@ -18,6 +19,7 @@ export const store = configureStore({
         likes: likeProductSlice,
         dislikes: dislikedProductSlice,
         users: usersSlice,
+        checkout: checkoutSlice
     },
     devTools: import.meta.env.NODE_ENV !== 'production',
     middleware: (getDefaultMiddlewares) =>

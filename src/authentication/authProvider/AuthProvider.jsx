@@ -1,6 +1,7 @@
-import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, deleteUser, getAuth, onAuthStateChanged, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { app } from "../firebase/firebase.config";
+import axios from "axios";
 
 export const AuthContext = createContext(null);
 const auth = getAuth(app);
@@ -8,7 +9,7 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
     const provider = new GoogleAuthProvider();
-
+    console.log(auth)
     const signUp = (email, password) => {
         setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
@@ -41,25 +42,29 @@ const AuthProvider = ({ children }) => {
     const forgetPassword = (email) => {
         return sendPasswordResetEmail(auth, email);
     }
+    const deletedUser = () => {
+        return deleteUser(auth.currentUser)
+    }
+
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
 
             //jwt-------------------------------------------
-            // if (currentUser) {
-            //     const userInfo = { email: currentUser?.email }
-            //     axios.post('https://bistro-boss-restuarant-server.onrender.com/jwt', userInfo)
-            //         .then(res => {
-            //             if (res?.data?.token) {
-            //                 localStorage.setItem('access-token', res?.data?.token);
-            //                 setLoading(false);
-            //             }
-            //         })
-            // }
-            // else {
-            //     localStorage.removeItem('access-token');
-            //     setLoading(false);
-            // }
+            if (currentUser) {
+                const userInfo = { email: currentUser?.email }
+                axios.post('http://localhost:5000/jwt', userInfo)
+                    .then(res => {
+                        if (res?.data?.token) {
+                            localStorage.setItem('access-token', res?.data?.token);
+                            setLoading(false);
+                        }
+                    })
+            }
+            else {
+                localStorage.removeItem('access-token');
+                setLoading(false);
+            }
             //--------------------------------
             console.log("current user", currentUser)
 
@@ -78,6 +83,8 @@ const AuthProvider = ({ children }) => {
         updateUserProfile,
         sentEmailVerify,
         forgetPassword,
+        deletedUser,
+
 
 
     }

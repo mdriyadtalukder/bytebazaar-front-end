@@ -18,10 +18,9 @@ export const usersApi = apiSlice.injectEndpoints({
             invalidatesTags: ['users']
         }),
         makeAdmin: builder.mutation({
-            query: ({ id, data }) => ({
-                url: `/users/${id}`,
+            query: (id) => ({
+                url: `/users/admin/${id}`,
                 method: "PATCH",
-                body: data,
             }),
             invalidatesTags: ['users']
 

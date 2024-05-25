@@ -110,6 +110,7 @@ const Dashboard = () => {
                                 <li className={` mt-2 ${dashboard === 'Add Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Add Laptop')} ><Link to='/dashboard/addLaptop'>Add Laptop</Link></li>
                                 <li className={` mt-2 ${dashboard === 'Liked Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Liked Laptop')} ><Link to='/dashboard/likedProduct'>Liked Laptop</Link></li>
                                 <li className={` mt-2 ${dashboard === 'Disliked Laptop' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Disliked Laptop')} ><Link to='/dashboard/dislikedProduct'>Disliked Laptop</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Users' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Users')} ><Link to='/dashboard/users'>Users</Link></li>
 
                             </ul>
 
