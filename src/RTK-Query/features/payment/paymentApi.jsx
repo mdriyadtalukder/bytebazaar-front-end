@@ -4,7 +4,7 @@ export const paymentApi = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
         getPayments: builder.query({
             query: (email) => ({
-                url: `/payment?email=${email}`,
+                url: `/payment/${email}`,
                 method: "GET",
             }),
             providesTags: ['payments']

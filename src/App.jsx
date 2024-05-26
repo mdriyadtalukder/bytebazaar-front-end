@@ -36,6 +36,7 @@ import Checkout from './components/dashboard/payment/checkout/Checkout'
 import Payment from './components/dashboard/payment/payment/Payment'
 import CreditCard from './components/dashboard/payment/payment/methods/CreditCard'
 import BKash from './components/dashboard/payment/payment/methods/BKash'
+import Order from './components/dashboard/orders/Order'
 
 function App() {
   const location = useLocation();
@@ -83,6 +84,7 @@ function App() {
           <Route path='payment' element={<Payment></Payment>}></Route>
           <Route path='card' element={<CreditCard></CreditCard>}></Route>
           <Route path='bkash' element={<BKash></BKash>}></Route>
+          <Route path='order' element={<Order></Order>}></Route>
 
 
         </Route>

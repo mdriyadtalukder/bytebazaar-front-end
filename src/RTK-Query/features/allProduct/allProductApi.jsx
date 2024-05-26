@@ -50,6 +50,18 @@ export const allProductApi = apiSlice.injectEndpoints({
             ],
 
         }),
+        decreaseLaptop: builder.mutation({
+            query: ({ id, data }) => ({
+                url: `/descreaselaptops/${id}`,
+                method: "PATCH",
+                body: data,
+            }),
+            invalidatesTags: (result, error, arg) => [
+                "laptops", 'cart',
+                { type: "laptop", id: arg.id }
+            ],
+
+        }),
         deleteLaptop: builder.mutation({
             query: (id) => ({
                 url: `/alllaptops/${id}`,
@@ -97,4 +109,4 @@ export const allProductApi = apiSlice.injectEndpoints({
         }),
     })
 })
-export const { useGetAllProductQuery, useGetAProductQuery, useAddToCartMutation, useGetCartQuery, useEditCartMutation, useDeleteCartMutation, useEditLaptopMutation, useAddLaptopMutation, useUpdateLaptopMutation,useDeleteLaptopMutation } = allProductApi;
+export const { useGetAllProductQuery, useGetAProductQuery, useAddToCartMutation, useGetCartQuery, useEditCartMutation, useDeleteCartMutation, useEditLaptopMutation, useAddLaptopMutation, useUpdateLaptopMutation,useDeleteLaptopMutation,useDecreaseLaptopMutation } = allProductApi;

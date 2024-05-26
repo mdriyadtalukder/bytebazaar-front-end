@@ -3,7 +3,7 @@ import SingleCart from "./SingleCart";
 import Loading from "../../loading/Loading";
 import { useContext } from "react";
 import { AuthContext } from "../../../authentication/authProvider/AuthProvider";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDeleteCheckoutMutation, useGetCheckoutQuery } from "../../../RTK-Query/features/checkout/checkoutApi";
 
 const Cart = () => {
@@ -72,14 +72,11 @@ const Cart = () => {
                                         <span>Subtotal</span>
                                         <span><span className="font-bold text-2xl">৳</span>{totalPrice}</span>
                                     </div>
-                                    <div className="flex justify-between mb-2">
-                                        <span>Shipping</span>
-                                        <span><span className="font-bold text-2xl">৳</span>{totalQuantity * 10}</span>
-                                    </div>
+
 
                                     <div className="flex justify-between mb-2 border-t-2 border-indigo-400">
                                         <span className="font-bold">Total</span>
-                                        <p className="font-bold me-2"><span className="font-bold text-2xl">৳</span>{(totalQuantity * 10) + totalPrice}</p>
+                                        <p className="font-bold me-2"><span className="font-bold text-2xl">৳</span>{totalPrice}</p>
                                     </div>
                                     <button onClick={clickCheckout} className="bg-indigo-400 text-white py-2 px-4 rounded-lg mt-4 w-full">Checkout</button>
 
