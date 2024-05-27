@@ -5,22 +5,35 @@ import BrandProduct from "../brandProduct/BrandProduct";
 import GamingLaptop from "../gamingLaptop/GamingLaptop";
 import GetProduct from "../getProduct/GetProduct";
 import Reviews from "../reviews/Reviews";
+import LikedProduct from "../../dashboard/likedProduct/LikedProduct";
+import Title from "../../title/Title";
+import { useContext } from "react";
+import { AuthContext } from "../../../authentication/authProvider/AuthProvider";
+import { useGetLikedProductQuery } from "../../../RTK-Query/features/likes/likedProductApi";
 
 const Home = () => {
-    
-        return (
-            <div className="bg-indigo-100 w-full">
-                <Helmet>
-                    <title>ByteBazaar | Home</title>
-                </Helmet>
-                <Banner></Banner>
-                <Brand></Brand>
-                <GetProduct></GetProduct>
-                <BrandProduct></BrandProduct>
-                <GamingLaptop></GamingLaptop>
-                <Reviews></Reviews>
-            </div>
-        );
-    };
+    const { user } = useContext(AuthContext);
+    const { data } = useGetLikedProductQuery(user?.email);
 
-    export default Home;
+    return (
+        <div className="bg-indigo-100 w-full">
+            <Helmet>
+                <title>ByteBazaar | Home</title>
+            </Helmet>
+            <Banner></Banner>
+            <Brand></Brand>
+            {
+                data?.length === 0 ? '' : <>
+                    <Title title='Your liked products'></Title>
+                    <LikedProduct></LikedProduct>
+                </>
+            }
+            <GetProduct></GetProduct>
+            <BrandProduct></BrandProduct>
+            <GamingLaptop></GamingLaptop>
+            <Reviews></Reviews>
+        </div>
+    );
+};
+
+export default Home;

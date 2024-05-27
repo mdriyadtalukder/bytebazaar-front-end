@@ -1,4 +1,3 @@
-import { MdFavorite } from "react-icons/md";
 import { useGetFavoriteQuery } from "../../../RTK-Query/features/favorite/favoriteApi";
 import { useContext } from "react";
 import { AuthContext } from "../../../authentication/authProvider/AuthProvider";

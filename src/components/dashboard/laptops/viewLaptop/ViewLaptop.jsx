@@ -13,6 +13,7 @@ import { AiFillDislike, AiFillLike } from "react-icons/ai";
 import { useAddLikedProductMutation, useDeleteLikedProductMutation, useGetLikedProductQuery, useUpdateLikesMutation } from "../../../../RTK-Query/features/likes/likedProductApi";
 import { useAddDislikedProductMutation, useDeleteDislikedProductMutation, useGetDislikedProductQuery, useUpdateDislikesMutation } from "../../../../RTK-Query/features/dislikes/dislikedProductApi";
 import { MdGroups } from "react-icons/md";
+import ReactImageMagnify from "react-image-magnify";
 
 const ViewLaptop = () => {
     const { id } = useParams();
@@ -41,6 +42,7 @@ const ViewLaptop = () => {
     const [addDislikedProduct] = useAddDislikedProductMutation();
     const [deleteDislikedProduct] = useDeleteDislikedProductMutation();
 
+    //npm install react-image-magnify --legacy-peer-deps
 
 
 
@@ -293,10 +295,24 @@ const ViewLaptop = () => {
                             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                                 <div className="flex flex-col md:flex-row -mx-4">
                                     <div className="md:flex-1 px-4">
-                                        <div className="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-                                            <img className="w-full h-full object-cover" src={data?.productImage} alt="Product Image" />
+                                        <div className="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4 ">
+                                            <img className="w-full h-full object-cover  lg:hidden" src={data?.productImage} alt="Product Image" />
+                                          
+                                                <ReactImageMagnify className="hidden lg:block" {...{
+                                                    smallImage: {
+                                                        alt: 'Wristwatch by Ted Baker London',
+                                                        isFluidWidth: true,
+                                                        src: data?.productImage
+                                                    },
+                                                    largeImage: {
+                                                        src: data?.productImage,
+                                                        width: 836,
+                                                        height: 1100
+                                                    }
+                                                }} />
+                                            
                                         </div>
-                                        <div className="flex -mx-2 mb-4">
+                                        <div className="flex -mx-2 mb-4 mt-20">
                                             <div onClick={handleCart} className="w-1/2 px-2">
                                                 <button className="w-full bg-indigo-400 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-indigo-400 dark:hover:bg-indigo-400">Add to Cart</button>
                                             </div>
@@ -307,7 +323,7 @@ const ViewLaptop = () => {
                                     </div>
                                     <div className="md:flex-1 px-4">
                                         <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">{data?.productName}</h2>
-                                        <div className="flex items-center justify-start"> 
+                                        <div className="flex items-center justify-start">
                                             <Rating
                                                 style={{ maxWidth: 180 }}
                                                 value={averageRating}
