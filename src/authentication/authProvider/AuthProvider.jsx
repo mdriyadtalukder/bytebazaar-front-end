@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, createUserWithEmailAndPassword, deleteUser, getAuth, onAuthStateChanged, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, deleteUser, getAuth, onAuthStateChanged, sendEmailVerification, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updatePassword, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { app } from "../firebase/firebase.config";
 import axios from "axios";
@@ -45,6 +45,21 @@ const AuthProvider = ({ children }) => {
     const deletedUser = () => {
         return deleteUser(auth.currentUser)
     }
+    const updateName = (name) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name
+        })
+    }
+
+    const updateImage = (name, image) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name, photoURL: image
+        })
+    }
+
+    const updatepassword = (password) => {
+        return updatePassword(auth.currentUser, password)
+    }
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
@@ -84,6 +99,9 @@ const AuthProvider = ({ children }) => {
         sentEmailVerify,
         forgetPassword,
         deletedUser,
+        updateName,
+        updateImage,
+        updatepassword
 
 
 

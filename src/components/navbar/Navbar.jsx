@@ -27,7 +27,7 @@ const Navbar = () => {
             .catch(err => console.log(err))
     }
     const handleClick = (name) => {
-        
+
         dispatch(getNavbar(''));
         dispatch(getDashboard(name))
     }
@@ -91,7 +91,6 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1">
 
                         <li onClick={() => handleHome("Home")} className={` me-1 ${navbar === 'Home' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} ><Link to='/'>Home</Link></li>
-                        <li className={` me-1 ${dashboard === 'My profile' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('My profile')}><Link to='/dashboard/user-profile'>Dashboard</Link></li>
                         <li className={` me-1 ${dashboard === 'Acer' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Acer')} ><Link to='/dashboard/acer'>Acer</Link></li>
                         <li className={` me-1 ${dashboard === 'Apple' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Apple')}><Link to='/dashboard/apple'>Apple</Link></li>
                         <li className={` me-1 ${dashboard === 'Asus' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Asus')} ><Link to='/dashboard/asus'>Asus</Link></li>
@@ -132,7 +131,8 @@ const Navbar = () => {
                                 </div>
                             </div>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>{user?.displayName} (Profile)</a></li>
+                                <li className={` ${dashboard === 'My profile' && 'bg-indigo-400 rounded-md font-bold text-white'}`} onClick={() => handleClick('My profile')}><Link to='/dashboard/user-profile'>{user?.displayName} (Profile)</Link></li>
+                                <li className={`  ${dashboard === 'My profile' && 'bg-indigo-400 rounded-md font-bold text-white'}`} onClick={() => handleClick('My profile')}><Link to='/dashboard/user-profile'>Dashboard</Link></li>
                                 <li onClick={handleLogOut}><a>Log Out</a></li>
 
                             </ul>

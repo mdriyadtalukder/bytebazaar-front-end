@@ -37,6 +37,9 @@ import Payment from './components/dashboard/payment/payment/Payment'
 import CreditCard from './components/dashboard/payment/payment/methods/CreditCard'
 import BKash from './components/dashboard/payment/payment/methods/BKash'
 import Order from './components/dashboard/orders/Order'
+import UpdateName from './authentication/manage/UpdateName'
+import UpdatePassword from './authentication/manage/UpdatePassword'
+import UpdateImage from './authentication/manage/UpdateImage'
 
 function App() {
   const location = useLocation();
@@ -85,6 +88,9 @@ function App() {
           <Route path='card' element={<CreditCard></CreditCard>}></Route>
           <Route path='bkash' element={<BKash></BKash>}></Route>
           <Route path='order' element={<Order></Order>}></Route>
+          <Route path='changename' element={<UpdateName></UpdateName>}></Route>
+          <Route path='changepassword' element={<UpdatePassword></UpdatePassword>}></Route>
+          <Route path='changeimage' element={<UpdateImage></UpdateImage>}></Route>
 
 
         </Route>

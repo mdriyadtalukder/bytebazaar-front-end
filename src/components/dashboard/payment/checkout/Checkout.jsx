@@ -69,7 +69,6 @@ const Checkout = () => {
 
                 </form>
                 {error && <p className="font-bold text-red-500 text-center">{error}</p>}
-                <Link to='/dashboard/payment'>Payment</Link>
 
             </div>
 
