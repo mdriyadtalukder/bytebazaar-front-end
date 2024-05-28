@@ -8,7 +8,7 @@ import { AuthContext } from "../../../authentication/authProvider/AuthProvider";
 import { useGetFavoriteQuery } from "../../../RTK-Query/features/favorite/favoriteApi";
 import { useDispatch, useSelector } from "react-redux";
 import { getAModel, getDashboard, getGeneration, getMemory, getModels, getNavbar, getRam, getSSD, getSeries, getType } from "../../../RTK-Query/features/allProduct/allProductSlice";
-import { useGetUserQuery} from "../../../RTK-Query/features/users/usersApi";
+import { useGetUserQuery } from "../../../RTK-Query/features/users/usersApi";
 
 const Dashboard = () => {
     const { user } = useContext(AuthContext);
@@ -42,7 +42,7 @@ const Dashboard = () => {
         dispatch(getNavbar(name));
         dispatch(getDashboard(name))
     }
-    
+
     return (
         <>
             {
@@ -123,7 +123,7 @@ const Dashboard = () => {
                                     admin[0]?.role === 'admin' && <>
                                         <li className={` mt-2 ${dashboard === 'Add Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Add Laptop')} ><Link to='/dashboard/addLaptop'>Add Laptop</Link></li>
                                         <li className={` mt-2 ${dashboard === 'Users' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Users')} ><Link to='/dashboard/users'>Users</Link></li>
-
+                                        <li className={` mt-2 ${dashboard === 'Users Order List' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Users Order List')} ><Link to='/dashboard/usersOrderList'>Users Order List</Link></li>
                                     </>
                                 }
 
@@ -131,9 +131,10 @@ const Dashboard = () => {
                                     user && <>
                                         <li className={` mt-2 ${dashboard === 'Liked Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Liked Laptop')} ><Link to='/dashboard/likedProduct'>Liked Laptop</Link></li>
                                         <li className={` mt-2 ${dashboard === 'Disliked Laptop' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Disliked Laptop')} ><Link to='/dashboard/dislikedProduct'>Disliked Laptop</Link></li>
-                                        <li className={` mt-2 ${dashboard === 'Users' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Orders')} ><Link to='/dashboard/order'>Orders</Link></li>
+                                        <li className={` mt-2 ${dashboard === 'Orders' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Orders')} ><Link to='/dashboard/order'>Orders</Link></li>
                                     </>
                                 }
+
 
                             </ul>
 

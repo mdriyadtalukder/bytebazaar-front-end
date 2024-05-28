@@ -22,7 +22,7 @@ export const paymentApi = apiSlice.injectEndpoints({
                 method: "POST",
                 body: data,
             }),
-            invalidatesTags: ['laptops', 'cart', 'payments','allpayment']
+            invalidatesTags: ['laptops', 'cart', 'payments', 'allpayment']
         }),
         addStripe: builder.mutation({
             query: (data) => ({
@@ -30,9 +30,26 @@ export const paymentApi = apiSlice.injectEndpoints({
                 method: "POST",
                 body: data,
             }),
-            invalidatesTags: ['laptops', 'cart', 'payments','allpayment']
+            invalidatesTags: ['laptops', 'cart', 'payments', 'allpayment']
+        }),
+        changeStatus: builder.mutation({
+            query: ({ id, data }) => ({
+                url: `/payment/${id}`,
+                method: "PATCH",
+                body: data,
+            }),
+            invalidatesTags: ['laptops', 'cart', 'payments', 'allpayment']
+
+        }),
+        deletePayment: builder.mutation({
+            query: (id) => ({
+                url: `/payment/${id}`,
+                method: "DELETE",
+            }),
+            invalidatesTags: ['laptops', 'cart', 'payments', 'allpayment']
+
         }),
 
     })
 })
-export const { useAddPaymentMutation, useAddStripeMutation, useGetPaymentsQuery,useGetAllPaymentQuery } = paymentApi;
+export const { useAddPaymentMutation, useAddStripeMutation, useGetPaymentsQuery, useGetAllPaymentQuery, useChangeStatusMutation, useDeletePaymentMutation } = paymentApi;

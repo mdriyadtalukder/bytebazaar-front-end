@@ -24,8 +24,9 @@ const Order = () => {
                 <td>{d?.price}</td>
                 <td>{d?.date}</td>
                 <td>{d?.method}</td>
-                <td><button className={`${d?.status === 'Pending' ? 'text-red-500' : 'text-green-500'} bg-gray-200 p-1 rounded-lg font-bold `} >{d?.status}</button></td>
-                <td> {d?.menuItemIds?.map(i => <p key={i}><Link to={`/dashboard/laptop/${i}`} key={i}>{i}</Link></p>)}</td>
+                <td> {d?.menuItemIds?.map(i => <p key={i} className="text-teal-400 font-bold"><Link to={`/dashboard/laptop/${i}`} key={i}>{i}</Link></p>)}</td>
+                <td><p className={`${d?.status === 'Pending' ? 'text-red-500' : 'text-green-500'} font-bold `} >{d?.status}</p></td>
+               
             </tr>)
     }
     return (
@@ -45,8 +46,9 @@ const Order = () => {
                                 <th>Price</th>
                                 <th>Date</th>
                                 <th>Method</th>
-                                <th>Status</th>
                                 <th>Purchased Product IDs</th>
+                                <th>Status</th>
+                               
                             </tr>
                         </thead>
                         <tbody>
