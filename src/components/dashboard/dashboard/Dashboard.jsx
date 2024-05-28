@@ -8,11 +8,13 @@ import { AuthContext } from "../../../authentication/authProvider/AuthProvider";
 import { useGetFavoriteQuery } from "../../../RTK-Query/features/favorite/favoriteApi";
 import { useDispatch, useSelector } from "react-redux";
 import { getAModel, getDashboard, getGeneration, getMemory, getModels, getNavbar, getRam, getSSD, getSeries, getType } from "../../../RTK-Query/features/allProduct/allProductSlice";
+import { useGetUserQuery} from "../../../RTK-Query/features/users/usersApi";
 
 const Dashboard = () => {
     const { user } = useContext(AuthContext);
     const { data: favorites, isLoading: loadings, error: err } = useGetFavoriteQuery(user?.email);
     const { data, isLoading, error } = useGetCartQuery(user?.email);
+    const { data: admin, isLoading: adminLoading, error: er } = useGetUserQuery(user?.email);
     const { dashboard } = useSelector(state => state.allProduct)
     const dispatch = useDispatch();
     let totalQuantity = 0;
@@ -40,10 +42,11 @@ const Dashboard = () => {
         dispatch(getNavbar(name));
         dispatch(getDashboard(name))
     }
+    
     return (
         <>
             {
-                (isLoading && !error?.status) ? <Loading></Loading> : (loadings && !err?.status) ? <Loading></Loading> :
+                (isLoading && !error?.status) ? <Loading></Loading> : (loadings && !err?.status) ? <Loading></Loading> : (adminLoading && !er?.status) ? <Loading></Loading> :
                     <div className="drawer lg:drawer-open">
                         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                         <div className="drawer-content flex flex-col items-start justify-start">
@@ -78,19 +81,26 @@ const Dashboard = () => {
                                         </div>
                                     </Link>
 
-                                    <Link to='/dashboard/cart' className="indicator">
-                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                                        <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{totalQuantity}</span>
-                                    </Link>
+                                    {
+                                        user && <>
+                                            <Link to='/dashboard/cart' className="indicator">
+                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                                                <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{totalQuantity}</span>
+                                            </Link>
 
 
-                                    <Link to='/dashboard/favoriteProduct' className="indicator">
-                                        <MdFavorite className="h-7 w-7 text-pink-600"></MdFavorite>
-                                        <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{favorites?.length || 0}</span>
-                                    </Link>
+                                            <Link to='/dashboard/favoriteProduct' className="indicator">
+                                                <MdFavorite className="h-7 w-7 text-pink-600"></MdFavorite>
+                                                <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{favorites?.length || 0}</span>
+                                            </Link>
+                                        </>
+                                    }
 
                                 </div>
-                                <li className={` mt-2 ${dashboard === 'My profile' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('My profile')}><Link to='/dashboard/user-profile'>My profile</Link></li>
+                                {
+                                    user && <li className={` mt-2 ${dashboard === 'My profile' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('My profile')}><Link to='/dashboard/user-profile'>My profile</Link></li>
+
+                                }
                                 <li className={` mt-2 ${dashboard === 'All Category Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('All Category Laptop')} ><Link to='/dashboard/all-category-laptop'>All Category Laptop</Link></li>
                                 <li className={` mt-2 ${dashboard === 'Acer' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Acer')} ><Link to='/dashboard/acer'>Acer</Link></li>
                                 <li className={` mt-2 ${dashboard === 'Apple' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Apple')}><Link to='/dashboard/apple'>Apple</Link></li>
@@ -106,12 +116,24 @@ const Dashboard = () => {
                                 <li className={` mt-2 ${dashboard === 'MSI' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('MSI')} ><Link to='/dashboard/msi'>MSI</Link></li>
                                 <li className={` mt-2 ${dashboard === 'Microsoft Surface' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Microsoft Surface')} ><Link to='/dashboard/microsoft'>Microsoft Surface</Link></li>
                                 <div className="divider"></div>
+
                                 <li onClick={() => handleHome("Home")} className={` mt-2 ${dashboard === 'Home' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`}><NavLink to='/'><FaHome></FaHome>Home</NavLink></li>
-                                <li className={` mt-2 ${dashboard === 'Add Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Add Laptop')} ><Link to='/dashboard/addLaptop'>Add Laptop</Link></li>
-                                <li className={` mt-2 ${dashboard === 'Liked Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Liked Laptop')} ><Link to='/dashboard/likedProduct'>Liked Laptop</Link></li>
-                                <li className={` mt-2 ${dashboard === 'Disliked Laptop' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Disliked Laptop')} ><Link to='/dashboard/dislikedProduct'>Disliked Laptop</Link></li>
-                                <li className={` mt-2 ${dashboard === 'Users' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Users')} ><Link to='/dashboard/users'>Users</Link></li>
-                                <li className={` mt-2 ${dashboard === 'Users' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Orders')} ><Link to='/dashboard/order'>Orders</Link></li>
+
+                                {
+                                    admin[0]?.role === 'admin' && <>
+                                        <li className={` mt-2 ${dashboard === 'Add Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Add Laptop')} ><Link to='/dashboard/addLaptop'>Add Laptop</Link></li>
+                                        <li className={` mt-2 ${dashboard === 'Users' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Users')} ><Link to='/dashboard/users'>Users</Link></li>
+
+                                    </>
+                                }
+
+                                {
+                                    user && <>
+                                        <li className={` mt-2 ${dashboard === 'Liked Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Liked Laptop')} ><Link to='/dashboard/likedProduct'>Liked Laptop</Link></li>
+                                        <li className={` mt-2 ${dashboard === 'Disliked Laptop' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Disliked Laptop')} ><Link to='/dashboard/dislikedProduct'>Disliked Laptop</Link></li>
+                                        <li className={` mt-2 ${dashboard === 'Users' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Orders')} ><Link to='/dashboard/order'>Orders</Link></li>
+                                    </>
+                                }
 
                             </ul>
 

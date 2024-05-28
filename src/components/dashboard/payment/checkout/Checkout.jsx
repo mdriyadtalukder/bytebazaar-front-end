@@ -16,21 +16,32 @@ const Checkout = () => {
         const address = form.address?.value;
         const city = form.city?.value;
         const num = form.num?.value;
-        addCheckout({
-            name: name,
-            email: user?.email,
-            address: address,
-            city: city,
-            number: num
-        })
-        Swal.fire({
-            position: "top-start",
-            icon: "success",
-            title: "Checkout has submitted successfully",
-            showConfirmButton: false,
-            timer: 1500
-        });
-        navigate('/dashboard/payment')
+        if (!name || !address || !city || !num) {
+            Swal.fire({
+                position: "top-start",
+                icon: "warning",
+                title: "please,fill up all input field!",
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+        else {
+            addCheckout({
+                name: name,
+                email: user?.email,
+                address: address,
+                city: city,
+                number: num
+            })
+            Swal.fire({
+                position: "top-start",
+                icon: "success",
+                title: "Checkout has submitted successfully",
+                showConfirmButton: false,
+                timer: 1500
+            });
+            navigate('/dashboard/payment')
+        }
     }
     return (
         <div className="bg-indigo-100 dark:bg-gray-900 w-full">

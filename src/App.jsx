@@ -40,6 +40,8 @@ import Order from './components/dashboard/orders/Order'
 import UpdateName from './authentication/manage/UpdateName'
 import UpdatePassword from './authentication/manage/UpdatePassword'
 import UpdateImage from './authentication/manage/UpdateImage'
+import PrivateRouter from './authentication/routers/PrivateRouter'
+import AdminRouter from './authentication/routers/AdminRouter'
 
 function App() {
   const location = useLocation();
@@ -58,12 +60,12 @@ function App() {
 
         <Route path='/dashboard' element={<Dashboard></Dashboard>}>
 
-          <Route path='user-profile' element={<UserProfile></UserProfile>}></Route>
+          <Route path='user-profile' element={<PrivateRouter><UserProfile></UserProfile></PrivateRouter>}></Route>
           <Route path='laptop/:id' element={<ViewLaptop></ViewLaptop>}></Route>
-          <Route path='cart' element={<Cart></Cart>}></Route>
-          <Route path='favoriteProduct' element={<FavoriteProduct></FavoriteProduct>}></Route>
-          <Route path='likedProduct' element={<LikedProduct></LikedProduct>}></Route>
-          <Route path='dislikedProduct' element={<DislikedProduct></DislikedProduct>}></Route>
+          <Route path='cart' element={<PrivateRouter><Cart></Cart></PrivateRouter>}></Route>
+          <Route path='favoriteProduct' element={<PrivateRouter><FavoriteProduct></FavoriteProduct></PrivateRouter>}></Route>
+          <Route path='likedProduct' element={<PrivateRouter><LikedProduct></LikedProduct></PrivateRouter>}></Route>
+          <Route path='dislikedProduct' element={<PrivateRouter><DislikedProduct></DislikedProduct></PrivateRouter>}></Route>
 
           <Route path='acer' element={<Acer></Acer>}></Route>
           <Route path='apple' element={<Apple></Apple>}></Route>
@@ -80,17 +82,18 @@ function App() {
           <Route path='chuwi' element={<Chuwi></Chuwi>}></Route>
           <Route path='all-category-laptop' element={<AllLaptops></AllLaptops>}></Route>
 
-          <Route path='addLaptop' element={<Create></Create>}></Route>
-          <Route path='editLaptop/:id' element={<Update></Update>}></Route>
-          <Route path='users' element={<Users></Users>}></Route>
-          <Route path='checkout' element={<Checkout></Checkout>}></Route>
-          <Route path='payment' element={<Payment></Payment>}></Route>
-          <Route path='card' element={<CreditCard></CreditCard>}></Route>
-          <Route path='bkash' element={<BKash></BKash>}></Route>
-          <Route path='order' element={<Order></Order>}></Route>
-          <Route path='changename' element={<UpdateName></UpdateName>}></Route>
-          <Route path='changepassword' element={<UpdatePassword></UpdatePassword>}></Route>
-          <Route path='changeimage' element={<UpdateImage></UpdateImage>}></Route>
+          <Route path='addLaptop' element={<AdminRouter><Create></Create></AdminRouter>}></Route>
+          <Route path='editLaptop/:id' element={<AdminRouter><Update></Update></AdminRouter>}></Route>
+          <Route path='users' element={<AdminRouter><Users></Users></AdminRouter>}></Route>
+
+          <Route path='checkout' element={<PrivateRouter><Checkout></Checkout></PrivateRouter>}></Route>
+          <Route path='payment' element={<PrivateRouter><Payment></Payment></PrivateRouter>}></Route>
+          <Route path='card' element={<PrivateRouter><CreditCard></CreditCard></PrivateRouter>}></Route>
+          <Route path='bkash' element={<PrivateRouter><BKash></BKash></PrivateRouter>}></Route>
+          <Route path='order' element={<PrivateRouter><Order></Order></PrivateRouter>}></Route>
+          <Route path='changename' element={<PrivateRouter><UpdateName></UpdateName></PrivateRouter>}></Route>
+          <Route path='changepassword' element={<PrivateRouter><UpdatePassword></UpdatePassword></PrivateRouter>}></Route>
+          <Route path='changeimage' element={<PrivateRouter><UpdateImage></UpdateImage></PrivateRouter>}></Route>
 
 
         </Route>

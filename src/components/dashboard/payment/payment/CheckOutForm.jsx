@@ -123,7 +123,7 @@ const CheckOutForm = () => {
                     if (check[0]?._id) {
                         deleteCheckout(check[0]?._id);
                     }
-
+                    
                     Swal.fire({
                         position: "top-end",
                         icon: "success",
@@ -133,7 +133,8 @@ const CheckOutForm = () => {
                     });
                 }
 
-                //navigate('/dashboard/booking');
+                // navigate('/dashboard/cart');
+
 
 
 
@@ -144,34 +145,35 @@ const CheckOutForm = () => {
     }
     //console.log(data?.clientSecret)
     //console.log(result?.result?.insertedId)
-    
+
     return (
-        <>
-            <form className="w-1/2 mx-auto border-2 p-10" onSubmit={handleSubmit}>
-                <CardElement
-                    options={{
-                        style: {
-                            base: {
-                                fontSize: '16px',
-                                color: '#424770',
-                                '::placeholder': {
-                                    color: '#aab7c4',
-                                },
-                            },
-                            invalid: {
-                                color: '#9e2146',
+
+        <form className="w-1/2 mx-auto border-2 p-10" onSubmit={handleSubmit}>
+            <CardElement
+                options={{
+                    style: {
+                        base: {
+                            fontSize: '16px',
+                            color: '#424770',
+                            '::placeholder': {
+                                color: '#aab7c4',
                             },
                         },
-                    }}
-                />
-                <button className="btn btn-sm btn-primary mt-2" type="submit" disabled={!stripe || !data?.clientSecret}>
-                    Pay
-                </button>
-                <p className="text-red-600">{error}</p>
-                {transactionId && <p className="text-green-600 font-bold">Your transaction ID: {transactionId}</p>}
-            </form>
-            {/* <button onClick={handler}>lllll</button> */}
-        </>
+                        invalid: {
+                            color: '#9e2146',
+                        },
+                    },
+                }}
+            />
+            <button className="btn btn-sm btn-primary mt-2" type="submit" disabled={!stripe || !data?.clientSecret}>
+                Pay
+            </button>
+            <p className="text-red-600">{error}</p>
+            {transactionId && <p className="text-green-600 font-bold">Your transaction ID: {transactionId}</p>}
+        </form>
+
+
+       
 
     );
 };

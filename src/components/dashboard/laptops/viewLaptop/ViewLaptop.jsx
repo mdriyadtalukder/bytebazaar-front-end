@@ -14,6 +14,7 @@ import { useAddLikedProductMutation, useDeleteLikedProductMutation, useGetLikedP
 import { useAddDislikedProductMutation, useDeleteDislikedProductMutation, useGetDislikedProductQuery, useUpdateDislikesMutation } from "../../../../RTK-Query/features/dislikes/dislikedProductApi";
 import { MdGroups } from "react-icons/md";
 import ReactImageMagnify from "react-image-magnify";
+import { useGetPaymentsQuery } from "../../../../RTK-Query/features/payment/paymentApi";
 
 const ViewLaptop = () => {
     const { id } = useParams();
@@ -42,9 +43,17 @@ const ViewLaptop = () => {
     const [addDislikedProduct] = useAddDislikedProductMutation();
     const [deleteDislikedProduct] = useDeleteDislikedProductMutation();
 
-    //npm install react-image-magnify --legacy-peer-deps
-
-
+    const { data: order, isLoading: orderLoading } = useGetPaymentsQuery(user?.email);
+    let arr = []
+    order?.map(d => {
+        d?.menuItemIds?.map(i => {
+            if (i === id) {
+                arr.push('true')
+            }
+        })
+    })
+    //console.log('id', id)
+    //console.log(arr.length)
 
     const handleCart = (e) => {
         e.preventDefault();
@@ -297,29 +306,31 @@ const ViewLaptop = () => {
                                     <div className="md:flex-1 px-4">
                                         <div className="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4 ">
                                             <img className="w-full h-full object-cover  lg:hidden" src={data?.productImage} alt="Product Image" />
-                                          
-                                                <ReactImageMagnify className="hidden lg:block" {...{
-                                                    smallImage: {
-                                                        alt: 'Wristwatch by Ted Baker London',
-                                                        isFluidWidth: true,
-                                                        src: data?.productImage
-                                                    },
-                                                    largeImage: {
-                                                        src: data?.productImage,
-                                                        width: 836,
-                                                        height: 1100
-                                                    }
-                                                }} />
-                                            
+
+                                            <ReactImageMagnify className="hidden lg:block" {...{
+                                                smallImage: {
+                                                    alt: 'Wristwatch by Ted Baker London',
+                                                    isFluidWidth: true,
+                                                    src: data?.productImage
+                                                },
+                                                largeImage: {
+                                                    src: data?.productImage,
+                                                    width: 836,
+                                                    height: 1100
+                                                }
+                                            }} />
+
                                         </div>
-                                        <div className="flex -mx-2 mb-4 mt-20">
-                                            <div onClick={handleCart} className="w-1/2 px-2">
-                                                <button className="w-full bg-indigo-400 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-indigo-400 dark:hover:bg-indigo-400">Add to Cart</button>
+                                        {
+                                            user && <div className="flex -mx-2 mb-4 mt-20">
+                                                <div onClick={handleCart} className="w-1/2 px-2">
+                                                    <button className="w-full bg-indigo-400 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-indigo-400 dark:hover:bg-indigo-400">Add to Cart</button>
+                                                </div>
+                                                <div className="w-1/2 px-2">
+                                                    <button onClick={handleFavorite} className={`${fav?._id ? 'bg-pink-400 text-white' : 'bg-slate-200 text-gray-800'} w-full   dark:bg-gray-700  dark:text-white py-2 px-4 rounded-full font-bold hover:bg-pink-400 dark:hover:bg-gray-600 `}>Add to Wishlist</button>
+                                                </div>
                                             </div>
-                                            <div className="w-1/2 px-2">
-                                                <button onClick={handleFavorite} className={`${fav?._id ? 'bg-pink-400 text-white' : 'bg-slate-200 text-gray-800'} w-full   dark:bg-gray-700  dark:text-white py-2 px-4 rounded-full font-bold hover:bg-pink-400 dark:hover:bg-gray-600 `}>Add to Wishlist</button>
-                                            </div>
-                                        </div>
+                                        }
                                     </div>
                                     <div className="md:flex-1 px-4">
                                         <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">{data?.productName}</h2>
@@ -332,13 +343,24 @@ const ViewLaptop = () => {
                                             <MdGroups className="text-3xl text-indigo-400 ms-5"></MdGroups>
                                             <span className="ms-2 text-lg font-bold"> {totalReviews}</span>
                                         </div>
-                                        <div className="flex items-center justify-start text-lg">
-                                            <p>{data?.productLikes} <AiFillLike onClick={handleLike} className={`${like?._id && 'text-indigo-500'} text-2xl cursor-pointer me-2 `}></AiFillLike></p>
-                                            <p>{data?.productUnlikes} <AiFillDislike onClick={handleDislike} className={`${dislike?._id && 'text-indigo-500'} text-2xl cursor-pointer `} ></AiFillDislike ></p>
+                                        {
+                                            user && <div className="flex items-center justify-start text-lg">
+                                                <p>{data?.productLikes} <AiFillLike onClick={handleLike} className={`${like?._id && 'text-indigo-500'} text-2xl cursor-pointer me-2 `}></AiFillLike></p>
+                                                <p>{data?.productUnlikes} <AiFillDislike onClick={handleDislike} className={`${dislike?._id && 'text-indigo-500'} text-2xl cursor-pointer `} ></AiFillDislike ></p>
 
 
 
-                                        </div>
+                                            </div>
+                                        }
+                                        {
+                                            !user && <div className="flex items-center justify-start text-lg">
+                                                <p>{data?.productLikes}  <p className="font-bold text-indigo-400 me-2"> Likes</p></p>
+                                                <p>{data?.productUnlikes}<p className="font-bold text-indigo-400"> Dislikes</p></p>
+
+
+
+                                            </div>
+                                        }
                                         <div className="flex my-4">
                                             <div className="mr-4">
 
@@ -936,28 +958,30 @@ const ViewLaptop = () => {
                             }
                         </div>
 
-                        <div className="w-full h-full bg-indigo-100 p-8 items-center flex flex-col justify-center ">
-                            <h2 className="text-4xl font-bold mb-4">Post review and rating</h2>
-                            <form onSubmit={handleEditReview} className="w-1/2 bg-base-100 p-5 rounded-lg shadow-lg">
-                                <div className="mb-4">
-                                    <label className="block mb-1">Rating</label>
-                                    <div className="flex items-center space-x-2">
-                                        <Rating
-                                            style={{ maxWidth: 180 }}
-                                            value={rating}
-                                            onChange={setRating}
-                                            isRequired
-                                        />
+                        {
+                            (user && arr.length > 0) && <div className="w-full h-full bg-indigo-100 p-8 items-center flex flex-col justify-center ">
+                                <h2 className="text-4xl font-bold mb-4">Post review and rating</h2>
+                                <form onSubmit={handleEditReview} className="w-1/2 bg-base-100 p-5 rounded-lg shadow-lg">
+                                    <div className="mb-4">
+                                        <label className="block mb-1">Rating</label>
+                                        <div className="flex items-center space-x-2">
+                                            <Rating
+                                                style={{ maxWidth: 180 }}
+                                                value={rating}
+                                                onChange={setRating}
+                                                isRequired
+                                            />
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="mb-4">
-                                    <label htmlFor="message" className="block mb-1">Review</label>
-                                    <textarea onChange={(e) => setReview(e.target.value)} id="message" className="w-full py-2 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
-                                </div>
-                                <button type="submit" className="py-2 px-4 bg-indigo-400 text-white rounded hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400">Submit</button>
+                                    <div className="mb-4">
+                                        <label htmlFor="message" className="block mb-1">Review</label>
+                                        <textarea onChange={(e) => setReview(e.target.value)} id="message" className="w-full py-2 px-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+                                    </div>
+                                    <button type="submit" className="py-2 px-4 bg-indigo-400 text-white rounded hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-400">Submit</button>
 
-                            </form>
-                        </div>
+                                </form>
+                            </div>
+                        }
                         <div className="h-full w-full text-center bg-indigo-100">
                             <h2 className="text-4xl font-bold mb-4">Related Laptops</h2>
                             <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-10 bg-indigo-100 p-4  ">

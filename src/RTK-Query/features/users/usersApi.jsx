@@ -9,20 +9,27 @@ export const usersApi = apiSlice.injectEndpoints({
             }),
             providesTags: ['users']
         }),
+        getUser: builder.query({
+            query: (email) => ({
+                url: `/user?email=${email}`,
+                method: "GET",
+            }),
+            providesTags: ['user']
+        }),
         addUsers: builder.mutation({
             query: (data) => ({
                 url: '/users',
                 method: "POST",
                 body: data,
             }),
-            invalidatesTags: ['users']
+            invalidatesTags: ['users','user']
         }),
         makeAdmin: builder.mutation({
             query: (id) => ({
                 url: `/users/admin/${id}`,
                 method: "PATCH",
             }),
-            invalidatesTags: ['users']
+            invalidatesTags: ['users','user']
 
         }),
         deleteUser: builder.mutation({
@@ -30,9 +37,9 @@ export const usersApi = apiSlice.injectEndpoints({
                 url: `/users/${id}`,
                 method: "DELETE",
             }),
-            invalidatesTags: ['users']
+            invalidatesTags: ['users','user']
 
         }),
     })
 })
-export const { useGetUsersQuery, useAddUsersMutation, useMakeAdminMutation, useDeleteUserMutation } = usersApi;
+export const { useGetUsersQuery, useAddUsersMutation, useMakeAdminMutation, useDeleteUserMutation,useGetUserQuery } = usersApi;

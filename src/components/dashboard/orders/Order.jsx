@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useGetPaymentsQuery } from "../../../RTK-Query/features/payment/paymentApi";
 import { AuthContext } from "../../../authentication/authProvider/AuthProvider";
 import Loading from "../../loading/Loading";
+import { Link } from "react-router-dom";
 
 const Order = () => {
     const { user } = useContext(AuthContext);
@@ -24,7 +25,7 @@ const Order = () => {
                 <td>{d?.date}</td>
                 <td>{d?.method}</td>
                 <td><button className={`${d?.status === 'Pending' ? 'text-red-500' : 'text-green-500'} bg-gray-200 p-1 rounded-lg font-bold `} >{d?.status}</button></td>
-
+                <td> {d?.menuItemIds?.map(i => <p key={i}><Link to={`/dashboard/laptop/${i}`} key={i}>{i}</Link></p>)}</td>
             </tr>)
     }
     return (
@@ -45,6 +46,7 @@ const Order = () => {
                                 <th>Date</th>
                                 <th>Method</th>
                                 <th>Status</th>
+                                <th>Purchased Product IDs</th>
                             </tr>
                         </thead>
                         <tbody>

@@ -9,6 +9,7 @@ import { Rating } from "@smastrom/react-rating";
 import { AiFillDislike, AiFillLike } from "react-icons/ai";
 import { useAddLikedProductMutation, useDeleteLikedProductMutation, useGetLikedProductQuery, useUpdateLikesMutation } from "../../../../RTK-Query/features/likes/likedProductApi";
 import { useAddDislikedProductMutation, useDeleteDislikedProductMutation, useGetDislikedProductQuery, useUpdateDislikesMutation } from "../../../../RTK-Query/features/dislikes/dislikedProductApi";
+import { useGetUserQuery, useGetUsersQuery } from "../../../../RTK-Query/features/users/usersApi";
 
 const SingleProduct = ({ d }) => {
     const { user } = useContext(AuthContext);
@@ -26,12 +27,14 @@ const SingleProduct = ({ d }) => {
     const [addLikedProduct] = useAddLikedProductMutation();
     const [deleteLikedProduct] = useDeleteLikedProductMutation();
 
+
     const { data: dislikes } = useGetDislikedProductQuery(user?.email);
     const [addDislikedProduct] = useAddDislikedProductMutation();
     const [deleteDislikedProduct] = useDeleteDislikedProductMutation();
 
     const [deleteFavorite] = useDeleteFavoriteMutation()
     const [deleteLaptop] = useDeleteLaptopMutation()
+    const { data: admin, isLoading: adminLoading } = useGetUserQuery(user?.email);
 
 
     const handleCart = (e) => {
@@ -325,28 +328,38 @@ const SingleProduct = ({ d }) => {
                         <span className="font-bold">Tk {d?.productPrice}</span>
 
 
-                        <MdFavorite onClick={handleFavorite} className={`${fav?._id && 'text-pink-600'} h-7 w-7 cursor-pointer `} ></MdFavorite>
-                        <Link to={`/dashboard/editLaptop/${d?._id}`}>
-                            <button className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-2 rounded">
-                                Edit
-                            </button>
-                        </Link>
+                        {
+                            (user && !admin[0]?.role) && <MdFavorite onClick={handleFavorite} className={`${fav?._id && 'text-pink-600'} h-7 w-7 cursor-pointer `} ></MdFavorite>
 
-                        <button onClick={handleDeleteLaptop} className="bg-red-600 hover:bg-red-600 text-white font-bold p-2  rounded">
-                            Delete
-                        </button>
-                        <button onClick={handleCart} className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-2 rounded">
-                            Add to cart
-                        </button>
+                        }
+
+                        {
+                            admin[0]?.role === 'admin' && <>
+                                <Link to={`/dashboard/editLaptop/${d?._id}`}>
+                                    <button className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-2 rounded">
+                                        Edit
+                                    </button>
+                                </Link>
+
+                                <button onClick={handleDeleteLaptop} className="bg-red-600 hover:bg-red-600 text-white font-bold p-2  rounded">
+                                    Delete
+                                </button>
+                            </>
+                        }
+
+                        {
+                           (user && !admin[0]?.role)  && <button onClick={handleCart} className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-2 rounded">
+                                Add to cart
+                            </button>
+                        }
                     </div>
                     <div className="divider"></div>
-                    <div className="flex items-center justify-between text-lg">
-                        <p>{d?.productLikes} <AiFillLike onClick={handleLike} className={`${like?._id && 'text-indigo-500'} text-2xl cursor-pointer `}></AiFillLike></p>
-                        <p>{d?.productUnlikes} <AiFillDislike onClick={handleDislike} className={`${dislike?._id && 'text-indigo-500'} text-2xl cursor-pointer `} ></AiFillDislike ></p>
-
-
-
-                    </div>
+                    {
+                        (user && !admin[0]?.role)  && <div className="flex items-center justify-between text-lg">
+                            <p>{d?.productLikes} <AiFillLike onClick={handleLike} className={`${like?._id && 'text-indigo-500'} text-2xl cursor-pointer `}></AiFillLike></p>
+                            <p>{d?.productUnlikes} <AiFillDislike onClick={handleDislike} className={`${dislike?._id && 'text-indigo-500'} text-2xl cursor-pointer `} ></AiFillDislike ></p>
+                        </div>
+                    }
                 </div>
             </div>
         </div>
