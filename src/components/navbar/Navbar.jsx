@@ -6,6 +6,7 @@ import { useGetCartQuery } from "../../RTK-Query/features/allProduct/allProductA
 import { useGetFavoriteQuery } from "../../RTK-Query/features/favorite/favoriteApi";
 import { getDashboard, getNavbar } from "../../RTK-Query/features/allProduct/allProductSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { TfiGift } from "react-icons/tfi";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -37,14 +38,14 @@ const Navbar = () => {
     }
     return (
         <div className="fixed z-10 bg-opacity-80 bg-base-100 w-screen pe-5">
-            <div className="navbar">
+            {/* <div className="navbar">
 
                 <label id='input' className="input w-full input-bordered flex input-accent items-center ga ">
                     <input type="text" className="grow" placeholder="Search" />
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd" /></svg>
                 </label>
 
-            </div>
+            </div> */}
 
 
             <div className="navbar shadow-lg">
@@ -112,6 +113,13 @@ const Navbar = () => {
 
                     {
                         user && <>
+
+                            <Link to='/dashboard/offering' >
+                                <div className="indicator">
+                                    <TfiGift className="h-7 w-7 text-pink-600"></TfiGift>
+                                    <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item"></span>
+                                </div>
+                            </Link>
                             <Link to='/dashboard/cart' className="pe-4 ps-4">
                                 <div className="indicator">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>

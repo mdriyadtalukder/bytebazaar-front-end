@@ -111,9 +111,9 @@ const SingleLikedProduct = ({ f }) => {
                 <p className="text-center mt-3 font-bold">
                     Tk {f?.productPrice}
                 </p>
-                <p className="text-center mt-3 font-bold">
+                {/* <p className="text-center mt-3 font-bold">
                     Quantity: {f?.quantity}
-                </p>
+                </p> */}
             </div>
             <div className="px-6 py-4 flex justify-between items-center ">
                 <button onClick={handleCart} className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-1 rounded">

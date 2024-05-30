@@ -6,13 +6,13 @@ import { useGetUserQuery } from "../../RTK-Query/features/users/usersApi";
 
 const AdminRouter = ({ children }) => {
     const { user, loading } = useContext(AuthContext);
-    const { data, isLoading } = useGetUserQuery(user?.email)
+    const { data, isLoading, error } = useGetUserQuery(user?.email)
     const location = useLocation();
-
-    if (loading || isLoading) {
+    if ((loading && !error?.status) || (isLoading && !error?.status)) {
         return <Loading></Loading>
     }
-    if (user && data[0]?.role === 'admin') {
+
+    if (user && data?.length > 0 && data[0]?.role === 'admin') {
         return children;
     }
     return <Navigate to='/' state={{ from: location }} replace ></Navigate>

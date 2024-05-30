@@ -32,6 +32,12 @@ export const paymentApi = apiSlice.injectEndpoints({
             }),
             invalidatesTags: ['laptops', 'cart', 'payments', 'allpayment']
         }),
+        getBkashSucess: builder.query({
+            query: () => ({
+                url: '/bkashSucess',
+                method: "GET",
+            })
+        }),
         changeStatus: builder.mutation({
             query: ({ id, data }) => ({
                 url: `/payment/${id}`,
@@ -49,7 +55,15 @@ export const paymentApi = apiSlice.injectEndpoints({
             invalidatesTags: ['laptops', 'cart', 'payments', 'allpayment']
 
         }),
+        deleteBkashSuccess: builder.mutation({
+            query: (id) => ({
+                url: `/bkashSucess/${id}`,
+                method: "DELETE",
+            }),
+            invalidatesTags: ['laptops', 'cart', 'payments', 'allpayment']
+
+        }),
 
     })
 })
-export const { useAddPaymentMutation, useAddStripeMutation, useGetPaymentsQuery, useGetAllPaymentQuery, useChangeStatusMutation, useDeletePaymentMutation } = paymentApi;
+export const { useAddPaymentMutation, useAddStripeMutation, useGetPaymentsQuery, useGetAllPaymentQuery, useChangeStatusMutation, useDeletePaymentMutation, useDeleteBkashSuccessMutation, useGetBkashSucessQuery } = paymentApi;

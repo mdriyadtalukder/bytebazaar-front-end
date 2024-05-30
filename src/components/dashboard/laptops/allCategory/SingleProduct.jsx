@@ -329,12 +329,12 @@ const SingleProduct = ({ d }) => {
 
 
                         {
-                            (user && !admin[0]?.role) && <MdFavorite onClick={handleFavorite} className={`${fav?._id && 'text-pink-600'} h-7 w-7 cursor-pointer `} ></MdFavorite>
+                            (user && admin?.length > 0 && !admin[0].role) && <MdFavorite onClick={handleFavorite} className={`${fav?._id && 'text-pink-600'} h-7 w-7 cursor-pointer `} ></MdFavorite>
 
                         }
 
                         {
-                            admin[0]?.role === 'admin' && <>
+                            (admin?.length > 0 && admin[0]?.role === 'admin') && <>
                                 <Link to={`/dashboard/editLaptop/${d?._id}`}>
                                     <button className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-2 rounded">
                                         Edit
@@ -348,14 +348,14 @@ const SingleProduct = ({ d }) => {
                         }
 
                         {
-                           (user && !admin[0]?.role)  && <button onClick={handleCart} className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-2 rounded">
+                            (user && admin?.length > 0 && !admin[0]?.role) && <button onClick={handleCart} className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-2 rounded">
                                 Add to cart
                             </button>
                         }
                     </div>
                     <div className="divider"></div>
                     {
-                        (user && !admin[0]?.role)  && <div className="flex items-center justify-between text-lg">
+                        (user && admin?.length > 0 && !admin[0]?.role) && <div className="flex items-center justify-between text-lg">
                             <p>{d?.productLikes} <AiFillLike onClick={handleLike} className={`${like?._id && 'text-indigo-500'} text-2xl cursor-pointer `}></AiFillLike></p>
                             <p>{d?.productUnlikes} <AiFillDislike onClick={handleDislike} className={`${dislike?._id && 'text-indigo-500'} text-2xl cursor-pointer `} ></AiFillDislike ></p>
                         </div>

@@ -100,9 +100,9 @@ const SingleFavorite = ({ f }) => {
                 <p className="text-center mt-3 font-bold">
                     Tk {f?.productPrice}
                 </p>
-                <p className="text-center mt-3 font-bold">
+                {/* <p className="text-center mt-3 font-bold">
                     Quantity: {f?.quantity}
-                </p>
+                </p> */}
             </div>
             <div className="px-6 py-4 flex justify-between items-center ">
                 <MdFavorite onClick={handleDelete} className="h-7 w-7 text-pink-600 cursor-pointer"></MdFavorite>

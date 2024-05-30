@@ -9,7 +9,8 @@ const initialState = {
     oneModel: 'All',
     models: [],
     navbar:"",
-    dashboard:""
+    dashboard:"",
+    search:''
 }
 const allProductSlice = createSlice({
     name: 'allProduct',
@@ -116,9 +117,12 @@ const allProductSlice = createSlice({
         },
         getDashboard: (state, action) => {
             state.dashboard = action.payload;
+        },
+        getSearch: (state, action) => {
+            state.search = action.payload;
         }
     }
 
 })
 export default allProductSlice.reducer;
-export const { getGeneration, getMemory, getRam, getSSD, getSeries, getType, getAModel, getModels,getNavbar,getDashboard } = allProductSlice.actions;
+export const { getGeneration, getMemory, getRam, getSSD, getSeries, getType, getAModel, getModels,getNavbar,getDashboard ,getSearch} = allProductSlice.actions;

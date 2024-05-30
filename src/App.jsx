@@ -35,7 +35,6 @@ import Users from './components/dashboard/users/Users'
 import Checkout from './components/dashboard/payment/checkout/Checkout'
 import Payment from './components/dashboard/payment/payment/Payment'
 import CreditCard from './components/dashboard/payment/payment/methods/CreditCard'
-import BKash from './components/dashboard/payment/payment/methods/BKash'
 import Order from './components/dashboard/orders/Order'
 import UpdateName from './authentication/manage/UpdateName'
 import UpdatePassword from './authentication/manage/UpdatePassword'
@@ -43,6 +42,9 @@ import UpdateImage from './authentication/manage/UpdateImage'
 import PrivateRouter from './authentication/routers/PrivateRouter'
 import AdminRouter from './authentication/routers/AdminRouter'
 import OrderList from './components/dashboard/orders/OrderList'
+import LatestLP from './components/dashboard/LGO/LatestLP'
+import GamingLP from './components/dashboard/LGO/GamingLP'
+import OfferingLP from './components/dashboard/LGO/OfferingLP'
 
 function App() {
   const location = useLocation();
@@ -83,6 +85,11 @@ function App() {
           <Route path='chuwi' element={<Chuwi></Chuwi>}></Route>
           <Route path='all-category-laptop' element={<AllLaptops></AllLaptops>}></Route>
 
+          <Route path='latest' element={<LatestLP></LatestLP>}></Route>
+          <Route path='gaming' element={<GamingLP></GamingLP>}></Route>
+          <Route path='offering' element={<OfferingLP></OfferingLP>}></Route>
+
+
           <Route path='addLaptop' element={<AdminRouter><Create></Create></AdminRouter>}></Route>
           <Route path='editLaptop/:id' element={<AdminRouter><Update></Update></AdminRouter>}></Route>
           <Route path='users' element={<AdminRouter><Users></Users></AdminRouter>}></Route>
@@ -91,7 +98,6 @@ function App() {
           <Route path='checkout' element={<PrivateRouter><Checkout></Checkout></PrivateRouter>}></Route>
           <Route path='payment' element={<PrivateRouter><Payment></Payment></PrivateRouter>}></Route>
           <Route path='card' element={<PrivateRouter><CreditCard></CreditCard></PrivateRouter>}></Route>
-          <Route path='bkash' element={<PrivateRouter><BKash></BKash></PrivateRouter>}></Route>
           <Route path='order' element={<PrivateRouter><Order></Order></PrivateRouter>}></Route>
           <Route path='changename' element={<PrivateRouter><UpdateName></UpdateName></PrivateRouter>}></Route>
           <Route path='changepassword' element={<PrivateRouter><UpdatePassword></UpdatePassword></PrivateRouter>}></Route>

@@ -4,7 +4,8 @@ import { AuthContext } from "../../../../authentication/authProvider/AuthProvide
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 import { useDecreaseLaptopMutation, useGetAllProductQuery, useGetCartQuery } from "../../../../RTK-Query/features/allProduct/allProductApi";
-import { useAddPaymentMutation } from "../../../../RTK-Query/features/payment/paymentApi";
+import { useAddPaymentMutation, useDeleteBkashSuccessMutation, useGetBkashSucessQuery } from "../../../../RTK-Query/features/payment/paymentApi";
+import axios from "axios";
 
 const Payment = () => {
     const { user } = useContext(AuthContext);
@@ -14,6 +15,8 @@ const Payment = () => {
     const [addPayment] = useAddPaymentMutation();
     const [decreaseLaptop] = useDecreaseLaptopMutation();
     const { data: laptops } = useGetAllProductQuery();
+    const { data: success } = useGetBkashSucessQuery();
+    const [deleteBkashSuccess] = useDeleteBkashSuccessMutation();
 
     let totalPrice = 0;
     let totalQuantity = 0;
@@ -80,13 +83,41 @@ const Payment = () => {
         });
 
     }
+
+    const bKashPayment = async () => {
+        try {
+            const { data } = await axios.post('http://localhost:5000/api/bkash/payment/create',
+                {
+                    amount: totalPrice,
+                    orderId: 1,
+                    email: user?.email,
+                    name: check[0]?._id && check[0]?.name,
+                    address: check[0]?._id && check[0]?.address,
+                    city: check[0]?._id && check[0]?.city,
+                    number: check[0]?._id && check[0]?.number,
+                    date: new Date(),
+                    cartIds: cart.map(c => c?._id),
+                    menuItemIds: cart.map(c => c?.cartId),
+                    cartItems: cart,
+                    method: 'BKash',
+                })
+            window.location.href = data.bkashURL;
+            console.log(data)
+
+
+        } catch (error) {
+            console.log(error.response.data)
+        }
+
+    }
+
     return (
 
         <div className=" w-full h-full bg-indigo-100 flex justify-center items-center">
             <div className=" w-1/2 text-center p-6 rounded-lg shadow-lg  bg-base-100">
                 <button onClick={clickCash} className=" p-3 me-2 bg-teal-400 rounded-lg text-white font-bold">Cash On Delivery</button>
                 <Link to='/dashboard/card'><button className=" p-3 me-2 bg-indigo-400 rounded-lg text-white font-bold">Credit Card</button></Link>
-                <Link to='/dashboard/bkash'><button className=" p-3 me-2 bg-pink-400 rounded-lg text-white font-bold">BKash</button></Link>
+                <button onClick={bKashPayment} className=" p-3 me-2 bg-pink-400 rounded-lg text-white font-bold">BKash</button>
             </div>
         </div>
 

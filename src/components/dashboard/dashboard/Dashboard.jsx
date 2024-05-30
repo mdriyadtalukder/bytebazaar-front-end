@@ -9,6 +9,7 @@ import { useGetFavoriteQuery } from "../../../RTK-Query/features/favorite/favori
 import { useDispatch, useSelector } from "react-redux";
 import { getAModel, getDashboard, getGeneration, getMemory, getModels, getNavbar, getRam, getSSD, getSeries, getType } from "../../../RTK-Query/features/allProduct/allProductSlice";
 import { useGetUserQuery } from "../../../RTK-Query/features/users/usersApi";
+import { TfiGift } from "react-icons/tfi";
 
 const Dashboard = () => {
     const { user } = useContext(AuthContext);
@@ -83,6 +84,12 @@ const Dashboard = () => {
 
                                     {
                                         user && <>
+                                            <Link to='/dashboard/offering' >
+                                                <div className="indicator">
+                                                    <TfiGift className="h-7 w-7 text-pink-600"></TfiGift>
+                                                    <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item"></span>
+                                                </div>
+                                            </Link>
                                             <Link to='/dashboard/cart' className="indicator">
                                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
                                                 <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{totalQuantity}</span>
@@ -115,17 +122,25 @@ const Dashboard = () => {
                                 <li className={` mt-2 ${dashboard === 'Lenovo' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Lenovo')} ><Link to='/dashboard/lenovo'>Lenovo</Link></li>
                                 <li className={` mt-2 ${dashboard === 'MSI' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('MSI')} ><Link to='/dashboard/msi'>MSI</Link></li>
                                 <li className={` mt-2 ${dashboard === 'Microsoft Surface' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Microsoft Surface')} ><Link to='/dashboard/microsoft'>Microsoft Surface</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Latest Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Latest Laptop')} ><Link to='/dashboard/latest'>Latest Laptop</Link></li>
+                                <li className={` mt-2 ${dashboard === 'Gaming Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Microsoft Surface')} ><Link to='/dashboard/gaming'>Gaming Laptop</Link></li>
                                 <div className="divider"></div>
 
                                 <li onClick={() => handleHome("Home")} className={` mt-2 ${dashboard === 'Home' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`}><NavLink to='/'><FaHome></FaHome>Home</NavLink></li>
 
-                                {
-                                    admin[0]?.role === 'admin' && <>
-                                        <li className={` mt-2 ${dashboard === 'Add Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Add Laptop')} ><Link to='/dashboard/addLaptop'>Add Laptop</Link></li>
-                                        <li className={` mt-2 ${dashboard === 'Users' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Users')} ><Link to='/dashboard/users'>Users</Link></li>
-                                        <li className={` mt-2 ${dashboard === 'Users Order List' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Users Order List')} ><Link to='/dashboard/usersOrderList'>Users Order List</Link></li>
+                                {admin?.length > 0 && admin[0].role === 'admin' && (
+                                    <>
+                                        <li className={`mt-2 ${dashboard === 'Add Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Add Laptop')}>
+                                            <Link to='/dashboard/addLaptop'>Add Laptop</Link>
+                                        </li>
+                                        <li className={`mt-2 ${dashboard === 'Users' && 'bg-indigo-400 rounded-md text-white'} font-bold`} onClick={() => handleClick('Users')}>
+                                            <Link to='/dashboard/users'>Users</Link>
+                                        </li>
+                                        <li className={`mt-2 ${dashboard === 'Users Order List' && 'bg-indigo-400 rounded-md text-white'} font-bold`} onClick={() => handleClick('Users Order List')}>
+                                            <Link to='/dashboard/usersOrderList'>Users Order List</Link>
+                                        </li>
                                     </>
-                                }
+                                )}
 
                                 {
                                     user && <>

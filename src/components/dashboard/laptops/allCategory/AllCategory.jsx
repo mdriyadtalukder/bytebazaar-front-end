@@ -7,7 +7,7 @@ import { Dialog, Disclosure, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { FunnelIcon, MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
 import { useDispatch, useSelector } from "react-redux";
-import { getAModel, getGeneration, getMemory, getModels, getRam, getSSD, getSeries, getType } from "../../../../RTK-Query/features/allProduct/allProductSlice";
+import { getAModel, getGeneration, getMemory, getModels, getRam, getSSD, getSearch, getSeries, getType } from "../../../../RTK-Query/features/allProduct/allProductSlice";
 import { AuthContext } from "../../../../authentication/authProvider/AuthProvider";
 import { useGetLikedProductQuery } from "../../../../RTK-Query/features/likes/likedProductApi";
 
@@ -20,12 +20,12 @@ const AllCategory = ({ data, isError, isLoading, error, filtering, model }) => {
 
     const { user } = useContext(AuthContext);
     const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
-    const { processor_Type, processor_Generation, ram_Options, ssd_Options, graphicsMemory_Options, laptopSeries_Options, oneModel, models } = useSelector(state => state.allProduct);
+    const { processor_Type, processor_Generation, ram_Options, ssd_Options, graphicsMemory_Options, laptopSeries_Options, oneModel, models, search } = useSelector(state => state.allProduct);
     const dispatch = useDispatch();
     const filters = filtering || undefined;
     const series = filters?.filter(f => f?.id === 'laptopSeriesOptions');
     const { data: likes } = useGetLikedProductQuery(user?.email);
-
+    console.log(search)
     let content;
 
     if (!isLoading && isError) content = <p className='text-red-600 font-bold text-center'>{error?.status}</p>
@@ -96,6 +96,14 @@ const AllCategory = ({ data, isError, isLoading, error, filtering, model }) => {
 
                 if (oneModel && oneModel !== 'All') {
                     return d?.productGeneral?.productBrand === oneModel;
+                }
+                else {
+                    return true;
+                }
+            })
+            .filter((d) => {
+                if (search) {
+                    return d?.productName.toLowerCase().includes(search.toLowerCase())
                 }
                 else {
                     return true;
@@ -228,7 +236,7 @@ const AllCategory = ({ data, isError, isLoading, error, filtering, model }) => {
 
                         <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-0 lg:ps-2">
                             <div className="flex items-baseline justify-between border-b border-gray-200  pt-2">
-                                <h1 className="text-4xl font-bold tracking-tight text-gray-900">New Arrivals</h1>
+                                <h1 className="text-4xl font-bold tracking-tight text-gray-900">Choice your favorite laptop!</h1>
 
                                 <div className="flex items-center">
                                     <button
@@ -323,8 +331,13 @@ const AllCategory = ({ data, isError, isLoading, error, filtering, model }) => {
                                     </form>
 
                                     {/* Product grid */}
-                                    <div className="lg:col-span-5">
+                                    <div className="lg:col-span-5 p-2">
+                                        <label id='input' className="input w-full input-bordered flex input-accent items-center ga ">
+                                            <input onChange={(e) => dispatch(getSearch(e.target.value))} type="text" className="grow" placeholder="Search" />
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd" /></svg>
+                                        </label>
                                         <div className="text-center hidden lg:block">
+
                                             <ul className="menu menu-horizontal px-1">
                                                 {
                                                     series && series[0]?.options?.map(s => <li onClick={() => {
@@ -339,6 +352,7 @@ const AllCategory = ({ data, isError, isLoading, error, filtering, model }) => {
                                                 {/* <li className='bg-indigo-400 rounded-md font-bold text-white me-2' ><p>Home</p></li> */}
 
                                             </ul>
+
                                         </div>
                                         <section className="flex flex-col justify-center w-full min-h-screen px-4 py-10 mx-auto sm:px-6 bg-indigo-100 ">
                                             <div className="flex flex-wrap -mx-4">

@@ -4,14 +4,19 @@ import SingleLikedProduct from "./SingleLikedProduct";
 import { AuthContext } from "../../../authentication/authProvider/AuthProvider";
 import { useGetLikedProductQuery } from "../../../RTK-Query/features/likes/likedProductApi";
 
-const LikedProduct = () => {
+const LikedProduct = ({ home }) => {
     const { user } = useContext(AuthContext);
     const { data, isLoading, isError, error } = useGetLikedProductQuery(user?.email);
     let content;
     if (!isLoading && isError) content = <p className='text-red-600 font-bold text-center'>{error?.status}</p>
     if (!isLoading && !isError && data?.length === 0) content = <p className='text-teal-400 font-bold  text-center'>No liked Products found!!</p>
     if (!isLoading && !isError && data?.length > 0) {
-        content = data.map(f => <SingleLikedProduct key={f?._id} f={f}></SingleLikedProduct>)
+        if (home) {
+            content = data.slice(0, 4).map(f => <SingleLikedProduct key={f?._id} f={f}></SingleLikedProduct>)
+        }
+        else {
+            content = data.map(f => <SingleLikedProduct key={f?._id} f={f}></SingleLikedProduct>)
+        }
     }
     return (
         <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 bg-indigo-100">
