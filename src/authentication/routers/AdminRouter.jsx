@@ -12,7 +12,7 @@ const AdminRouter = ({ children }) => {
         return <Loading></Loading>
     }
 
-    if (user && data?.length > 0 && data[0]?.role === 'admin') {
+    if (user && data?.length > 0 && (data[0].role === 'admin' || data[0].role === 'seller')) {
         return children;
     }
     return <Navigate to='/' state={{ from: location }} replace ></Navigate>

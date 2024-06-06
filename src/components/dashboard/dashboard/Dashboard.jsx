@@ -127,19 +127,24 @@ const Dashboard = () => {
                                 <div className="divider"></div>
 
                                 <li onClick={() => handleHome("Home")} className={` mt-2 ${dashboard === 'Home' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`}><NavLink to='/'><FaHome></FaHome>Home</NavLink></li>
+                                
+                                {admin?.length > 0 && (admin[0].role === 'admin' || admin[0].role === 'seller') && <>
+                                    <li className={`mt-2 ${dashboard === 'Add Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Add Laptop')}>
+                                        <Link to='/dashboard/addLaptop'>Add Laptop</Link>
+                                    </li>
+                                    <li className={`mt-2 ${dashboard === 'Users Order List' && 'bg-indigo-400 rounded-md text-white'} font-bold`} onClick={() => handleClick('Users Order List')}>
+                                        <Link to='/dashboard/usersOrderList'>Users Order List</Link>
+                                    </li>
 
+                                </>}
+                                
                                 {admin?.length > 0 && admin[0].role === 'admin' && (
-                                    <>
-                                        <li className={`mt-2 ${dashboard === 'Add Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Add Laptop')}>
-                                            <Link to='/dashboard/addLaptop'>Add Laptop</Link>
-                                        </li>
-                                        <li className={`mt-2 ${dashboard === 'Users' && 'bg-indigo-400 rounded-md text-white'} font-bold`} onClick={() => handleClick('Users')}>
-                                            <Link to='/dashboard/users'>Users</Link>
-                                        </li>
-                                        <li className={`mt-2 ${dashboard === 'Users Order List' && 'bg-indigo-400 rounded-md text-white'} font-bold`} onClick={() => handleClick('Users Order List')}>
-                                            <Link to='/dashboard/usersOrderList'>Users Order List</Link>
-                                        </li>
-                                    </>
+
+                                    <li className={`mt-2 ${dashboard === 'Users' && 'bg-indigo-400 rounded-md text-white'} font-bold`} onClick={() => handleClick('Users')}>
+                                        <Link to='/dashboard/users'>Users</Link>
+                                    </li>
+
+
                                 )}
 
                                 {

@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import { useDeleteUserMutation, useGetUsersQuery, useMakeAdminMutation } from "../../../RTK-Query/features/users/usersApi";
+import { useDeleteUserMutation, useGetUsersQuery, useMakeAdminMutation, useMakeSellerMutation } from "../../../RTK-Query/features/users/usersApi";
 import Loading from "../../loading/Loading";
 import { useContext } from "react";
 import { AuthContext } from "../../../authentication/authProvider/AuthProvider";
@@ -11,6 +11,8 @@ const Users = () => {
     const { data, isLoading, isError, error } = useGetUsersQuery();
     // const [deleteUser] = useDeleteUserMutation();
     const [makeAdmin] = useMakeAdminMutation();
+    const [makeSeller] = useMakeSellerMutation();
+
     const handleMakeAdmin = user => {
         Swal.fire({
             title: "Are you sure?",
@@ -34,8 +36,31 @@ const Users = () => {
 
     }
 
+    const hanldeMakeSeller = user => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, make seller!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                makeSeller(user?._id)
+                Swal.fire({
+                    title: `${user?.name} make seller succesfully!`,
+                    text: "make seller.",
+                    icon: "success"
+                });
+
+            }
+        });
+
+    }
+
     // const handleDeleteUser = user => {
-       
+
     //     Swal.fire({
     //         title: "Are you sure?",
     //         text: "You won't be able to revert this!",
@@ -72,7 +97,10 @@ const Users = () => {
             <th>{count++}</th>
             <td>{d?.name}</td>
             <td>{d?.email}</td>
-            <td>{d?.role === 'admin' ? "Admin" : <button onClick={() => handleMakeAdmin(d)} className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-1 rounded">Make admin</button>}</td>
+            <td>{d?.role === 'admin' ? "Admin" : d?.role === 'seller' ? 'Seller' : <>
+                <button onClick={() => handleMakeAdmin(d)} className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-1 rounded">Make admin</button>
+                <button onClick={() => hanldeMakeSeller(d)} className="bg-teal-400 hover:bg-teal-400 text-white font-bold p-1 rounded ms-2">Make Seller</button>
+            </>}</td>
             {/* <td>{d?.role === 'admin' ? '' : <button onClick={() => handleDeleteUser(d)} className="bg-red-500 hover:bg-red-500 text-white font-bold p-1 rounded">Delete User</button>}</td> */}
         </tr>)
 

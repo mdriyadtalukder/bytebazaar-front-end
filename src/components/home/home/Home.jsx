@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
     const { user } = useContext(AuthContext);
     const { data } = useGetLikedProductQuery(user?.email);
+    console.log(data?.length)
 
     return (
         <div className="bg-indigo-100 w-full">
@@ -24,7 +25,7 @@ const Home = () => {
             <Banner></Banner>
             <Brand></Brand>
             {
-                (!user && data?.length === 0) ? '' : <>
+                (!user || data?.length === 0) ? '' : <>
                     <Title title='Your liked products'></Title>
                     <LikedProduct home={true}></LikedProduct>
                     {

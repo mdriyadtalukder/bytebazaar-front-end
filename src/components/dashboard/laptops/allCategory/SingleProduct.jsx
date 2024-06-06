@@ -334,7 +334,7 @@ const SingleProduct = ({ d }) => {
                         }
 
                         {
-                            (admin?.length > 0 && admin[0]?.role === 'admin') && <>
+                            (admin?.length > 0 && (admin[0].role === 'admin' || admin[0].role === 'seller')) && <>
                                 <Link to={`/dashboard/editLaptop/${d?._id}`}>
                                     <button className="bg-indigo-400 hover:bg-indigo-400 text-white font-bold p-2 rounded">
                                         Edit
