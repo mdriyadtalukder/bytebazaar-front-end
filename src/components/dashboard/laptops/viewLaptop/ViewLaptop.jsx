@@ -134,29 +134,62 @@ const ViewLaptop = () => {
             });
         }
     }
+
     const handleEditReview = (e) => {
         e.preventDefault();
-        editLaptop({
-            id: data?._id,
-            data: {
-                productReviews: [...(data?.productReviews || []), {
-                    name: user?.displayName,
-                    email: user?.email,
-                    image: user?.photoURL,
-                    rating: rating,
-                    review: review,
-                }]
-            }
-        });
-        e.target.reset();
-        setRating(null)
-        Swal.fire({
-            position: "top-end",
-            icon: "success",
-            title: `A rating and review has added`,
-            showConfirmButton: false,
-            timer: 1500
-        });
+        const rev = data?.productReviews?.find(d => d?.email === user?.email);
+        if (rev?.email) {
+            editLaptop({
+                id: data?._id,
+                data: {
+                    productReviews: [
+                        ...(data?.productReviews?.filter(d => d?.email !== user?.email) || []),
+                        {
+                            name: user?.displayName,
+                            email: user?.email,
+                            image: user?.photoURL,
+                            rating: rating,
+                            review: review,
+                        }
+                    ]
+                }
+            });
+
+            e.target.reset();
+            setRating(null)
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `A rating and review has added`,
+                showConfirmButton: false,
+                timer: 1500
+            });
+
+        }
+        else {
+            editLaptop({
+                id: data?._id,
+                data: {
+                    productReviews: [...(data?.productReviews || []), {
+                        name: user?.displayName,
+                        email: user?.email,
+                        image: user?.photoURL,
+                        rating: rating,
+                        review: review,
+                    }]
+                }
+            });
+            e.target.reset();
+            setRating(null)
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: `A rating and review has added`,
+                showConfirmButton: false,
+                timer: 1500
+            });
+        }
+
     }
 
     const handleLike = (e) => {
