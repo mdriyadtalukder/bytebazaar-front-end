@@ -92,6 +92,8 @@ const ViewLaptop = () => {
                 productImage: data?.productImage,
                 productPrice: data?.productPrice,
                 quantity: 1,
+                sellerID: data?.sellerID,
+
             })
             Swal.fire({
                 position: "top-end",
@@ -124,6 +126,8 @@ const ViewLaptop = () => {
                 productImage: data?.productImage,
                 productPrice: data?.productPrice,
                 quantity: data?.productQuantity,
+                sellerID: data?.sellerID,
+
             });
             Swal.fire({
                 position: "top-end",
@@ -232,6 +236,8 @@ const ViewLaptop = () => {
                 productImage: data?.productImage,
                 productPrice: data?.productPrice,
                 quantity: data?.productQuantity,
+                sellerID: data?.sellerID,
+
             });
             if (disliked?._id) {
                 updateDislikes({
@@ -294,6 +300,8 @@ const ViewLaptop = () => {
                 productImage: data?.productImage,
                 productPrice: data?.productPrice,
                 quantity: data?.productQuantity,
+                sellerID: data?.sellerID,
+
             });
             if (liked?._id) {
                 updateLikes({
@@ -419,6 +427,7 @@ const ViewLaptop = () => {
                                                 <p className="text-lg mb-2"><span className="font-bold">Graphics Memory: </span>{data?.productGraphics?.graphicsMemory}</p>
                                                 <p className="text-lg mb-2"><span className="font-bold">Display Size (Inch): </span>{data?.productDisplay?.displaySizeInch} (Inch)</p>
                                                 <p className="text-lg mb-2"><span className="font-bold">Laptop Series: </span>{data?.productGeneral?.productLaptopSeries}</p>
+                                                <p className="text-lg mb-2"><span className="font-bold">SID: </span>{data?.sellerID}</p>
                                             </p>
                                         </div>
                                     </div>

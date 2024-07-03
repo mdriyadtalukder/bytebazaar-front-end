@@ -8,14 +8,17 @@ const AdminRouter = ({ children }) => {
     const { user, loading } = useContext(AuthContext);
     const { data, isLoading, error } = useGetUserQuery(user?.email)
     const location = useLocation();
-    if ((loading && !error?.status) || (isLoading && !error?.status)) {
+    if (isLoading && !error?.status) {
         return <Loading></Loading>
     }
 
-    if (user && data?.length > 0 && (data[0].role === 'admin' || data[0].role === 'seller')) {
-        return children;
+    if (user && data?.length > 0) {
+        const userRole = data[0]?.role;
+        if (userRole === 'admin' || userRole === 'seller') {
+            return children;
+        }
     }
-    return <Navigate to='/' state={{ from: location }} replace ></Navigate>
+    // return <Navigate to='/' state={{ from: location }} replace ></Navigate>
 
 };
 

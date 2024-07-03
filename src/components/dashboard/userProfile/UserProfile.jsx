@@ -15,6 +15,7 @@ const UserProfile = () => {
     const { data: userRole, isLoading: userRoleLoading } = useGetUserQuery(user?.email);
 
 
+
     const navigate = useNavigate('');
 
     const formatNumber = (num) => {
@@ -23,27 +24,59 @@ const UserProfile = () => {
         } else if (num >= 1e5) {
             return (num / 1e5).toFixed(2) + ' Lakh';
         } else if (num >= 1e3) {
-            return (num / 1e3).toFixed(2) + ' K';
+            return (num / 1e3).toFixed(2) + 'K';
         }
-        return num.toString();
+        return num?.toString();
     };
     const totalProductPrice = data?.reduce((acc, product) => acc + Number(product?.price), 0);
+    const alldata = data?.filter(f => f.status === "Accepted")
 
-    const totalRevenueUSD = totalProductPrice / 117.30;
-
-    let revenue = formatNumber(totalRevenueUSD);
+    let revenue = formatNumber(totalProductPrice);
     const totalEarn = totalProductPrice / 4;
-    const totalearning = totalEarn / 117.30;
 
-    let earn = formatNumber(totalearning);
+    let earn = formatNumber(totalEarn);
 
 
-    const pendingProducts = data?.filter(product => product.status === 'Pending');
-    // Calculate the total price of pending products
-    const totalPriceOfPendingProducts = pendingProducts?.reduce((total, product) => total + product?.price, 0);
-    const totalPending = totalPriceOfPendingProducts / 117.30;
-    let pending = formatNumber(totalPending);
 
+
+
+    const totalPendigs = data?.filter(f => f.status === "Pending")?.map(d => {
+        // Filter cart items where sid matches myid
+        const filteredItems = d.cartItems?.filter(item => item.sellerID === userRole[0]?.sellerID);
+        // Calculate the total price for these filtered items
+        const totalPrice = filteredItems?.reduce((sum, item) => sum + Number(item.productPrice), 0);
+        return totalPrice;
+    })
+        // Sum up all total prices from each cart
+        ?.reduce((sum, price) => sum + price, 0);
+
+
+
+    let pending = formatNumber(totalPendigs);
+
+    const totlaEarnigs = data?.filter(f => f.status === "Accepted")?.map(d => {
+        // Filter cart items where sid matches myid
+        const filteredItems = d.cartItems?.filter(item => item.sellerID === userRole[0]?.sellerID);
+        // Calculate the total price for these filtered items
+        const totalPrice = filteredItems?.reduce((sum, item) => sum + Number(item.productPrice), 0);
+        return totalPrice;
+    })
+        // Sum up all total prices from each cart
+        ?.reduce((sum, price) => sum + price, 0);
+
+    let earnig = formatNumber(totlaEarnigs);
+
+
+    
+        const totalPendig = data
+            // Filter data where the status is "Pending"
+            ?.filter(f => f.status === "Pending")
+            // Map over the filtered data to further filter cartItems by sellerID
+            ?.map(f => f.cartItems.filter(item => item.sellerID === userRole[0]?.sellerID)) //got (2)[Array(1), Array(1)]
+            // Filter out empty arrays
+            ?.filter(cartItems => cartItems.length !== 0);  //(2)[Array(1), Array(1)] give those whose Array.length!==0
+
+    
 
     const handleDeleteUser = user => {
 
@@ -95,8 +128,8 @@ const UserProfile = () => {
         },
         {
             "name": "2023",
-            "Total Revenue": Number(totalRevenueUSD),
-            "Total Earning": Number(totalearning)
+            "Total Revenue": Number(totalProductPrice),
+            "Total Earning": Number(totalEarn)
         },
         {
             "name": "2023",
@@ -133,8 +166,8 @@ const UserProfile = () => {
         },
         {
             "name": "2023",
-            "Total Pending": Number(totalPending),
-            "Total Earning": Number(totalearning)
+            "Total Pending": Number(totalPendigs),
+            "Total Earning": Number(totlaEarnigs)
         },
         {
             "name": "2023",
@@ -167,7 +200,7 @@ const UserProfile = () => {
                                         </div>
 
                                         <div className="text-4xl dark:text-gray-100">
-                                            ${revenue}
+                                            BDT-{revenue}
                                         </div>
 
                                         <div className="flex items-center space-x-1 rtl:space-x-reverse text-lg font-medium ">
@@ -192,7 +225,7 @@ const UserProfile = () => {
                                         </div>
 
                                         <div className="text-4xl dark:text-gray-100">
-                                            ${earn}
+                                            BDT-{earn}
                                         </div>
 
                                         <div className="flex items-center space-x-1 rtl:space-x-reverse text-lg font-medium ">
@@ -218,7 +251,7 @@ const UserProfile = () => {
                                         </div>
 
                                         <div className="text-4xl dark:text-gray-100">
-                                            {data?.length}
+                                            {alldata?.length}
                                         </div>
 
                                         <div className="flex items-center space-x-1 rtl:space-x-reverse text-lg font-medium ">
@@ -260,7 +293,7 @@ const UserProfile = () => {
                                     </div>
 
                                     <div className="text-4xl dark:text-gray-100">
-                                        ${pending}
+                                        BDT-{pending}
                                     </div>
 
                                     <div className="flex items-center space-x-1 rtl:space-x-reverse text-lg font-medium ">
@@ -283,7 +316,7 @@ const UserProfile = () => {
                                     </div>
 
                                     <div className="text-4xl dark:text-gray-100">
-                                        ${earn}
+                                        BDT-{earnig}
                                     </div>
 
                                     <div className="flex items-center space-x-1 rtl:space-x-reverse text-lg font-medium ">
@@ -307,7 +340,7 @@ const UserProfile = () => {
                                     </div>
 
                                     <div className="text-4xl dark:text-gray-100">
-                                        {data?.length}
+                                        {totalPendig?.length}
                                     </div>
 
                                     <div className="flex items-center space-x-1 rtl:space-x-reverse text-lg font-medium ">
@@ -387,6 +420,11 @@ const UserProfile = () => {
                                                     <dt className="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Email</dt>
                                                     <dd className="text-lg font-semibold">{user?.email}</dd>
                                                 </div>
+                                                {userRole?.length > 0 && userRole[0]?.sellerID && (<div className="flex flex-col py-3">
+                                                    <dt className="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Seller ID</dt>
+                                                    <dd className="text-lg font-semibold">{userRole[0]?.sellerID}</dd>
+                                                </div>)}
+
                                                 <div className="flex justify-between pb-3">
                                                     <button onClick={handleDeleteUser} className="bg-gray-200 hover:bg-gray-200 text-red-500 font-bold p-1 rounded mt-2">Delete Account</button>
                                                 </div>

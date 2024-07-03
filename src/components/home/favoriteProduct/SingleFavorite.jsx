@@ -51,6 +51,8 @@ const SingleFavorite = ({ f }) => {
                 productImage: f?.productImage,
                 productPrice: f?.productPrice,
                 quantity: 1,
+                sellerID: f?.sellerID,
+
             })
             Swal.fire({
                 position: "top-end",
@@ -75,7 +77,7 @@ const SingleFavorite = ({ f }) => {
             timer: 1500
         });
     }
-    
+
     return (
         <div className="rounded overflow-hidden shadow-lg bg-base-100">
 

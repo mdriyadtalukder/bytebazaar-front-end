@@ -41,10 +41,10 @@ import UpdatePassword from './authentication/manage/UpdatePassword'
 import UpdateImage from './authentication/manage/UpdateImage'
 import PrivateRouter from './authentication/routers/PrivateRouter'
 import AdminRouter from './authentication/routers/AdminRouter'
-import OrderList from './components/dashboard/orders/OrderList'
 import LatestLP from './components/dashboard/LGO/LatestLP'
 import GamingLP from './components/dashboard/LGO/GamingLP'
 import OfferingLP from './components/dashboard/LGO/OfferingLP'
+import CombineOrder from './components/dashboard/orders/CombineOrder'
 
 function App() {
   const location = useLocation();
@@ -93,7 +93,7 @@ function App() {
           <Route path='addLaptop' element={<AdminRouter><Create></Create></AdminRouter>}></Route>
           <Route path='editLaptop/:id' element={<AdminRouter><Update></Update></AdminRouter>}></Route>
           <Route path='users' element={<AdminRouter><Users></Users></AdminRouter>}></Route>
-          <Route path='usersOrderList' element={<AdminRouter><OrderList></OrderList></AdminRouter>}></Route>
+          <Route path='usersOrderList' element={<AdminRouter><CombineOrder></CombineOrder></AdminRouter>}></Route>
 
           <Route path='checkout' element={<PrivateRouter><Checkout></Checkout></PrivateRouter>}></Route>
           <Route path='payment' element={<PrivateRouter><Payment></Payment></PrivateRouter>}></Route>

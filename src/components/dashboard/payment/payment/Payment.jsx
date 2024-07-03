@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useDecreaseLaptopMutation, useGetAllProductQuery, useGetCartQuery } from "../../../../RTK-Query/features/allProduct/allProductApi";
 import { useAddPaymentMutation, useDeleteBkashSuccessMutation, useGetBkashSucessQuery } from "../../../../RTK-Query/features/payment/paymentApi";
 import axios from "axios";
+import Loading from "../../../loading/Loading";
 
 const Payment = () => {
     const { user } = useContext(AuthContext);
@@ -113,13 +114,17 @@ const Payment = () => {
 
     return (
 
-        <div className=" w-full h-full bg-indigo-100 flex justify-center items-center">
-            <div className=" w-1/2 text-center p-6 rounded-lg shadow-lg  bg-base-100">
-                <button onClick={clickCash} className=" p-3 me-2 bg-teal-400 rounded-lg text-white font-bold">Cash On Delivery</button>
-                <Link to='/dashboard/card'><button className=" p-3 me-2 bg-indigo-400 rounded-lg text-white font-bold">Credit Card</button></Link>
-                <button onClick={bKashPayment} className=" p-3 me-2 bg-pink-400 rounded-lg text-white font-bold">BKash</button>
-            </div>
-        </div>
+        <>
+            {(checkLoading || !check[0]?._id) ? <Loading></Loading> :
+                <div className=" w-full h-full bg-indigo-100 flex justify-center items-center">
+                    <div className=" w-1/2 text-center p-6 rounded-lg shadow-lg  bg-base-100">
+                        <button onClick={clickCash} className=" p-3 me-2 bg-teal-400 rounded-lg text-white font-bold">Cash On Delivery</button>
+                        <Link to='/dashboard/card'><button className=" p-3 me-2 bg-indigo-400 rounded-lg text-white font-bold">Credit Card</button></Link>
+                        <button onClick={bKashPayment} className=" p-3 me-2 bg-pink-400 rounded-lg text-white font-bold">BKash</button>
+                    </div>
+                </div>
+            }
+        </>
 
     );
 };

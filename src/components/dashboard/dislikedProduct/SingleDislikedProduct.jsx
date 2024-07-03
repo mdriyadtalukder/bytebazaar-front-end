@@ -17,7 +17,6 @@ const SingleDislikedProduct = ({ f }) => {
 
 
 
-
     const handleCart = (e) => {
         e.preventDefault();
         const cart = carts.find(c => c?.cartId === f?.dislikeId);
@@ -56,6 +55,7 @@ const SingleDislikedProduct = ({ f }) => {
                 productImage: f?.productImage,
                 productPrice: f?.productPrice,
                 quantity: 1,
+                sellerID: f?.sellerID,
             })
             Swal.fire({
                 position: "top-end",

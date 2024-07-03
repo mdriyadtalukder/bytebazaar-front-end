@@ -15,7 +15,7 @@ const SingleLikedProduct = ({ f }) => {
     const [deleteLikedProduct] = useDeleteLikedProductMutation();
     const [updateLikes] = useUpdateLikesMutation();
 
-
+console.log(f);
 
     const handleCart = (e) => {
         e.preventDefault();
@@ -55,6 +55,8 @@ const SingleLikedProduct = ({ f }) => {
                 productImage: f?.productImage,
                 productPrice: f?.productPrice,
                 quantity: 1,
+                sellerID: f?.sellerID,
+
             })
             Swal.fire({
                 position: "top-end",

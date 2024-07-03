@@ -18,7 +18,7 @@ const SingleCart = ({ d }) => {
         })
 
     }
-
+console.log(d)
     const handleDecreaseQuantity = (e) => {
         e.preventDefault();
         editCart({

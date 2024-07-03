@@ -74,6 +74,7 @@ const SingleProduct = ({ d }) => {
                 productImage: d?.productImage,
                 productPrice: d?.productPrice,
                 quantity: 1,
+                sellerID: d?.sellerID,
             })
             Swal.fire({
                 position: "top-end",
@@ -117,6 +118,8 @@ const SingleProduct = ({ d }) => {
                 productImage: d?.productImage,
                 productPrice: d?.productPrice,
                 quantity: d?.productQuantity,
+                sellerID: d?.sellerID,
+
             });
             Swal.fire({
                 position: "top-end",
@@ -189,6 +192,8 @@ const SingleProduct = ({ d }) => {
                 productImage: d?.productImage,
                 productPrice: d?.productPrice,
                 quantity: d?.productQuantity,
+                sellerID: d?.sellerID,
+
             });
             if (disliked?._id) {
                 updateDislikes({
@@ -251,6 +256,8 @@ const SingleProduct = ({ d }) => {
                 productImage: d?.productImage,
                 productPrice: d?.productPrice,
                 quantity: d?.productQuantity,
+                sellerID: d?.sellerID,
+
             });
             if (liked?._id) {
                 updateLikes({
@@ -320,6 +327,7 @@ const SingleProduct = ({ d }) => {
                             <p><span className="font-bold">Display Size (Inch): </span>{d?.productDisplay?.displaySizeInch} (Inch)</p>
                             <p><span className="font-bold">Laptop Series: </span>{d?.productGeneral?.productLaptopSeries}</p>
                             <p><span className="font-bold">Quantity: </span>{d?.productQuantity}</p>
+                            <p><span className="font-bold">SID: </span>{d?.sellerID}</p>
                         </Link>
 
                     </div>
