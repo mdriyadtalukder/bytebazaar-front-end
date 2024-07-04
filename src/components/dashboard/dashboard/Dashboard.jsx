@@ -1,7 +1,7 @@
 import { FaHome } from "react-icons/fa";
 import { MdFavorite } from "react-icons/md";
 import { Link, NavLink, Outlet } from "react-router-dom";
-import { useGetCartQuery } from "../../../RTK-Query/features/allProduct/allProductApi";
+import { useGetCartQuery, useGetCoinQuery } from "../../../RTK-Query/features/allProduct/allProductApi";
 import Loading from "../../loading/Loading";
 import { useContext } from "react";
 import { AuthContext } from "../../../authentication/authProvider/AuthProvider";
@@ -10,13 +10,16 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAModel, getDashboard, getGeneration, getMemory, getModels, getNavbar, getRam, getSSD, getSeries, getType } from "../../../RTK-Query/features/allProduct/allProductSlice";
 import { useGetUserQuery } from "../../../RTK-Query/features/users/usersApi";
 import { TfiGift } from "react-icons/tfi";
+import { GiTwoCoins } from "react-icons/gi";
 
 const Dashboard = () => {
     const { user } = useContext(AuthContext);
     const { data: favorites, isLoading: loadings, error: err } = useGetFavoriteQuery(user?.email);
     const { data, isLoading, error } = useGetCartQuery(user?.email);
     const { data: admin, isLoading: adminLoading, error: er } = useGetUserQuery(user?.email);
-    const { dashboard } = useSelector(state => state.allProduct)
+    const { dashboard } = useSelector(state => state.allProduct);
+    const { data: coin } = useGetCoinQuery(user?.email);
+
     const dispatch = useDispatch();
     let totalQuantity = 0;
 
@@ -68,18 +71,7 @@ const Dashboard = () => {
                                 {/* Sidebar content here */}
                                 <div className="flex justify-evenly items-center">
                                     <Link to='/' onClick={() => handleHome("Home")} className="text-xl font-bold uppercase mt-4 mb-4 flex justify-center items-center">
-                                        <div>
-                                            <span className='text-indigo-400'>B</span>
-                                            <span className='text-teal-400'>y</span>
-                                            <span className='text-indigo-400'>t</span>
-                                            <span className='text-teal-400'>e</span>
-                                            <span className='text-indigo-400'>b</span>
-                                            <span className='text-teal-400'>a</span>
-                                            <span className='text-indigo-400'>z</span>
-                                            <span className='text-teal-400'>a</span>
-                                            <span className='text-indigo-400'>a</span>
-                                            <span className='text-teal-400'>r</span>
-                                        </div>
+                                        <FaHome className="h-8 w-8 text-black font-bold"></FaHome>
                                     </Link>
 
                                     {
@@ -100,6 +92,12 @@ const Dashboard = () => {
                                                 <MdFavorite className="h-7 w-7 text-pink-600"></MdFavorite>
                                                 <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{favorites?.length || 0}</span>
                                             </Link>
+                                            <p className="indicator">
+                                                <GiTwoCoins className="h-7 w-7 text-yellow-600"></GiTwoCoins>
+                                                <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{coin?.coins}</span>
+                                            </p>
+
+
                                         </>
                                     }
 
@@ -127,7 +125,7 @@ const Dashboard = () => {
                                 <div className="divider"></div>
 
                                 <li onClick={() => handleHome("Home")} className={` mt-2 ${dashboard === 'Home' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`}><NavLink to='/'><FaHome></FaHome>Home</NavLink></li>
-                                
+
                                 {admin?.length > 0 && (admin[0].role === 'admin' || admin[0].role === 'seller') && <>
                                     <li className={`mt-2 ${dashboard === 'Add Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Add Laptop')}>
                                         <Link to='/dashboard/addLaptop'>Add Laptop</Link>
@@ -137,7 +135,7 @@ const Dashboard = () => {
                                     </li>
 
                                 </>}
-                                
+
                                 {admin?.length > 0 && admin[0].role === 'admin' && (
 
                                     <li className={`mt-2 ${dashboard === 'Users' && 'bg-indigo-400 rounded-md text-white'} font-bold`} onClick={() => handleClick('Users')}>
@@ -151,6 +149,7 @@ const Dashboard = () => {
                                     user && <>
                                         <li className={` mt-2 ${dashboard === 'Liked Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Liked Laptop')} ><Link to='/dashboard/likedProduct'>Liked Laptop</Link></li>
                                         <li className={` mt-2 ${dashboard === 'Disliked Laptop' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Disliked Laptop')} ><Link to='/dashboard/dislikedProduct'>Disliked Laptop</Link></li>
+                                        <li className={` mt-2 ${dashboard === "Coin's Products" && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick("Coin's Products")} ><Link to='/dashboard/coinsproducts'>Coin's Products</Link></li>
                                         <li className={` mt-2 ${dashboard === 'Orders' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Orders')} ><Link to='/dashboard/order'>Orders</Link></li>
                                     </>
                                 }

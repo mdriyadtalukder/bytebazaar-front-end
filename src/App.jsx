@@ -45,6 +45,7 @@ import LatestLP from './components/dashboard/LGO/LatestLP'
 import GamingLP from './components/dashboard/LGO/GamingLP'
 import OfferingLP from './components/dashboard/LGO/OfferingLP'
 import CombineOrder from './components/dashboard/orders/CombineOrder'
+import CoinsProducts from './components/dashboard/coinsProducts/CoinsProducts'
 
 function App() {
   const location = useLocation();
@@ -69,6 +70,7 @@ function App() {
           <Route path='favoriteProduct' element={<PrivateRouter><FavoriteProduct></FavoriteProduct></PrivateRouter>}></Route>
           <Route path='likedProduct' element={<PrivateRouter><LikedProduct></LikedProduct></PrivateRouter>}></Route>
           <Route path='dislikedProduct' element={<PrivateRouter><DislikedProduct></DislikedProduct></PrivateRouter>}></Route>
+          <Route path='coinsproducts' element={<PrivateRouter><CoinsProducts></CoinsProducts></PrivateRouter>}></Route>
 
           <Route path='acer' element={<Acer></Acer>}></Route>
           <Route path='apple' element={<Apple></Apple>}></Route>

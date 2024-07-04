@@ -8,6 +8,13 @@ export const allProductApi = apiSlice.injectEndpoints({
             }),
             providesTags: ['laptops']
         }),
+        getCoinsProducts: builder.query({
+            query: () => ({
+                url: '/coinsProducts',
+                method: "GET",
+            }),
+            providesTags: ['coinsproducts']
+        }),
         getAProduct: builder.query({
             query: (id) => ({
                 url: `/alllaptops/${id}`,
@@ -16,6 +23,31 @@ export const allProductApi = apiSlice.injectEndpoints({
             providesTags: (result, error, arg) => [
                 { type: "laptop", id: arg }
             ]
+        }),
+        getCoin: builder.query({
+            query: (email) => ({
+                url: `/coins?email=${email}`,
+                method: "GET",
+            }),
+            providesTags: ['coin']
+        }),
+        addCoin: builder.mutation({
+            query: (data) => ({
+                url: '/coins',
+                method: "POST",
+                body: data,
+            }),
+            invalidatesTags: ['coin'],
+
+        }),
+        editCoin: builder.mutation({
+            query: ({ id, data }) => ({
+                url: `/coins/${id}`,
+                method: "PATCH",
+                body: data,
+            }),
+            invalidatesTags: ['coin'],
+
         }),
         addLaptop: builder.mutation({
             query: (data) => ({
@@ -109,4 +141,4 @@ export const allProductApi = apiSlice.injectEndpoints({
         }),
     })
 })
-export const { useGetAllProductQuery, useGetAProductQuery, useAddToCartMutation, useGetCartQuery, useEditCartMutation, useDeleteCartMutation, useEditLaptopMutation, useAddLaptopMutation, useUpdateLaptopMutation,useDeleteLaptopMutation,useDecreaseLaptopMutation } = allProductApi;
+export const { useGetAllProductQuery, useGetCoinsProductsQuery, useGetAProductQuery, useGetCoinQuery, useAddToCartMutation, useGetCartQuery, useEditCartMutation, useDeleteCartMutation, useEditLaptopMutation, useAddLaptopMutation, useUpdateLaptopMutation, useDeleteLaptopMutation, useDecreaseLaptopMutation, useAddCoinMutation, useEditCoinMutation } = allProductApi;

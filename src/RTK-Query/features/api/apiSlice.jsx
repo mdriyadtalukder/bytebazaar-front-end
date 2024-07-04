@@ -26,7 +26,7 @@ export const apiSlice = createApi({
         }
         return result;
     },
-    tagTypes: ['laptops', 'laptop', 'cart', 'favorite', 'likes', 'dislikes', 'checkout', 'payments', 'allpayment', 'users', 'user'],
+    tagTypes: ['laptops', 'laptop', 'cart', 'favorite', 'likes', 'dislikes', 'checkout', 'payments', 'allpayment', 'users', 'user', 'coinsproducts', 'coin'],
     endpoints: (builder) => ({}),
 
 })

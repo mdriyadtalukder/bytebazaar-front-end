@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../../authentication/authProvider/AuthProvider";
 import Swal from "sweetalert2";
 import { useAddPaymentMutation, useAddStripeMutation } from "../../../../RTK-Query/features/payment/paymentApi";
-import { useDecreaseLaptopMutation, useGetAllProductQuery, useGetCartQuery } from "../../../../RTK-Query/features/allProduct/allProductApi";
+import { useAddCoinMutation, useDecreaseLaptopMutation, useEditCoinMutation, useGetAllProductQuery, useGetCartQuery, useGetCoinQuery } from "../../../../RTK-Query/features/allProduct/allProductApi";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { useDeleteCheckoutMutation, useGetCheckoutQuery } from "../../../../RTK-Query/features/checkout/checkoutApi";
 
@@ -23,9 +23,12 @@ const CheckOutForm = () => {
     const { data: cart } = useGetCartQuery(user?.email);
     const [addStripe, { data }] = useAddStripeMutation();
     const [addPayment] = useAddPaymentMutation();
+    const { data: coin } = useGetCoinQuery(user?.email);
+    const [addCoin] = useAddCoinMutation();
+    const [editCoin] = useEditCoinMutation();
 
 
-
+    //console.log(coin)
 
     let totalPrice = 0;
     let totalQuantity = 0;
@@ -123,7 +126,20 @@ const CheckOutForm = () => {
                     if (check[0]?._id) {
                         deleteCheckout(check[0]?._id);
                     }
-                    
+                    if (coin?._id) {
+                        editCoin({
+                            id: coin?._id,
+                            data: {
+                                coins: Number(coin?.coins) + (Number(totalPrice / 1000))
+                            }
+                        })
+                    }
+                    else {
+                        addCoin({
+                            email: user?.email,
+                            coins: Number(totalPrice) / 1000,
+                        })
+                    }
                     Swal.fire({
                         position: "top-end",
                         icon: "success",
@@ -173,7 +189,7 @@ const CheckOutForm = () => {
         </form>
 
 
-       
+
 
     );
 };

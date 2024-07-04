@@ -25,7 +25,7 @@ const AllCategory = ({ data, isError, isLoading, error, filtering, model }) => {
     const filters = filtering || undefined;
     const series = filters?.filter(f => f?.id === 'laptopSeriesOptions');
     const { data: likes } = useGetLikedProductQuery(user?.email);
-    console.log(search)
+    //console.log(search)
     let content;
 
     if (!isLoading && isError) content = <p className='text-red-600 font-bold text-center'>{error?.status}</p>

@@ -2,17 +2,20 @@ import { useContext } from "react";
 import { MdFavorite } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../authentication/authProvider/AuthProvider";
-import { useGetCartQuery } from "../../RTK-Query/features/allProduct/allProductApi";
+import { useGetCartQuery, useGetCoinQuery } from "../../RTK-Query/features/allProduct/allProductApi";
 import { useGetFavoriteQuery } from "../../RTK-Query/features/favorite/favoriteApi";
 import { getDashboard, getNavbar } from "../../RTK-Query/features/allProduct/allProductSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { TfiGift } from "react-icons/tfi";
+import { GiTwoCoins } from "react-icons/gi";
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
     const { data: favorites, isLoading: loadings, error: err } = useGetFavoriteQuery(user?.email);
     const { data, isLoading, isError, error } = useGetCartQuery(user?.email);
     const { dashboard, navbar } = useSelector(state => state.allProduct)
+    const { data: coin } = useGetCoinQuery(user?.email);
+
     const dispatch = useDispatch();
     let totalQuantity = 0;
 
@@ -132,6 +135,12 @@ const Navbar = () => {
                                     <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{favorites?.length || 0}</span>
                                 </div>
                             </Link>
+                            <div className="pe-4">
+                                <div className="indicator">
+                                    <GiTwoCoins className="h-9 w-9 text-yellow-600"></GiTwoCoins>
+                                    <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{coin?.coins}</span>
+                                </div>
+                            </div>
                         </>
                     }
 

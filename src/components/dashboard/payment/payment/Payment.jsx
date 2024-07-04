@@ -3,7 +3,7 @@ import { useDeleteCheckoutMutation, useGetCheckoutQuery } from "../../../../RTK-
 import { AuthContext } from "../../../../authentication/authProvider/AuthProvider";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
-import { useDecreaseLaptopMutation, useGetAllProductQuery, useGetCartQuery } from "../../../../RTK-Query/features/allProduct/allProductApi";
+import { useAddCoinMutation, useDecreaseLaptopMutation, useEditCoinMutation, useGetAllProductQuery, useGetCartQuery, useGetCoinQuery } from "../../../../RTK-Query/features/allProduct/allProductApi";
 import { useAddPaymentMutation, useDeleteBkashSuccessMutation, useGetBkashSucessQuery } from "../../../../RTK-Query/features/payment/paymentApi";
 import axios from "axios";
 import Loading from "../../../loading/Loading";
@@ -18,6 +18,10 @@ const Payment = () => {
     const { data: laptops } = useGetAllProductQuery();
     const { data: success } = useGetBkashSucessQuery();
     const [deleteBkashSuccess] = useDeleteBkashSuccessMutation();
+
+    const { data: coin } = useGetCoinQuery(user?.email);
+    const [addCoin] = useAddCoinMutation();
+    const [editCoin] = useEditCoinMutation();
 
     let totalPrice = 0;
     let totalQuantity = 0;
@@ -71,7 +75,20 @@ const Payment = () => {
                     if (check[0]?._id) {
                         deleteCheckout(check[0]?._id);
                     }
-
+                    if (coin?._id) {
+                        editCoin({
+                            id: coin?._id,
+                            data: {
+                                coins: Number(coin?.coins) + (Number(totalPrice / 1000))
+                            }
+                        })
+                    }
+                    else {
+                        addCoin({
+                            email: user?.email,
+                            coins: Number(totalPrice) / 1000,
+                        })
+                    }
                     Swal.fire({
                         position: "top-end",
                         icon: "success",
@@ -115,7 +132,7 @@ const Payment = () => {
     return (
 
         <>
-            {(checkLoading || !check[0]?._id) ? <Loading></Loading> :
+            {checkLoading ? <Loading></Loading> :
                 <div className=" w-full h-full bg-indigo-100 flex justify-center items-center">
                     <div className=" w-1/2 text-center p-6 rounded-lg shadow-lg  bg-base-100">
                         <button onClick={clickCash} className=" p-3 me-2 bg-teal-400 rounded-lg text-white font-bold">Cash On Delivery</button>
