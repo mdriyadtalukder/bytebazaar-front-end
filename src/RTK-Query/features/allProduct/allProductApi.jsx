@@ -8,6 +8,13 @@ export const allProductApi = apiSlice.injectEndpoints({
             }),
             providesTags: ['laptops']
         }),
+        getPurchaseCoinsRecords: builder.query({
+            query: () => ({
+                url: '/recordsCoins',
+                method: "GET",
+            }),
+            providesTags: ['records']
+        }),
         getCoinsProducts: builder.query({
             query: () => ({
                 url: '/coinsProducts',
@@ -31,6 +38,13 @@ export const allProductApi = apiSlice.injectEndpoints({
             }),
             providesTags: ['coin']
         }),
+        getPurchaseCoinRecord: builder.query({
+            query: (email) => ({
+                url: `/recordCoin?email=${email}`,
+                method: "GET",
+            }),
+            providesTags: ['record']
+        }),
         addCoin: builder.mutation({
             query: (data) => ({
                 url: '/coins',
@@ -40,6 +54,15 @@ export const allProductApi = apiSlice.injectEndpoints({
             invalidatesTags: ['coin'],
 
         }),
+        addPurchaseCoinsRecords: builder.mutation({
+            query: (data) => ({
+                url: '/recordsCoins',
+                method: "POST",
+                body: data,
+            }),
+            invalidatesTags: ['record', 'records'],
+
+        }),
         editCoin: builder.mutation({
             query: ({ id, data }) => ({
                 url: `/coins/${id}`,
@@ -47,6 +70,15 @@ export const allProductApi = apiSlice.injectEndpoints({
                 body: data,
             }),
             invalidatesTags: ['coin'],
+
+        }),
+        editCoinsProduct: builder.mutation({
+            query: ({ id, data }) => ({
+                url: `/coinsProducts/${id}`,
+                method: "PATCH",
+                body: data,
+            }),
+            invalidatesTags: ['coin', 'coinsproducts'],
 
         }),
         addLaptop: builder.mutation({
@@ -139,6 +171,14 @@ export const allProductApi = apiSlice.injectEndpoints({
             invalidatesTags: ['cart']
 
         }),
+        deletePurchaseCoinsRecords: builder.mutation({
+            query: (id) => ({
+                url: `/recordsCoins/${id}`,
+                method: "DELETE",
+            }),
+            invalidatesTags: ['record', 'records']
+
+        }),
     })
 })
-export const { useGetAllProductQuery, useGetCoinsProductsQuery, useGetAProductQuery, useGetCoinQuery, useAddToCartMutation, useGetCartQuery, useEditCartMutation, useDeleteCartMutation, useEditLaptopMutation, useAddLaptopMutation, useUpdateLaptopMutation, useDeleteLaptopMutation, useDecreaseLaptopMutation, useAddCoinMutation, useEditCoinMutation } = allProductApi;
+export const { useGetAllProductQuery, useGetCoinsProductsQuery, useGetAProductQuery, useGetCoinQuery, useGetPurchaseCoinRecordQuery, useGetPurchaseCoinsRecordsQuery, useAddToCartMutation, useGetCartQuery, useEditCartMutation, useDeleteCartMutation, useEditLaptopMutation, useAddLaptopMutation, useUpdateLaptopMutation, useDeleteLaptopMutation, useDecreaseLaptopMutation, useAddCoinMutation, useEditCoinMutation, useEditCoinsProductMutation, useAddPurchaseCoinsRecordsMutation, useDeletePurchaseCoinsRecordsMutation } = allProductApi;

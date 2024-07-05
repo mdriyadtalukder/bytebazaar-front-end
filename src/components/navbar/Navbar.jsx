@@ -15,6 +15,7 @@ const Navbar = () => {
     const { data, isLoading, isError, error } = useGetCartQuery(user?.email);
     const { dashboard, navbar } = useSelector(state => state.allProduct)
     const { data: coin } = useGetCoinQuery(user?.email);
+    const isFloat = Number(coin?.coins) === coin?.coins && coin?.coins % 1 !== 0;
 
     const dispatch = useDispatch();
     let totalQuantity = 0;
@@ -138,7 +139,7 @@ const Navbar = () => {
                             <div className="pe-4">
                                 <div className="indicator">
                                     <GiTwoCoins className="h-9 w-9 text-yellow-600"></GiTwoCoins>
-                                    <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{coin?.coins}</span>
+                                    <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{isFloat ? coin?.coins.toFixed(2) : coin?.coins}</span>
                                 </div>
                             </div>
                         </>
