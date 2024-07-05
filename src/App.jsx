@@ -46,6 +46,8 @@ import GamingLP from './components/dashboard/LGO/GamingLP'
 import OfferingLP from './components/dashboard/LGO/OfferingLP'
 import CombineOrder from './components/dashboard/orders/CombineOrder'
 import CoinsProducts from './components/dashboard/coinsProducts/CoinsProducts'
+import Purchased from './components/dashboard/purchaseCoined/Purchased'
+import AllPurchase from './components/dashboard/purchaseCoined/AllPurchase'
 
 function App() {
   const location = useLocation();
@@ -96,11 +98,13 @@ function App() {
           <Route path='editLaptop/:id' element={<AdminRouter><Update></Update></AdminRouter>}></Route>
           <Route path='users' element={<AdminRouter><Users></Users></AdminRouter>}></Route>
           <Route path='usersOrderList' element={<AdminRouter><CombineOrder></CombineOrder></AdminRouter>}></Route>
+          <Route path='allpurchase' element={<AdminRouter><AllPurchase></AllPurchase></AdminRouter>}></Route>
 
           <Route path='checkout' element={<PrivateRouter><Checkout></Checkout></PrivateRouter>}></Route>
           <Route path='payment' element={<PrivateRouter><Payment></Payment></PrivateRouter>}></Route>
           <Route path='card' element={<PrivateRouter><CreditCard></CreditCard></PrivateRouter>}></Route>
           <Route path='order' element={<PrivateRouter><Order></Order></PrivateRouter>}></Route>
+          <Route path='purchase' element={<PrivateRouter><Purchased></Purchased></PrivateRouter>}></Route>
           <Route path='changename' element={<PrivateRouter><UpdateName></UpdateName></PrivateRouter>}></Route>
           <Route path='changepassword' element={<PrivateRouter><UpdatePassword></UpdatePassword></PrivateRouter>}></Route>
           <Route path='changeimage' element={<PrivateRouter><UpdateImage></UpdateImage></PrivateRouter>}></Route>

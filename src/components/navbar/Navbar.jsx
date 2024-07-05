@@ -136,12 +136,12 @@ const Navbar = () => {
                                     <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{favorites?.length || 0}</span>
                                 </div>
                             </Link>
-                            <div className="pe-4">
+                            <Link to='/dashboard/coinsproducts' className="pe-4">
                                 <div className="indicator">
                                     <GiTwoCoins className="h-9 w-9 text-yellow-600"></GiTwoCoins>
-                                    <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{isFloat ? coin?.coins.toFixed(2) : coin?.coins}</span>
+                                    <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{isFloat ? coin?.coins.toFixed(2) : coin?.coins || 0}</span>
                                 </div>
-                            </div>
+                            </Link>
                         </>
                     }
 

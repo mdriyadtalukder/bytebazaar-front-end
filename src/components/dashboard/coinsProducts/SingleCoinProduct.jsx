@@ -38,7 +38,8 @@ const SingleCoinProduct = ({ d }) => {
                     email: user?.email,
                     name: d?.name,
                     coins: d?.coins,
-                    data: new Date()
+                    status: "Pending",
+                    date: new Date(),
                 });
                 Swal.fire({
                     title: "Deleted!",
@@ -79,8 +80,8 @@ const SingleCoinProduct = ({ d }) => {
                             d?.clickSound ? <p><span className="font-bold">Click Sound: </span>{d?.clickSound}</p> : <p><span className="font-bold">Microphone: </span>{d?.microphone}</p>
 
                         }                        <p><span className="font-bold">Quantity: </span>{d?.Quantity}</p>
-                        <button onClick={handlePurchase} disabled={coin?.coins < d?.coins} className={`${coin?.coins < d?.coins ? 'bg-gray-300 text-gray-600' : 'bg-yellow-300 text-yellow-600 '} py-2.5 px-6 w-full rounded-lg text-lg   flex items-center justify-center font-bold`}>
-                            <TbCoinFilled className={`${coin?.coins < d?.coins ? ' text-gray-600' : ' text-yellow-600 '} h-9 w-9  mr-2`} /> {d?.coins}
+                        <button onClick={handlePurchase} disabled={(coin?.coins < d?.coins || !coin?._id)} className={`${(coin?.coins < d?.coins || !coin?._id) ? 'bg-gray-300 text-gray-600' : 'bg-yellow-300 text-yellow-600 '} py-2.5 px-6 w-full rounded-lg text-lg   flex items-center justify-center font-bold`}>
+                            <TbCoinFilled className={`${(coin?.coins < d?.coins || !coin?._id) ? ' text-gray-600' : ' text-yellow-600 '} h-9 w-9  mr-2`} /> {d?.coins}
                         </button>
 
 

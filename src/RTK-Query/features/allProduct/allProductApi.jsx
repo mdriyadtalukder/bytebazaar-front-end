@@ -63,6 +63,15 @@ export const allProductApi = apiSlice.injectEndpoints({
             invalidatesTags: ['record', 'records'],
 
         }),
+        editPurchaseCoinsRecords: builder.mutation({
+            query: ({ id, data }) => ({
+                url: `/recordsCoins/${id}`,
+                method: "PATCH",
+                body: data,
+            }),
+            invalidatesTags: ['record', 'records'],
+
+        }),
         editCoin: builder.mutation({
             query: ({ id, data }) => ({
                 url: `/coins/${id}`,
@@ -181,4 +190,4 @@ export const allProductApi = apiSlice.injectEndpoints({
         }),
     })
 })
-export const { useGetAllProductQuery, useGetCoinsProductsQuery, useGetAProductQuery, useGetCoinQuery, useGetPurchaseCoinRecordQuery, useGetPurchaseCoinsRecordsQuery, useAddToCartMutation, useGetCartQuery, useEditCartMutation, useDeleteCartMutation, useEditLaptopMutation, useAddLaptopMutation, useUpdateLaptopMutation, useDeleteLaptopMutation, useDecreaseLaptopMutation, useAddCoinMutation, useEditCoinMutation, useEditCoinsProductMutation, useAddPurchaseCoinsRecordsMutation, useDeletePurchaseCoinsRecordsMutation } = allProductApi;
+export const { useGetAllProductQuery, useGetCoinsProductsQuery, useGetAProductQuery, useGetCoinQuery, useGetPurchaseCoinRecordQuery, useGetPurchaseCoinsRecordsQuery, useAddToCartMutation, useGetCartQuery, useEditCartMutation, useDeleteCartMutation, useEditLaptopMutation, useAddLaptopMutation, useUpdateLaptopMutation, useDeleteLaptopMutation, useDecreaseLaptopMutation, useAddCoinMutation, useEditCoinMutation, useEditCoinsProductMutation, useAddPurchaseCoinsRecordsMutation,useEditPurchaseCoinsRecordsMutation, useDeletePurchaseCoinsRecordsMutation } = allProductApi;

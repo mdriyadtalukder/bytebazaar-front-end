@@ -92,10 +92,10 @@ const Dashboard = () => {
                                                 <MdFavorite className="h-7 w-7 text-pink-600"></MdFavorite>
                                                 <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{favorites?.length || 0}</span>
                                             </Link>
-                                            <p className="indicator">
+                                            <Link to='/dashboard/coinsproducts' className="indicator">
                                                 <GiTwoCoins className="h-7 w-7 text-yellow-600"></GiTwoCoins>
-                                                <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{isFloat ? coin?.coins.toFixed(2) : coin?.coins}</span>
-                                            </p>
+                                                <span className="badge bg-red-600 text-white font-bold badge-sm indicator-item">{isFloat ? coin?.coins.toFixed(2) : coin?.coins || 0}</span>
+                                            </Link>
 
 
                                         </>
@@ -133,6 +133,9 @@ const Dashboard = () => {
                                     <li className={`mt-2 ${dashboard === 'Users Order List' && 'bg-indigo-400 rounded-md text-white'} font-bold`} onClick={() => handleClick('Users Order List')}>
                                         <Link to='/dashboard/usersOrderList'>Users Order List</Link>
                                     </li>
+                                    <li className={`mt-2 ${dashboard === "Users Buyed Coin's Products" && 'bg-indigo-400 rounded-md text-white'} font-bold`} onClick={() => handleClick("Users Buyed Coin's Products")}>
+                                        <Link to='/dashboard/allpurchase'>Users Buyed Coin's Products</Link>
+                                    </li>
 
                                 </>}
 
@@ -150,6 +153,7 @@ const Dashboard = () => {
                                         <li className={` mt-2 ${dashboard === 'Liked Laptop' && 'bg-indigo-400 rounded-md font-bold text-white'} font-bold`} onClick={() => handleClick('Liked Laptop')} ><Link to='/dashboard/likedProduct'>Liked Laptop</Link></li>
                                         <li className={` mt-2 ${dashboard === 'Disliked Laptop' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Disliked Laptop')} ><Link to='/dashboard/dislikedProduct'>Disliked Laptop</Link></li>
                                         <li className={` mt-2 ${dashboard === "Coin's Products" && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick("Coin's Products")} ><Link to='/dashboard/coinsproducts'>Coin's Products</Link></li>
+                                        <li className={` mt-2 ${dashboard === "Buyed Coin's Products" && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick("Buyed Coin's Products")} ><Link to='/dashboard/purchase'>Buyed Coin's Products</Link></li>
                                         <li className={` mt-2 ${dashboard === 'Orders' && 'bg-indigo-400 rounded-md  text-white'} font-bold`} onClick={() => handleClick('Orders')} ><Link to='/dashboard/order'>Orders</Link></li>
                                     </>
                                 }
