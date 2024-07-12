@@ -105,7 +105,7 @@ const CheckOutForm = () => {
                     cartIds: cart.map(c => c?._id),
                     menuItemIds: cart.map(c => c?.cartId),
                     cartItems: cart,
-                    status: 'Accepted',
+                    status: 'Pending',
                     method: 'Credit Card'
 
                 }
