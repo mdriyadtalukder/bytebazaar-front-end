@@ -13,7 +13,6 @@ import { AiFillDislike, AiFillLike } from "react-icons/ai";
 import { useAddLikedProductMutation, useDeleteLikedProductMutation, useGetLikedProductQuery, useUpdateLikesMutation } from "../../../../RTK-Query/features/likes/likedProductApi";
 import { useAddDislikedProductMutation, useDeleteDislikedProductMutation, useGetDislikedProductQuery, useUpdateDislikesMutation } from "../../../../RTK-Query/features/dislikes/dislikedProductApi";
 import { MdGroups } from "react-icons/md";
-import ReactImageMagnify from "react-image-magnify";
 import { useGetPaymentsQuery } from "../../../../RTK-Query/features/payment/paymentApi";
 
 const ViewLaptop = () => {
@@ -347,19 +346,6 @@ const ViewLaptop = () => {
                                     <div className="md:flex-1 px-4">
                                         <div className="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4 ">
                                             <img className="w-full h-full object-cover  lg:hidden" src={data?.productImage} alt="Product Image" />
-
-                                            <ReactImageMagnify className="hidden lg:block" {...{
-                                                smallImage: {
-                                                    alt: 'Wristwatch by Ted Baker London',
-                                                    isFluidWidth: true,
-                                                    src: data?.productImage
-                                                },
-                                                largeImage: {
-                                                    src: data?.productImage,
-                                                    width: 836,
-                                                    height: 1100
-                                                }
-                                            }} />
 
                                         </div>
                                         {
