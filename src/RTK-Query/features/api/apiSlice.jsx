@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { auth } from "../../../authentication/firebase/firebase.config";
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: "http://localhost:5000/",
+    baseUrl: "https://bytebazaar-back-end.onrender.com/",
     prepareHeaders: (headers, { getState }) => {
         const token = localStorage.getItem('access-token');
         if (token) {

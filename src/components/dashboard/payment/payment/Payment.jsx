@@ -104,7 +104,7 @@ const Payment = () => {
 
     const bKashPayment = async () => {
         try {
-            const { data } = await axios.post('http://localhost:5000/api/bkash/payment/create',
+            const { data } = await axios.post('https://bytebazaar-back-end.onrender.com/api/bkash/payment/create',
                 {
                     amount: totalPrice,
                     orderId: 1,
